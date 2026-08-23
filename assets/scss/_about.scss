@@ -103,11 +103,11 @@
             }
 
             .bg {
-                stroke: rgba(29, 139, 138, 0.25);
+                stroke: rgba(178, 132, 44, 0.25);
             }
 
             .progress {
-                stroke: #1D8B8A; 
+                stroke: #B2842C;
                 stroke-dasharray:339.292;
                 stroke-dashoffset:339.292;
                 transition:stroke-dashoffset 1.5s ease;
@@ -127,7 +127,7 @@
     }
 
     .counter-items {
-        border-top: 1px solid rgba(5, 54, 53, 0.16);
+        border-top: 1px solid rgba(0, 23, 31, 0.16);
         margin-top: 25px;
         padding-top: 25px;
 
@@ -270,7 +270,7 @@
         .line {
             height: 178px;
             width: 1px;
-            background-color: rgba(67, 75, 75, 0.14);
+            background-color: rgba(85, 85, 85, 0.14);
 
             @include breakpoint (max-xxl){
                 display: none;
@@ -408,7 +408,7 @@
 
     .counter-style-2 {
         padding-right: 42px;
-        border-right: 1px solid rgba(2, 36, 35, 0.1);
+        border-right: 1px solid rgba(0, 23, 31, 0.1);
     }
 }
 
@@ -564,7 +564,7 @@
     .line {
         width: 185px;
         height: 2px;
-        background-color: rgba(29, 139, 138, 0.26);
+        background-color: rgba(178, 132, 44, 0.26);
         margin-top: 20px;
         margin-bottom: 24px;
         position: relative;
@@ -1200,7 +1200,7 @@
             
 
             &:not(:last-child) {
-                border-bottom: 1px solid rgba(2, 36, 35, 0.1);
+                border-bottom: 1px solid rgba(0, 23, 31, 0.1);
                 padding-bottom: 40px;
 
                 @include breakpoint (max-xl){
@@ -1275,7 +1275,7 @@
 }
 
 .about-content-wrapper-8 {
-    border-left: 1px solid rgba(2, 36, 35, 0.1);
+    border-left: 1px solid rgba(0, 23, 31, 0.1);
     padding-left: 50px;
 
     @include breakpoint (max-xxl){
@@ -1330,7 +1330,7 @@
         .about-text {
             max-width: 560px;
             font-size: 20px;
-            color: #5E7373;
+            color: #555555;
 
             @include breakpoint (max-md){
                 font-size: 18px;
@@ -1454,7 +1454,7 @@
 
     .about-text {
         margin-top: 15px;
-        border-bottom: 1px solid rgba(2, 36, 35, 0.2);
+        border-bottom: 1px solid rgba(0, 23, 31, 0.2);
         padding-bottom: 25px;
     }
 
@@ -1469,7 +1469,7 @@
             height: 50px;
             line-height: 50px;
             text-align: center;
-            background-color: rgba(29, 139, 138, 0.22);
+            background-color: rgba(178, 132, 44, 0.22);
             border-radius: 50%;
         }
 
@@ -1599,7 +1599,7 @@
         .progress {
             position: relative;
             height: 8px;
-            background-color: rgba(29, 139, 138, 0.18);
+            background-color: rgba(178, 132, 44, 0.18);
             border-radius: 0;
             overflow: visible;
             margin-top: 15px;
@@ -1662,11 +1662,11 @@
                 }
 
                 .bg {
-                    stroke: rgba(29, 139, 138, 0.25);
+                    stroke: rgba(178, 132, 44, 0.25);
                 }
 
                 .progress {
-                    stroke: #1D8B8A; 
+                    stroke: #B2842C;
                     stroke-dasharray:339.292;
                     stroke-dashoffset:339.292;
                     transition:stroke-dashoffset 1.5s ease;
@@ -1781,7 +1781,7 @@
         .client-btn {
             @include flex;
             gap: 80px;
-            border-top: 1px solid rgba(2, 36, 35, 0.1);
+            border-top: 1px solid rgba(0, 23, 31, 0.1);
             padding-top: 20px;
             margin-top: 30px;
 

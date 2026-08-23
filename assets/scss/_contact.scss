@@ -130,9 +130,9 @@
 
         .form-clt {
             input,textarea {
-                color: rgba(87, 125, 125, 0.7);
-                border: 1px solid #D8E5E5;
-                background: #D8E5E5;
+                color: rgba(85, 85, 85, 0.7);
+                border: 1px solid #F5F5F5;
+                background: #F5F5F5;
             }
 
             textarea {
@@ -200,6 +200,8 @@
 
         .icon {
             max-width: 62px;
+            min-width: 62px;
+            flex: 0 0 62px;
             height: 62px;
             line-height: 70px;
             text-align: center;
@@ -233,6 +235,19 @@
                 font-size: 18px;
             }
            }
+        }
+
+        &.contact-email-card {
+            padding-right: 28px;
+
+            .content {
+                min-width: 0;
+
+                .title {
+                    font-size: clamp(15px, 1.05vw, 18px);
+                    white-space: nowrap;
+                }
+            }
         }
 
         &:hover {

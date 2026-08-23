@@ -137,12 +137,11 @@ A Roma não deve parecer:
 
 ### Paleta prevista
 
-- preto;
-- grafite;
-- branco;
-- off-white;
-- cinza claro;
-- dourado apenas como detalhe ou acento.
+- azul profundo institucional: `#00171f`;
+- preto: `#000000`;
+- cinza para textos secundários: `#555555`;
+- dourado de destaque: `#b2842c`;
+- branco e cinzas claros apenas como bases neutras de contraste.
 
 Não usar grandes superfícies douradas. A sofisticação deve vir principalmente de tipografia, espaçamento, contraste, fotografia, composição, hierarquia e ritmo visual.
 
@@ -202,7 +201,7 @@ CTA secundário: **Agendar Diagnóstico**
 - As demais variações `index*.html` ficam em `referencias/` apenas para consulta visual.
 - Os assets compartilhados permanecem em `assets/`.
 - A identidade explícita do template foi removida da página principal.
-- A paleta definitiva será estruturada em uma etapa posterior.
+- A paleta definitiva utiliza `#00171f`, `#000000`, `#555555` e `#b2842c`, com o dourado restrito a destaques e estados interativos.
 - Dados de contato ainda não fornecidos devem ser tratados como provisórios e validados antes da publicação.
 - A hero já utiliza a headline “Antes da carta, vem a estratégia.”, o texto de apoio aprovado e CTAs direcionados para “Agendar Diagnóstico”.
 - O card inclinado de telefone da hero foi removido.
@@ -223,6 +222,8 @@ Após a apresentação das estratégias patrimoniais, a página deve seguir esta
 6. **Diagnóstico estratégico** — convite para uma conversa consultiva antes de qualquer recomendação de instrumento.
 
 O conteúdo deve funcionar como um memorando de decisão patrimonial: sóbrio, progressivo, específico e livre de promessas promocionais.
+
+As seções de blog do projeto devem adotar como padrão o componente editorial utilizado em `about.html`: imagem vertical, data de publicação, autoria, categoria e título do conteúdo. A página principal já utiliza essa estrutura e mantém a pauta alinhada à inteligência patrimonial da Roma Capital.
 
 ## 15. Critérios permanentes de qualidade
 

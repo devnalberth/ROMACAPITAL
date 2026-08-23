@@ -78,7 +78,7 @@
     position: relative;
     @include transition;
     text-align: center;
-    background: rgba(9, 48, 46, 0.24);
+    background: rgba(0, 23, 31, 0.24);
     backdrop-filter: blur(42px);
     border-radius: 12px;
     bottom: 57px;
@@ -140,7 +140,7 @@
             text-transform: capitalize;
 
             a {
-                color: #206D69;
+                color: #555555;
             }
         }
     }
@@ -343,13 +343,13 @@
         }
 
         .sm-text {
-            background-color: rgba(29, 139, 138, 0.12);
+            background-color: rgba(178, 132, 44, 0.12);
             width: 128px;
             height: 35px;
             line-height: 35px;
             border-radius: 90px;
             text-align: center;
-            color: rgba(29, 139, 138, 1);
+            color: rgba(178, 132, 44, 1);
             font-weight: 600;
 
         }
@@ -430,7 +430,7 @@
         padding-bottom: 22px;
 
         span {
-            border: 1px solid rgba(29, 139, 138, 0.33);
+            border: 1px solid rgba(178, 132, 44, 0.33);
             border-radius: 90px;
             padding: 8px 15px;
             font-weight: 600;
@@ -491,7 +491,7 @@
             position: relative;
 
             .icon {
-                border: 1px solid rgba(2, 36, 35, 0.2);
+                border: 1px solid rgba(0, 23, 31, 0.2);
                 border-radius: 50%;
                 color: $theme-color;
                 font-size: 15px;
@@ -675,7 +675,7 @@
             li {
                 font-size: 16px;
                 font-weight: 500;
-                color: #577D7D;
+                color: #555555;
 
                 &:not(:last-child) {
                     margin-bottom: 20px;
@@ -775,7 +775,7 @@
                 gap: 25px;
                 font-size: 16px;
                 font-weight: 500;
-                color: #577D7D;
+                color: #555555;
 
                 span {
                     font-size: 16px;
@@ -1073,7 +1073,7 @@
 
                     li {
                         span {
-                            border: 1px solid rgba(29, 139, 138, 0.33);
+                            border: 1px solid rgba(178, 132, 44, 0.33);
                             border-radius: 90px;
                             padding: 8px 15px;
                             font-weight: 600;
@@ -1188,10 +1188,10 @@
             }
 
             .sm-text {
-                background-color: rgba(29, 139, 138, 0.12);
+                background-color: rgba(178, 132, 44, 0.12);
                 text-align: center;
                 border-radius: 90px;
-                color: rgba(29, 139, 138, 1);
+                color: rgba(178, 132, 44, 1);
                 font-weight: 600;
                 padding: 12px 22px;
                 line-height: 1;

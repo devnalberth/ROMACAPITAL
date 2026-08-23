@@ -2,16 +2,17 @@
 :root {
     
     --body: #fff;
-    --black: #000;
+    --black: #000000;
     --white: #fff;
-    --theme: #1D8B8A;
-    --header: #022423;
-    --text: #577D7D;
-    --text-2: #687799;
-    --border: #CAD2D2;
-    --bg: #D8E5E5;
+    --theme: #00171F;
+    --accent: #B2842C;
+    --header: #00171F;
+    --text: #555555;
+    --text-2: #555555;
+    --border: #D6D6D6;
+    --bg: #F5F5F5;
     --bg-2: #F5F5F5;
-    --bg-3: #022423;
+    --bg-3: #00171F;
     --box-shadow: 0px 1px 14px 0px rgba(0, 0, 0, 0.13);
 }
 
@@ -19,6 +20,7 @@
 $black: var(--black);
 $white: var(--white);
 $theme-color: var(--theme);
+$accent-color: var(--accent);
 $text-color: var(--text);
 $text-color-2: var(--text-2);
 $header-color: var(--header);

@@ -46,7 +46,7 @@
         span {
             font-size: 14px;
             font-weight: 500;
-            color: rgba(151, 166, 165, 1);
+            color: rgba(85, 85, 85, 1);
             margin-top: 22px;
             display: inline-block;
             margin-bottom: 5px;
@@ -96,7 +96,7 @@
         border-radius: 88px;
 
         i {
-            background-color: #ECF0F0;
+            background-color: #F5F5F5;
             position: absolute;
             top: 4px;
             right: 6px;
@@ -213,7 +213,7 @@
 
         .list-content {
             span {
-                color: rgba(151, 166, 165, 1);
+                color: rgba(85, 85, 85, 1);
                 font-size: 14px;
                 font-weight: 500;
             }
@@ -272,7 +272,7 @@
                 height: 10px;
                 border-radius: 50%;
                 content: "";
-                background: rgba(29, 139, 138, 0.35);
+                background: rgba(178, 132, 44, 0.35);
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);

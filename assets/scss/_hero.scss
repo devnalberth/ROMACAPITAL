@@ -173,7 +173,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(266.83deg, rgba(12, 30, 33, 0.01) 2.32%, rgba(12, 30, 33, 0.71) 98.31%);
+            background: linear-gradient(266.83deg, rgba(0, 23, 31, 0.01) 2.32%, rgba(0, 23, 31, 0.71) 98.31%);
         }
     }
 
@@ -209,7 +209,7 @@
             }
 
             b {
-                color: #A8B7B8;
+                color: #B2842C;
             }
 
             @include breakpoint (max-xxl){
@@ -527,7 +527,7 @@
 
     &::before {
         @include before;
-        background: rgba(3, 40, 40, 0.58);
+        background: rgba(0, 23, 31, 0.58);
     }
 
     .hero-shape-1 {
@@ -683,7 +683,7 @@
 }
 
 .hero-section-4 {
-    background-color: rgba(2, 36, 35, 1);
+    background-color: rgba(0, 23, 31, 1);
     padding: 50px;
     padding-top: 100px;
 
@@ -742,7 +742,7 @@
         width: 100%;
         height: 100%;
         content: "";
-        background: rgba(3, 40, 40, 0.36);
+        background: rgba(0, 23, 31, 0.36);
         z-index: -1;
         border-radius: 12px;
     }
@@ -864,8 +864,8 @@
                     text-transform: capitalize;
                     color: $text-color;
                     border-radius: 6px;
-                    border: 1px solid rgba(2, 36, 35, 0.24);
-                    background: rgba(236, 240, 240, 0.48);
+                    border: 1px solid rgba(0, 23, 31, 0.24);
+                    background: rgba(245, 245, 245, 0.48);
                 }
 
                 textarea {
@@ -879,8 +879,8 @@
                     text-transform: capitalize;
                     color: $text-color;
                     border-radius: 6px;
-                    border: 1px solid rgba(2, 36, 35, 0.24);
-                    background: rgba(236, 240, 240, 0.48);
+                    border: 1px solid rgba(0, 23, 31, 0.24);
+                    background: rgba(245, 245, 245, 0.48);
 
                     .list {
                         width: 100%;
@@ -1039,7 +1039,7 @@
 
         &::before {
             @include before;
-            background: rgba(3, 40, 40, 0.26);
+            background: rgba(0, 23, 31, 0.26);
             border-radius: 12px;
         }
 
@@ -1160,7 +1160,7 @@
         width: 100%;
         height: 100%;
         content: "";
-        background: rgba(3, 40, 40, 0.65);
+        background: rgba(0, 23, 31, 0.65);
         z-index: -1;
         border-radius: 12px;
     }
@@ -1370,7 +1370,7 @@
 
     &::before {
         @include before;
-        background: rgba(3, 40, 40, 0.58);
+        background: rgba(0, 23, 31, 0.58);
     }
 
 
@@ -1585,7 +1585,7 @@
         width: 100%;
         height: 100%;
         content: "";
-        background: linear-gradient(180deg,#03282800 0%, #02242380 50%,#022423BF 100%);
+        background: linear-gradient(180deg,#00171F00 0%, #00171F80 50%,#00171FBF 100%);
         z-index: -1;
         border-radius: 12px;
     }
@@ -1732,7 +1732,7 @@
 
             .counter-box-items {
                 .star {
-                    color: #FAC02E;
+                    color: #B2842C;
                     margin-bottom: 10px;
                 }
 
@@ -1908,7 +1908,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(262.24deg, rgba(2, 36, 35, 0.168) 5.96%, rgba(2, 36, 35, 0.6) 59.2%);
+            background: linear-gradient(262.24deg, rgba(0, 23, 31, 0.168) 5.96%, rgba(0, 23, 31, 0.6) 59.2%);
         }
     }
 
@@ -2084,7 +2084,7 @@
     &::before {
         @include before;
         z-index: -1;
-        background: linear-gradient(267.67deg, rgba(2, 36, 35, 0) 20.02%, rgba(2, 36, 35, 0.85) 76.49%);
+        background: linear-gradient(267.67deg, rgba(0, 23, 31, 0) 20.02%, rgba(0, 23, 31, 0.85) 76.49%);
     }
 
 
@@ -2281,7 +2281,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(270deg, rgba(2, 36, 35, 0) 28.37%, rgba(2, 36, 35, 0.9) 62.5%);
+            background: linear-gradient(270deg, rgba(0, 23, 31, 0) 28.37%, rgba(0, 23, 31, 0.9) 62.5%);
         }
     }
 
@@ -2405,7 +2405,7 @@
     &::before {
         @include before;
         z-index: -1;
-        background: linear-gradient(256.4deg, rgba(12, 30, 33, 0.01) -3.77%, rgba(12, 30, 33, 0.71) 65.57%);
+        background: linear-gradient(256.4deg, rgba(0, 23, 31, 0.01) -3.77%, rgba(0, 23, 31, 0.71) 65.57%);
     }
 
     .hero-content {

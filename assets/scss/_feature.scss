@@ -71,7 +71,7 @@
         .progress {
             position: relative;
             height: 8px;
-            background-color: rgba(29, 139, 138, 0.18);
+            background-color: rgba(178, 132, 44, 0.18);
             border-radius: 0;
             overflow: visible;
             margin-top: 15px;
@@ -329,7 +329,7 @@
             line-height: 80px;
             text-align: center;
             border-radius: 6px;
-            background-color: rgba(236, 240, 240, 1);
+            background-color: rgba(245, 245, 245, 1);
 
             @include breakpoint (max-lg){
                 margin: 0 auto;
@@ -648,7 +648,7 @@
 
         &::before {
             @include before;
-            background: linear-gradient(180deg, rgba(2, 36, 35, 0.25) 0%, rgba(2, 36, 35, 0.88) 100%);
+            background: linear-gradient(180deg, rgba(0, 23, 31, 0.25) 0%, rgba(0, 23, 31, 0.88) 100%);
             z-index: -1;
             border-radius: 12px;
         }
@@ -797,11 +797,11 @@
             }
 
             .bg {
-                stroke: rgba(29, 139, 138, 0.25);
+                stroke: rgba(178, 132, 44, 0.25);
             }
 
             .progress {
-                stroke: #1D8B8A; 
+                stroke: #B2842C;
                 stroke-dasharray:339.292;
                 stroke-dashoffset:339.292;
                 transition:stroke-dashoffset 1.5s ease;
@@ -841,11 +841,11 @@
         }
 
         ul {
-            border-top: 1px solid rgba(29, 139, 138, 0.15);
+            border-top: 1px solid rgba(178, 132, 44, 0.15);
             padding-top: 40px;
 
             li {
-                border-bottom: 1px solid rgba(29, 139, 138, 0.15);
+                border-bottom: 1px solid rgba(178, 132, 44, 0.15);
                 padding-bottom: 40px;
                
 
@@ -948,7 +948,7 @@
         .line {
             width: 185px;
             height: 2px;
-            background-color: rgba(29, 139, 138, 0.26);
+            background-color: rgba(178, 132, 44, 0.26);
             margin-top: 20px;
             margin-bottom: 24px;
             position: relative;
@@ -1028,7 +1028,7 @@
     }
 
     span {
-        background: linear-gradient(180deg, #1D8B8A 0%, #FFFFFF 74.71%);
+        background: linear-gradient(180deg, #B2842C 0%, #FFFFFF 74.71%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -1072,7 +1072,7 @@
         left: 96%;
         transition: all 0.4s ease-in-out;
         z-index: 1;
-        border: 7px solid #ECF0F0;
+        border: 7px solid #F5F5F5;
 
          @include breakpoint (max-sm){
             display: none;
@@ -1482,7 +1482,7 @@
     .line {
         width: 100%;
         height: 2px;
-        background-color: rgba(29, 139, 138, 0.26);
+        background-color: rgba(178, 132, 44, 0.26);
         margin-top: 20px;
         margin-bottom: 24px;
         position: relative;
@@ -1667,11 +1667,11 @@
                 }
 
                 .bg {
-                    stroke: rgba(29, 139, 138, 0.25);
+                    stroke: rgba(178, 132, 44, 0.25);
                 }
 
                 .progress {
-                    stroke: #1D8B8A; 
+                    stroke: #B2842C;
                     stroke-dasharray:339.292;
                     stroke-dashoffset:339.292;
                     transition:stroke-dashoffset 1.5s ease;
@@ -1685,7 +1685,7 @@
                     justify-content:center;
                     font-weight:600;
                     font-size:26px;
-                    color: rgba(2, 36, 35, 1);
+                    color: rgba(0, 23, 31, 1);
 
                      @include breakpoint (max-xl){
                         font-size: 18px;
@@ -1862,7 +1862,7 @@
                 display: inline-block;
                 transition: all 0.4s ease-in-out;
                 z-index: 1;
-                border: 7px solid #ECF0F0;
+                border: 7px solid #F5F5F5;
                 font-size: 22px;
                 font-weight: 600;
                 color: $theme-color;
@@ -1941,7 +1941,7 @@
                         transform: translateX(-50%);
                         width: 2px;
                         height: calc(100% + 60px);
-                        border-left: 1px dashed rgba(29, 139, 138, 0.33);
+                        border-left: 1px dashed rgba(178, 132, 44, 0.33);
                         z-index: 0;
 
                         @include breakpoint (max-lg){
@@ -2010,10 +2010,10 @@
 
         .content {
             h2 {
-                color: rgba(29, 139, 138, 0.28);
+                color: rgba(178, 132, 44, 0.28);
 
                 .count {
-                    color: rgba(2, 36, 35, 1);
+                    color: rgba(0, 23, 31, 1);
                     margin-right: 10px;
                 }
             }
@@ -2227,7 +2227,7 @@
 
 .choose-right-content-12 {
     .choose-items {
-        border-bottom: 1px solid rgba(2, 36, 35, 0.1);
+        border-bottom: 1px solid rgba(0, 23, 31, 0.1);
         padding-bottom: 35px;
         margin-top: 45px;
 

@@ -65,7 +65,7 @@
 				z-index: 99999;
 				visibility: hidden;
 				opacity: 0;
-				color: #16333B;
+				color: #00171F;
 				@include transition;
 				border-top: 4px solid $theme-color;
 				box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -237,7 +237,7 @@
 							}
 	
 							&::before {
-								background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 19, 19, 0)), to(#5e5ef6));
+								background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 19, 19, 0)), to(#00171F));
 								background: linear-gradient(to bottom, rgba(99, 92, 92, 0) 0%, #252527 100%);
 								background-repeat: no-repeat;
 								background-size: cover;
@@ -415,9 +415,9 @@
 	left: 0;
 	width: 100%;
 	z-index: 9999;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.26);
-    backdrop-filter: blur(29.05px);
+    background: $header-color;
+    border: 1px solid $header-color;
+    backdrop-filter: none;
 
 	.logo {
 		@include breakpoint (max-xl){
@@ -474,8 +474,9 @@
             border: 1.5px solid $white;
 
             &:hover {
-                background-color: $theme-color;
-                border-color: $theme-color;
+                background-color: $accent-color;
+                border-color: $accent-color;
+                color: $header-color;
             }
 
             i {
@@ -498,10 +499,18 @@
             color: $white;
 
             &:hover {
-                background-color: $theme-color;
+                background-color: $accent-color;
+                color: $header-color;
             }
         }
 	}
+}
+
+.header-1 .header-main .main-menu ul li {
+    > a:hover,
+    &:hover > a {
+        color: $accent-color !important;
+    }
 }
 
 .header-section-2 {
@@ -512,7 +521,7 @@
     z-index: 99999;
 
     .header-top-section {
-		background: #022423;
+		background: #00171F;
 		
 
 		@include breakpoint (max-xl){
@@ -603,7 +612,7 @@
 		}
 
 		&.style-2 {
-			background-color: rgba(32, 62, 61, 1);
+			background-color: rgba(0, 23, 31, 1);
 			
 
 			.header-top-wrapper {
@@ -641,7 +650,7 @@
 }
 
 .header-2 {
-    background-color: #46A09F;
+    background-color: #00171F;
 
     .header-main {
         padding: 0;
@@ -838,7 +847,7 @@
 }
 
 .header-5 {
-	background-color: #022423;
+	background-color: #00171F;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.16);
 
 	 .header-main {
@@ -957,7 +966,7 @@
 	
 			}
 			.submenu {
-				color: #16333B;
+				color: #00171F;
 
 				li {
 					
@@ -1014,7 +1023,7 @@
 	}
 
 	.theme-btn {
-		border: 1px solid #577D7D !important;
+		border: 1px solid #555555 !important;
 
 		.btn-title {
 			color: $header-color;
@@ -1066,7 +1075,7 @@
 	
 			}
 			.submenu {
-				color: #16333B;
+				color: #00171F;
 
 				li {
 					
@@ -1123,7 +1132,7 @@
 	}
 
 	.theme-btn {
-		border: 1px solid #577D7D !important;
+		border: 1px solid #555555 !important;
 
 		.btn-title {
 			color: $header-color;
@@ -1263,7 +1272,7 @@
 	}
 
 	.text {
-		color: #C1D2CE;
+		color: #FFFFFF;
 		font-size: 15px;
 	}
 
@@ -1285,7 +1294,7 @@
 			margin-top: 14px;
 
 			.sub-info {
-				color: #C1D2CE;
+				color: #FFFFFF;
 
 				@include breakpoint (max-sm){
 					font-size: 14px;
@@ -1386,7 +1395,7 @@
 
 	&::before {
 		@include before;
-		background: rgba(3, 40, 40, 0.38);
+		background: rgba(0, 23, 31, 0.38);
 	}
 
 	.page-heading {

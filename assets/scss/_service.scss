@@ -47,7 +47,7 @@
 }
 
 .service-box-items {
-    background-color: rgba(2, 36, 35, 1);
+    background-color: rgba(0, 23, 31, 1);
     padding: 25px;
     border-radius: 12px;
     @include flex;
@@ -223,7 +223,7 @@
 
      @include breakpoint (max-xxl){
        margin-bottom: 0;
-       background-color: #022423;
+       background-color: #00171F;
     }
 
     &.service-style-8 {
@@ -438,7 +438,7 @@
 
         .service-thumb {
             .icon {
-                background-color: #022423;
+                background-color: #00171F;
             }
         }
 
@@ -454,12 +454,12 @@
             }
 
             p {
-                color: rgba(87, 125, 125, 0.8);
+                color: rgba(85, 85, 85, 0.8);
             }
 
             h4 {
                 color: $header-color;
-                border-top: 1px solid rgba(87, 125, 125, 0.36);
+                border-top: 1px solid rgba(85, 85, 85, 0.36);
             }
 
             ul {
@@ -499,13 +499,13 @@
             }
 
             p {
-                color: rgba(87, 125, 125, 0.8);
+                color: rgba(85, 85, 85, 0.8);
             }
 
             h4 {
                 
                 color: $header-color;
-                border-top: 1px solid rgba(87, 125, 125, 0.16);
+                border-top: 1px solid rgba(85, 85, 85, 0.16);
             }
 
             ul {
@@ -566,7 +566,7 @@
 
     &.service-bottom-items-8 {
         p {
-            color: rgba(87, 125, 125, 0.8);
+            color: rgba(85, 85, 85, 0.8);
         }
 
         .link-btn {
@@ -580,7 +580,7 @@
 }
 
 .service-section-11 {
-    background-color: #D8E5E5;
+    background-color: #F5F5F5;
 }
 
 .service-left-items-style-3 {
@@ -694,7 +694,7 @@
 .service-box-4 {
     background-color: $bg-color;
     padding: 45px 70px;
-    border-bottom: 1px dashed rgba(2, 36, 35, 0.45);
+    border-bottom: 1px dashed rgba(0, 23, 31, 0.45);
     @include flex;
     justify-content: space-between;
     position: relative;
@@ -767,7 +767,7 @@
     }
 
     .text {
-        color: #577D7D;
+        color: #555555;
         max-width: 272px;
         position: relative;
         z-index: 9;
@@ -1162,7 +1162,7 @@
                 .line {
                     width: 185px;
                     height: 2px;
-                    background-color: rgba(29, 139, 138, 0.26);
+                    background-color: rgba(178, 132, 44, 0.26);
                     margin-top: 20px;
                     margin-bottom: 24px;
                     position: relative;
@@ -1230,7 +1230,7 @@
                 li {
                     font-size: 16px;
                     font-weight: 500;
-                    color: #577D7D;
+                    color: #555555;
 
                     &:not(:last-child) {
                         margin-bottom: 20px;
@@ -1299,7 +1299,7 @@
 }
 
 .service-section-inners {
-    background-color: #022423;
+    background-color: #00171F;
 
     .container {
         max-width: 1640px;
@@ -1345,7 +1345,7 @@
 
     .service-box-6 {
         padding: 43px 0;
-        border-top: 1px solid rgba(4, 85, 84, 0.22);
+        border-top: 1px solid rgba(0, 23, 31, 0.22);
         @include flex;
         justify-content: space-between;
         position: relative;
@@ -1504,7 +1504,7 @@
 
     .service-box-7 {
         padding: 30px 0;
-        border-top: 1px dashed rgba(2, 36, 35, 0.45);
+        border-top: 1px dashed rgba(0, 23, 31, 0.45);
         @include flex;
         justify-content: space-between;
         position: relative;
@@ -1512,7 +1512,7 @@
         @include transition;
 
         &:last-child {
-            border-bottom: 1px dashed rgba(2, 36, 35, 0.45);
+            border-bottom: 1px dashed rgba(0, 23, 31, 0.45);
         }
 
         @include breakpoint (max-xl){
@@ -1692,7 +1692,7 @@
 
     .service-content {
         p {
-            color: rgba(87, 125, 125, 0.8);
+            color: rgba(85, 85, 85, 0.8);
             margin-top: 15px;
             max-width: 300px;
         }

@@ -772,6 +772,16 @@
             normalizeScroll: false,
             ignoreMobileResize: true,
         });
+
+        if (window.location.hash === "#estrategias") {
+            const strategiesSection = document.querySelector("#estrategias");
+
+            if (strategiesSection) {
+                requestAnimationFrame(function () {
+                    smoother.scrollTo(strategiesSection, false, "top 112px");
+                });
+            }
+        }
     }
 
     /* ================================
@@ -1030,7 +1040,9 @@
             }
         }
 
-        if (Preloader.length) {
+        const skipPreloader = document.documentElement.classList.contains("skip-preloader");
+
+        if (Preloader.length && !skipPreloader) {
 
             setTimeout(function () {
 
@@ -1046,6 +1058,9 @@
             }, 2000);
 
         } else {
+            if (Preloader.length) {
+                Preloader.removeClass("is-loading").addClass("is-loaded").hide();
+            }
             initAnimations();
         }
 
@@ -1056,7 +1071,6 @@
 
   
   })(jQuery); // End jQuery
-
 
 
 

@@ -127,3 +127,20 @@
 
 // Testimonial
 @import "_testimonial";
+
+/* Roma Capital: harmoniza acentos rasterizados legados com a paleta institucional. */
+img[src$="work-process-top-shape.png"],
+img[src$="contact-icon-01.png"],
+img[src$="contact-icon-03.png"] {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(48%) saturate(1035%) hue-rotate(2deg) brightness(88%) contrast(78%);
+}
+
+img[src$="footer-shape-1.png"],
+img[src$="footer-shape-3.png"],
+img[src$="project-shape-1.png"],
+img[src$="project-shape-2.png"],
+img[src$="pricing-shape.png"],
+img[src$="testi-shape-1.png"] {
+    filter: grayscale(1) brightness(.62);
+    opacity: .28;
+}
