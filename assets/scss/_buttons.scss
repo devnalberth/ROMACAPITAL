@@ -1,0 +1,120 @@
+.theme-btn {
+-webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: $theme-color;
+  border-radius: 50px;
+  color: $white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  padding: 16px 70px 16px 40px;
+  position: relative;
+  text-transform: capitalize;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  z-index: 0;
+
+  &:hover {
+  
+    .btn-arrow-left {
+      scale: 1;
+    }
+    .btn-arrow-right {
+     scale: 0;
+    }
+    .btn-title {
+      -webkit-transform: translateX(30px);
+          transform: translateX(30px);
+    }
+  }
+
+
+  .btn-arrow-right {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: $white;
+    border-radius: 50%;
+    color: $theme-color;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 15px;
+    height: 46px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: auto;
+    line-height: 1;
+    position: absolute;
+    right: 10px;
+    width: 46px;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    font-size: 20px;
+  
+  }
+
+  .btn-arrow-left {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+    align-items: center;
+  background-color: $white;
+  border-radius: 50px;
+  color: $theme-color;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 15px;
+  height: 46px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  line-height: 1;
+  left: 10px;
+  position: absolute;
+  right: auto;
+  scale: 0;
+  width: 46px;
+  -webkit-transition: all 400ms ease;
+  transition: all 400ms ease;
+  font-size: 20px;
+  }
+
+  .btn-title {
+  
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 100px;
+    font-weight: 500;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 10px;
+    text-transform: capitalize;
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+    font-size: 16px;
+    color: $white;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  &.bg-white-style {
+    background-color: $white;
+    color: $theme-color;
+
+     .btn-arrow-right, .btn-arrow-left {
+        background-color: $theme-color;
+        color: $white;
+     }
+
+     .btn-title {
+        color: $theme-color;
+     }
+  }
+}
+

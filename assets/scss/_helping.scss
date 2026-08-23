@@ -1,0 +1,213 @@
+//page scroll bar add
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #FBF3E6; 
+	border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $theme-color;
+	border-radius: 0;
+}
+//page scroll bar add
+
+//Basic Code Start
+.fix {
+  overflow: hidden;
+}
+
+.ralt{
+ position: relative;
+}
+
+//Basic Code End
+
+//Video Css Start
+.ripple {
+  position: relative;
+
+  &::before,&::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 30px;
+      height: 30px;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(29, 139, 138, .6);
+      -webkit-animation: rippleOne 3s infinite;
+      animation: rippleOne 3s infinite;
+  }
+
+  &::before {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+
+  &::after {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+//Video Css End
+
+
+//pagination default
+
+//pagination default
+
+
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.brand-slide-element {
+	width: auto;
+	display: inline-block;
+}
+
+.container-2 {
+  max-width: 1320px;
+}
+
+
+br {
+  @include breakpoint (max-md){
+    display: none;
+  }
+}
+
+
+.text_invert > div {
+  background-image: linear-gradient(to right, rgb(137, 137, 137) 50%, rgb(137, 137, 137) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.text_invert-2 > div {
+  background-image: linear-gradient(to right, rgb(25, 42, 25) 50%, rgb(137, 137, 137) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.page-nav-wrap {
+  margin-top: 60px;
+
+  ul {
+      li {
+          display: inline-block;
+
+          &.active {
+            
+            .page-numbers {
+              background-color: $theme-color;
+              color: $white;
+              width: 66px !important;
+            }
+          }
+
+          .page-numbers {
+              &.current {
+                  background-color: $theme-color;
+                  color: $header-color;
+              }
+
+              display: inline-block;
+              width: 48px;
+              height: 48px;
+              text-align: center;
+              line-height: 48px;
+              border-radius: 6px;
+              background: $white;
+              color: $header-color;
+              font-weight: 600;
+              font-size: 16px;
+              transition: all 0.3s ease-in-out;
+              margin: 0 5px;
+              text-transform: capitalize;
+
+              i {
+                  margin-top: 2px;
+              }
+
+              &:hover {
+                  background-color: $theme-color;
+                  color: $white;
+              }
+          }
+      }
+  }
+}
+
+.pt-35 {
+  padding-top: 35px !important;
+}
+
+.swiper-dot {
+  position: relative;
+  .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      transition: 0.6s;
+      background-color: #E6E8EB;
+      opacity: 1;
+      border-radius: 10px;
+      &:not(:last-child){
+      margin-right: 5px;
+      }
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $theme-color;
+      transition: 0.6s;
+      position: relative;
+  }
+
+}
+
+/* ================================
+   Split Text Styles
+================================ */
+
+
+.split-title .word {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* char animation */
+.split-title .char {
+  display: inline-block;
+  transform-origin: left center;
+  clip-path: inset(0 100% 0 0);
+  opacity: 0;
+}

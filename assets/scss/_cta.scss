@@ -1,0 +1,153 @@
+.cta-section-3 {
+    background-color: $theme-color;
+    padding: 80px 0;
+}
+
+.cta-wrapper-3 {
+    @include flex;
+    justify-content: space-between;
+
+    @include breakpoint (max-xl){
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .cta-icon-area {
+        @include flex;
+        gap: 30px;
+
+         @include breakpoint (max-lg){
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .cta-first-items {
+            @include flex;
+            gap: 35px;
+            border-right: 3px solid $white;
+            padding-right: 35px;
+
+            @include breakpoint (max-xxl){
+                border-right: none;
+                padding-right: 0;
+                gap: 20px;
+            }
+
+            .content {
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: $heading-font;
+
+                    a {
+                        color: $white;
+
+                        background-position: 0 95%;
+                        background-repeat: no-repeat;
+                        background-size: 0% 2px;
+                        display: inline;
+
+                        &:hover {
+                            background-size: 100% 2px;
+                            background-image: linear-gradient(180deg, $white 0%, $white 100%);
+                        }
+                    }
+                }
+
+                .mail-text {
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: $heading-font;
+                    margin-top: 5px;
+                    display: inline-block;
+                     color: $white;
+
+                     background-position: 0 95%;
+                    background-repeat: no-repeat;
+                    background-size: 0% 2px;
+
+                    &:hover {
+                        background-size: 100% 2px;
+                        background-image: linear-gradient(180deg, $white 0%, $white 100%);
+                    }
+                }
+            }
+        }
+
+        .title {
+            color: $white;
+            font-size: 32px;
+            max-width: 462px;
+
+            @include breakpoint (max-xxl){
+                font-size: 28px;
+            }
+
+             @include breakpoint (max-lg){
+               text-align: center;
+               font-size: 24px;
+            }
+        }
+    }
+
+    .theme-btn {
+        background-color: $white;
+        color: $theme-color;
+
+        i {
+            background-color: $theme-color;
+            color: $white;
+        }
+    }
+}
+
+.cta-marquee-section-2 {
+    position: relative;
+
+    @include breakpoint (max-xxl){
+        overflow: hidden;
+    }
+
+    .cta-marque-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            height: 650px;
+            object-fit: cover;
+        }
+    }
+
+    .cta-marque-imag2 {
+         position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+         img {
+            width: 100%;
+            height: 100%;
+            height: 650px;
+            object-fit: cover;
+
+            @include breakpoint (max-md){
+                height: 570px;
+            }
+        }
+    }
+
+    .section-title-area {
+        padding-bottom: 52px;
+        margin-bottom: 30px !important;
+    }
+}

@@ -1,0 +1,193 @@
+.faq-left-content {
+    .faq-text {
+        margin-top: 25px;
+        max-width: 464px;
+    }
+
+    .faq-bottom-area {
+        background-color: $theme-color;
+        border-radius: 12px;
+        padding: 45px;
+        @include flex;
+        gap: 30px;
+        margin-top: 30px;
+
+        @include breakpoint (max-xl){
+          padding: 28px;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+
+        .content {
+            p {
+                font-size: 24px;
+                font-weight: 500;
+                font-family: $heading-font;
+
+                 @include breakpoint (max-xl){
+                  font-size: 20px;
+                }
+
+                a {
+                    color: $white;
+                    background-position: 0 95%;
+                  background-repeat: no-repeat;
+                  background-size: 0% 2px;
+                  display: inline;
+
+                  &:hover {
+                      background-size: 100% 2px;
+                      background-image: linear-gradient(180deg, $white 0%, $white 100%);
+                  }
+                }
+            }
+
+            .mail-text {
+                font-size: 24px;
+                font-weight: 500;
+                font-family: $heading-font;
+                margin-top: 10px;
+                
+                color: $white;
+                display: inline-block;
+
+                @include breakpoint (max-xl){
+                  font-size: 20px;
+                }
+
+                background-position: 0 95%;
+                  background-repeat: no-repeat;
+                  background-size: 0% 2px;
+                  display: inline-block;
+
+                  &:hover {
+                      background-size: 100% 2px;
+                      background-image: linear-gradient(180deg, $white 0%, $white 100%);
+                  }
+            }
+        }
+
+        &:hover {
+          .icon {
+              img {
+                  animation: wobble 1.5s ease-in-out;
+              }
+          }
+        }
+    }
+}
+
+.faq-items-style-1 {
+
+  .accordion-box {
+    position: relative;
+
+    .block {
+      position: relative;
+      background-color: $white;
+      border: 1px solid #D9D9D9;
+      margin-bottom: 17px;
+      line-height: 1;
+      border-radius: 30px;
+
+
+      .acc-btn {
+        position: relative;
+        font-size: 18px;
+        color: $header-color;
+        font-weight: 500;
+        font-family: $heading-font;
+        cursor: pointer;
+        transition: all 500ms ease;
+        @include flex;
+        justify-content: space-between;
+        padding: 11px 30px;
+        padding-right: 14px;
+        gap: 14px;
+
+        @include breakpoint(max-xxl) {
+          line-height: 1.4;
+        }
+
+        @include breakpoint(max-xxs) {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+
+        .icon {
+          max-width: 39px;
+          height: 39px;
+          font-size: 16px;
+          line-height: 39px;
+          background-color: #F3F7F6;
+          transition: all 500ms ease;
+          border-radius: 50%;
+          color: $theme-color;
+          text-align: center;
+          width: 100%;
+
+          &:before {
+            content: "\f067"; 
+            font-family: "Font Awesome 6 Pro";
+            font-weight: 900;
+            color: $theme-color;
+            transition: all 0.3s ease;
+          }
+        }
+      }
+
+      .acc-content {
+        position: relative;
+        display: none;
+        padding: 30px 30px;
+        padding-top: 22px;
+
+         @include breakpoint(max-xxs) {
+          padding: 18px 20px;
+        }
+
+        .content {
+          position: relative;
+
+          .text {
+            line-height: 175%;
+            font-size: 18px;
+            font-weight: 400;
+            color: $text-color;
+
+            @include breakpoint(max-xxs) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      // Active block styles
+      &.active-block {
+        border-radius: 12px;
+
+        .acc-btn {
+          background-color: $theme-color;
+          border-radius: 12px;
+          border-bottom-left-radius: 0;
+          border-bottom-right-radius: 0;
+          color: $white !important;
+
+          .icon:before {
+            content: "\f068"; // minus icon when active
+            color: $header-color;
+          }
+        }
+      }
+    }
+
+    // Show content if marked current
+    .block .acc-content.current {
+      display: block;
+    }
+
+    .block:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Bixoo 
+    Author: wowtheme7
+    Author URI: https://themeforest.net/user/wowtheme7/portfolio
+    Description: "Bixoo – Business Consulting & Corporate HTML Template
+    Version: 1.0.0
+
+-----------------------------------------------------------------------------------
+
+    TABLE OF CONTENTS
+    -------------------------------------------------------------------------------
+    
+    01. Basic
+        01.01 Mixins
+        01.02 Variables
+        01.03 Buttons
+        01.04 Typography
+    
+    02. Template Section Styles
+        02.01 About
+        02.02 Animation
+        02.03 Brand
+        02.04 Contact
+        02.05 CTA
+        02.06 Shop
+        02.07 FAQ
+        02.08 Feature
+        02.09 Footer
+        02.10 Header
+        02.11 Helping
+        02.12 Hero
+        02.13 Marquee
+        02.14 MeanMenu
+        02.15 News
+        02.16 Preloader
+        02.17 Pricing
+        02.18 Section
+        02.19 Service
+        02.20 Team/Speaker
+        02.21 Project
+        02.22 Testimonial
+
+-----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------*/
+/*  01. Basic
+/*----------------------------------------*/
+
+// Mixins
+@import "_mixins";
+
+// Variables
+@import "_variables";
+
+// Buttons
+@import "_buttons";
+
+// Typography
+@import "_typography";
+
+
+/*----------------------------------------*/
+/*  02. Template Section Styles
+/*----------------------------------------*/
+
+// About
+@import "_about";
+
+// Animation
+@import "_animation";
+
+// Brand
+@import "_brand";
+
+// Contact
+@import "_contact";
+
+// CTA
+@import "_cta";
+
+// FAQ
+@import "_faq";
+
+// Feature
+@import "_feature";
+
+// Footer
+@import "_footer";
+
+// Header
+@import "_header";
+
+// Helping
+@import "_helping";
+
+// Hero
+@import "_hero";
+
+// Marquee
+@import "_marquee";
+
+// MeanMenu
+@import "_meanmenu";
+
+// News
+@import "_news";
+
+// Preloader
+@import "_preloader";
+
+// Pricing
+@import "_pricing";
+
+// Section
+@import "_section";
+
+// Service
+@import "_service";
+
+// Team / Speaker
+@import "_team";
+
+// Project
+@import "_project";
+
+// Testimonial
+@import "_testimonial";

@@ -1,0 +1,99 @@
+.marquee {
+  position: relative;
+  --duration: 30s;
+  --gap: 0px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 30px;
+
+  .marquee-group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    min-width: 100%;
+    animation: scroll var(--duration) linear infinite;
+  }
+
+  .marquee-thumb {
+    @include flex;
+    gap: 40px;
+    @include transition;
+
+    @include breakpoint (max-md){
+      gap: 20px;
+    }
+
+    .thumb {
+        img {
+            @include imgw;
+            border-radius: 12px;
+        }
+    }
+
+    .text {
+        font-weight: 500;
+        font-size: 100px;
+        letter-spacing: -0.04em;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FFFFFF;
+        font-family: $heading-font;
+        @include transition;
+
+        @include breakpoint (max-md){
+          font-size: 60px;
+        }
+
+        &:hover {
+            -webkit-text-stroke-width: initial;
+            -webkit-text-stroke-color: initial;
+            color: $white;
+        }
+    }
+  }
+
+  .marquee-icon {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    backdrop-filter: blur(29.05px);
+    border-radius: 90px;
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .text {
+      font-size: 16px;
+      font-weight: 600;
+      color: $white;
+    }
+  }
+}
+
+.marquee-section {
+    padding: 30px 0;
+    background-color: $theme-color;
+}
+
+.marquee-section-2 {
+  .marquee {
+    gap: 10px;
+
+    .marquee-group {
+      gap: 10px;
+    }
+  }
+}
+
+// Animation
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
