@@ -12,7 +12,7 @@
         <!-- ======== Page title ============ -->
         <title>Roma Capital | Estratégia financeira e patrimonial</title>
         <!--<< Favcion >>-->
-        <link rel="shortcut icon" href="assets/img/favicon.svg">
+        <link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon.svg?v=roma-capital-2">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< All Min Css >>-->
@@ -93,15 +93,10 @@
                 margin-top: 0;
             }
 
-            .main-header__search,
-            .sidebar__toggle {
+            .main-header__search {
                 background: transparent;
                 border: 0;
                 padding: 0;
-            }
-
-            html.skip-preloader .preloader {
-                display: none !important;
             }
 
             @media (prefers-reduced-motion: reduce) {
@@ -115,31 +110,9 @@
                 }
             }
         </style>
-        <script>
-            if (window.location.hash === "#estrategias") {
-                document.documentElement.classList.add("skip-preloader");
-            }
-        </script>
-                            
     </head>
     <body class="body-bg-1">
         <a class="skip-link theme-btn" href="#conteudo-principal">Ir para o conteúdo</a>
-
-         <!-- Back To Top Start -->
-        <div class="preloader is-loading">
-            <div class="preloader-inner">
-                <div class="preloader-ball-wrap">
-                    <div class="preloader-ball-inner-wrap">
-                        <div class="preloader-ball-inner">
-                            <div class="preloader-ball"></div>
-                        </div>
-                        <div class="preloader-ball-shadow"></div>
-                    </div>
-                    <div id="weave-anim" class="preloader-text">Carregando…</div>
-                </div>
-            </div>
-            <div class="preloader-overlay"></div>
-        </div>
 
          <!-- Back To Top Start -->
         <button id="back-top" class="back-to-top" type="button" aria-label="Voltar ao topo">
@@ -150,73 +123,13 @@
         <div class="mouseCursor cursor-outer"></div>
         <div class="mouseCursor cursor-inner"></div>
 
-        <!-- Offcanvas Area Start -->
-        <div class="fix-area">
-            <div class="offcanvas__info">
-                <div class="offcanvas__wrapper">
-                    <div class="offcanvas__content">
-                        <div class="offcanvas__top d-flex justify-content-between align-items-center">
-                            <div class="offcanvas__logo">
-                                <a href="index.html">
-                                    <img src="assets/img/logo/white-logo.svg" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="offcanvas__close">
-                                <button>
-                                    <i class="fa-thin fa-times"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <p class="text d-none d-xl-block">
-                            Consultoria patrimonial conduzida com análise, clareza e acompanhamento próximo em cada decisão.
-                        </p>
-                        <div class="mobile-menu fix"></div>
-                        <div class="off-contact-info">
-                            <span class="info-title">Informações de contato</span>
-                            <div class="contact-details">
-                                <span class="sub-info">Telefone</span>
-                                <p>
-                                    <a href="tel:+2085550112">+208-555-0112</a>
-                                </p>
-                            </div>
-                            <div class="contact-details">
-                                <span class="sub-info">Email</span>
-                                <p>
-                                    <a href="mailto:bixoo@gmail.com">bixoo@gmail.com</a>
-                                </p>
-                            </div>
-                            <div class="contact-details">
-                                <span class="sub-info">Localização</span>
-                                <p>
-                                    Elgin St. Celina, NY 10299
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="social-icon-list">
-                            <span class="follow-title">
-                                Siga a Roma:
-                            </span>
-                            <div class="social-icon d-flex align-items-center">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                            </div>
-                            
-                        </div>
-                </div>
-            </div>
-        </div>
-        <div class="offcanvas__overlay"></div>
-
         <!-- Header Section Start -->
          <header id="header-sticky" class="header-1">
             <div class="container">
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
                         <a href="index.html" class="logo">
-                            <img src="assets/img/logo/white-logo.svg" alt="Roma Capital">
+                            <img src="assets/img/logo/logowhite.svg" alt="Roma Capital">
                         </a>
                         <div class="header-right d-flex justify-content-end align-items-center">
                             <div class="mean__menu-wrapper">
@@ -237,13 +150,6 @@
                                 <i class="fa-regular fa-magnifying-glass" aria-hidden="true"></i>
                             </a>
                             <a href="contact.html" class="theme-btn header-bg">Agendar Diagnóstico <i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i></a>
-                            <div class="header__hamburger my-auto">
-                                <div class="sidebar__toggle" aria-label="Abrir menu">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -270,7 +176,11 @@
 
             <!-- Hero Section Start -->
             <section class="hero-section-8">
-                <div class="hero-8 fix bg-cover" style="background-image: url('assets/img/home-8/hero-bg.jpg');">
+                <div class="hero-8 fix bg-cover">
+                    <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1">
+                        <source src="assets/img/hero/videohero.m4v" type="video/mp4">
+                        <source src="assets/img/hero/videohero.mov" type="video/quicktime">
+                    </video>
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="hero-content-style-8">
@@ -307,8 +217,8 @@
                     <div class="row g-4">
                         <div class="col-xl-4 col-md-5">
                             <div class="about-left-thumb-style-8">
-                                <div class="about-image fix">
-                                    <img data-speed=".8" src="assets/img/home-8/about.jpg" alt="" width="461" height="489" loading="lazy">
+                                <div class="about-image fix media-cover">
+                                    <img data-speed=".8" src="assets/img/sobre/sobre.webp" alt="" width="461" height="489" loading="lazy">
                                 </div>
                                 <div class="about-left-content wow fadeInUp" data-wow-delay=".2s">
                                     <p class="about-left-title">Nossa forma de atuar</p>
@@ -321,7 +231,7 @@
                         <div class="col-xl-8 col-md-7">
                             <div class="about-content-wrapper-8">
                                 <div class="section-title mb-0">
-                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/sub-title-1.svg" alt="" width="20" height="20">Sobre a Roma Capital</span>
+                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Sobre a Roma Capital</span>
                                     <h2 class="split-title">Estratégia, transparência e acompanhamento para decisões patrimoniais mais inteligentes.</h2>
                                 </div>
                                 <div class="about-content-style-8">
@@ -362,17 +272,14 @@
             <section id="estrategias" class="service-section-2 service-style-8 section-padding section-bg mb-0">
                 <div class="container">
                     <div class="section-title text-center">
-                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/sub-title-1.svg" alt="" width="20" height="20">Estratégias patrimoniais</span>
+                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Estratégias patrimoniais</span>
                         <h2 class="split-title">Cada patrimônio exige uma estratégia própria.</h2>
                     </div>
                     <div class="row">
                         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="service-box-items-style-2 service-style-8">
                                 <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/home-2/service-01.jpg" alt="" width="372" height="257" loading="lazy">
-                                    <div class="icon">
-                                        <img src="assets/img/home-8/service-icon-01.svg" alt="" width="55" height="55">
-                                    </div>
+                                    <img class="hover-img" src="assets/img/estrategias/imoveis.webp" alt="" width="372" height="257" loading="lazy">
                                 </div>
                                 <div class="service-content">
                                     <h3><a href="service-details.html">Aquisição de imóveis</a></h3>
@@ -396,10 +303,7 @@
                         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="service-box-items-style-2 service-style-8">
                                 <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/home-2/service-02.jpg" alt="" width="372" height="257" loading="lazy">
-                                    <div class="icon">
-                                        <img src="assets/img/home-8/service-icon-02.svg" alt="" width="55" height="55">
-                                    </div>
+                                    <img class="hover-img" src="assets/img/estrategias/carros.webp" alt="" width="372" height="257" loading="lazy">
                                 </div>
                                 <div class="service-content">
                                     <h3><a href="service-details.html">Veículos e ativos</a></h3>
@@ -423,10 +327,7 @@
                         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="service-box-items-style-2 service-style-8">
                                 <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/home-2/service-03.jpg" alt="" width="372" height="257" loading="lazy">
-                                    <div class="icon">
-                                        <img src="assets/img/home-8/service-icon-03.svg" alt="" width="55" height="55">
-                                    </div>
+                                    <img class="hover-img" src="assets/img/estrategias/construction.webp" alt="" width="372" height="257" loading="lazy">
                                 </div>
                                 <div class="service-content">
                                     <h3><a href="service-details.html">Construção e reforma</a></h3>
@@ -450,10 +351,7 @@
                         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                             <div class="service-box-items-style-2 service-style-8">
                                 <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/home-2/service-04.jpg" alt="" width="372" height="257" loading="lazy">
-                                    <div class="icon">
-                                        <img src="assets/img/home-8/service-icon-04.svg" alt="" width="55" height="55">
-                                    </div>
+                                    <img class="hover-img" src="assets/img/estrategias/entrepeneur.webp" alt="" width="372" height="257" loading="lazy">
                                 </div>
                                 <div class="service-content">
                                     <h3><a href="service-details.html">Estratégias empresariais</a></h3>
@@ -494,7 +392,7 @@
             <section id="como-funciona" class="work-process-section-3 work-process-style-8 section-padding fix">
                 <div class="container">
                     <div class="section-title text-center">
-                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/sub-title-1.svg" alt="" width="20" height="20">Método Roma</span>
+                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Método Roma</span>
                         <h2 class="split-title">Decidir bem exige método.</h2>
                         <p class="mt-3 wow fadeInUp" data-wow-delay=".2s">
                             Do diagnóstico à execução, organizamos cada projeto em três movimentos<br class="d-none d-md-block"> para que o cliente avance com clareza sobre escolhas, impactos e próximos passos.
@@ -502,7 +400,7 @@
                     </div>
                     <div class="title-shape-box">
                         <div class="title-icon">
-                            <img src="assets/img/home-8/service-title-icon.svg" alt="" width="42" height="42">
+                            <img src="assets/img/logo/logoicon.svg" alt="" width="42" height="42">
                         </div>
                         <div class="bar-shape">
                             <img src="assets/img/home-8/work-process-top-shape.png" alt="" width="908" height="171" loading="lazy">
@@ -561,7 +459,7 @@
                 <div class="container">
                     <div class="section-title-area align-items-end">
                         <div class="section-title">
-                            <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/sub-title-1.svg" alt="" width="20" height="20">Arquitetura patrimonial</span>
+                            <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Arquitetura patrimonial</span>
                             <h2 id="tese-roma" class="split-title">Seu patrimônio define a estratégia.</h2>
                         </div>
                         <p class="wow fadeInUp" data-wow-delay=".2s">
@@ -571,12 +469,12 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 wow fadeInUp" data-wow-delay=".3s">
                             <div class="choose-thumb-style-2 style-image2">
-                                <img src="assets/img/home-2/choose-01.jpg" alt="Profissional analisando informações para uma decisão financeira" width="460" height="379" loading="lazy">
+                                <img src="assets/img/arquitetura/arquiteturaone.webp" alt="Profissional analisando informações para uma decisão financeira" width="460" height="379" loading="lazy">
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-7 wow fadeInUp" data-wow-delay=".5s">
                             <div class="choose-thumb-style-2">
-                                <img src="assets/img/home-2/choose-02.jpg" alt="Reunião reservada de planejamento patrimonial" width="740" height="370" loading="lazy">
+                                <img src="assets/img/arquitetura/arquiteturatwo.webp" alt="Reunião reservada de planejamento patrimonial" width="740" height="370" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -594,7 +492,7 @@
                 <div class="container">
                     <div class="section-title-area justify-content-center justify-content-lg-between text-center text-lg-start">
                         <div class="section-title">
-                            <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center justify-content-lg-start"><img src="assets/img/sub-title-1.svg" alt="" width="20" height="20">Critérios de atuação</span>
+                            <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center justify-content-lg-start"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Critérios de atuação</span>
                             <h2 id="criterios-atuacao" class="split-title">Decisões patrimoniais exigem critério e presença.</h2>
                         </div>
                         <p class="wow fadeInUp" data-wow-delay=".2s">
@@ -604,9 +502,9 @@
                     <div class="row">
                         <div class="col-xl-7 col-lg-7 wow fadeInUp" data-wow-delay=".3s">
                             <div class="choose-us-left-thumb-style-8">
-                                <img src="assets/img/home-8/choose-01.jpg" class="wow img-custom-anim-left" alt="Análise de cenários financeiros" width="481" height="512" loading="lazy">
+                                <img src="assets/img/criterios/criteriosone.webp" class="wow img-custom-anim-left" alt="Análise de cenários financeiros" width="481" height="512" loading="lazy">
                                 <div class="thumb-2">
-                                    <img src="assets/img/home-8/choose-02.jpg" class="wow img-custom-anim-right" alt="Planejamento conduzido em reunião consultiva" width="410" height="329" loading="lazy">
+                                    <img src="assets/img/criterios/criteriostwo.webp" class="wow img-custom-anim-right" alt="Planejamento conduzido em reunião consultiva" width="410" height="329" loading="lazy">
                                 </div>
                             </div>
                         </div> 
@@ -645,7 +543,7 @@
                 <div class="container">
                     <div class="roma-mandate-header">
                         <div class="section-title">
-                            <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/sub-title-1.svg" alt="" width="20" height="20">Mandato consultivo</span>
+                            <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Mandato consultivo</span>
                             <h2 id="mandato-roma" class="split-title">Patrimônio relevante exige decisões à altura.</h2>
                         </div>
                         <p class="roma-mandate-intro wow fadeInUp" data-wow-delay=".2s">Para empresários, investidores e famílias, uma decisão financeira nunca é isolada. Ela precisa estar alinhada ao patrimônio, ao caixa e aos objetivos de longo prazo.</p>
@@ -677,7 +575,7 @@
                         <div class="col-xl-5 col-lg-6">
                             <div class="faq-left-content">
                                 <div class="section-title mb-0">
-                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/sub-title-1.svg" alt="img">Perguntas frequentes</span>
+                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="img">Perguntas frequentes</span>
                                     <h2 class="split-title">Clareza antes de decidir.</h2>
                                 </div>
                                 <p class="faq-text wow fadeInUp" data-wow-delay=".2s">
@@ -774,14 +672,14 @@
             <section id="conteudos" class="news-section section-padding pt-0 fix">
                 <div class="container">
                     <div class="section-title text-center">
-                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/sub-title-1.svg" alt="img">Inteligência patrimonial</span>
+                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/logo/logoicon.svg" alt="img">Inteligência patrimonial</span>
                         <h2 class="split-title">Análises para decisões de longo prazo.</h2>
                     </div>
                     <div class="row">
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="news-box-main-area">
                                     <div class="news-box-items">
-                                        <img src="assets/img/home-1/news-01.jpg" alt="img">
+                                        <img src="assets/img/blog/postum/postone.webp" alt="img">
                                         <div class="post-date">
                                                     <h3 class="date">23</h3>
                                             <p>JAN</p>
@@ -831,7 +729,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                                 <div class="news-box-main-area">
                                     <div class="news-box-items">
-                                        <img src="assets/img/home-1/news-02.jpg" alt="img">
+                                        <img src="assets/img/blog/postdois/one.webp" alt="img">
                                         <div class="post-date">
                                             <h3 class="date">16</h3>
                                             <p>JAN</p>
@@ -881,7 +779,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                                 <div class="news-box-main-area">
                                     <div class="news-box-items">
-                                        <img src="assets/img/home-1/news-03.jpg" alt="img">
+                                        <img src="assets/img/blog/posttres/um.webp" alt="img">
                                         <div class="post-date">
                                             <h3 class="date">09</h3>
                                             <p>JAN</p>
@@ -939,30 +837,34 @@
                         <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div class="contact-left-items-style-3">
                                 <div class="section-title mb-0">
-                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/sub-title-1.svg" alt="" width="20" height="20">Diagnóstico estratégico</span>
-                                    <h2 class="split-title">Uma boa decisão começa por uma conversa bem conduzida.</h2>
+                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Conversa estratégica</span>
+                                    <h2 class="split-title">Clareza antes de mobilizar capital.</h2>
                                 </div>
                                 <div class="location-area">
                                     <div class="icon">
                                         <i class="fa-sharp fa-light fa-comments" aria-hidden="true"></i>
                                     </div>
                                     <div class="content">
-                                        <h3>Atendimento consultivo</h3>
-                                        <p>Compartilhe seu objetivo. A primeira conversa existe para compreender o cenário antes de discutir qualquer instrumento financeiro.</p>
+                                        <h3>Análise com contexto</h3>
+                                        <p>Em uma conversa reservada, compreendemos seu objetivo, horizonte, liquidez e prioridades antes de avaliar qualquer estrutura.</p>
                                     </div>
                                 </div>
                                 <p class="contact-text">
-                                    Retorno em horário comercial, com atendimento individual e reservado.
+                                    Cada contato é tratado de forma individual, confidencial e sem recomendações genéricas.
                                 </p>
-                                <p>
+                                <p class="contact-email">
                                     <a href="mailto:contato@romacapital.com.br">contato@romacapital.com.br</a>
                                 </p>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6">
                             <div class="contact-right-content-style-3 contact-style-8">
-                                <form action="#" id="contact-form" class="contact-form-box-3">
-                                    <h3 class="wow fadeInUp">Solicite um diagnóstico</h3>
+                                <form action="contact.php" method="post" id="contact-form" class="contact-form-box-3">
+                                    <div class="form-heading wow fadeInUp">
+                                        <span>Diagnóstico inicial</span>
+                                        <h3>Compartilhe seu cenário</h3>
+                                        <p>Estas informações direcionam uma primeira conversa mais precisa e produtiva.</p>
+                                    </div>
                                     <div class="row g-4 align-items-center justify-content-center">
                                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                                             <div class="form-clt">
@@ -972,7 +874,7 @@
                                         </div>
                                         <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                                             <div class="form-clt">
-                                                <label for="contact-email">Email</label>
+                                                <label for="contact-email">E-mail profissional</label>
                                                 <input type="email" id="contact-email" name="email" placeholder="nome@empresa.com.br…" autocomplete="email" spellcheck="false" required>
                                             </div>
                                         </div>
@@ -990,14 +892,14 @@
                                         </div>
                                         <div class="col-lg-12 wow fadeInUp" data-wow-delay=".7s">
                                             <div class="form-clt">
-                                                <label for="contact-objective">Objetivo patrimonial</label>
-                                                <input type="text" id="contact-objective" name="objective" placeholder="Ex.: aquisição, expansão ou reorganização…" autocomplete="off" required>
+                                                <label for="contact-objective">Decisão em análise</label>
+                                                <input type="text" id="contact-objective" name="objective" placeholder="Ex.: aquisição, expansão ou reorganização patrimonial…" autocomplete="off" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 wow fadeInUp" data-wow-delay=".8s">
                                             <div class="form-clt">
-                                                <label for="contact-message">Contexto da decisão</label>
-                                                <textarea id="contact-message" name="message" placeholder="Conte brevemente o que pretende estruturar…" required></textarea>
+                                                <label for="contact-message">Contexto e horizonte</label>
+                                                <textarea id="contact-message" name="message" placeholder="Conte brevemente o que pretende estruturar e em qual horizonte…" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12 wow fadeInUp" data-wow-delay=".9s">
@@ -1008,6 +910,8 @@
                                                     <span class="btn-arrow-right" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                                                 </button>
                                             </div>
+                                            <p class="form-privacy">Seus dados serão utilizados exclusivamente para este atendimento.</p>
+                                            <div class="form-message" role="status" aria-live="polite"></div>
                                         </div>
                                     </div>
                                 </form>
@@ -1033,7 +937,7 @@
                                 <div class="footer-widget-items roma-footer-brand wow fadeInUp" data-wow-delay=".2s">
                                     <div class="widget-head">
                                         <a href="index.html" aria-label="Roma Capital — página inicial">
-                                            <img src="assets/img/logo/black-logo.svg" alt="Roma Capital" width="155" height="48" loading="lazy">
+                                            <img src="assets/img/logo/logoblack.svg" alt="Roma Capital" width="155" height="69" loading="lazy">
                                         </a>
                                     </div>
                                     <div class="footer-content">
@@ -1157,7 +1061,53 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!--<< Wow Animation Js >>-->
         <script src="assets/js/wow.min.js"></script>
+        <!--<< Contact Form Js >>-->
+        <script src="assets/js/ajax-mail.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.js"></script>
+        <script>
+            (() => {
+                const heroVideo = document.querySelector('.hero-video');
+                const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+                let heroIsVisible = true;
+
+                if (!heroVideo) return;
+
+                const syncHeroMotion = () => {
+                    if (reducedMotion.matches || !heroIsVisible) {
+                        heroVideo.pause();
+                        return;
+                    }
+
+                    heroVideo.play().catch(() => {});
+                };
+
+                const resetHeroFrame = () => {
+                    if (!reducedMotion.matches) return;
+
+                    if (heroVideo.readyState >= 1) {
+                        heroVideo.currentTime = 0;
+                        return;
+                    }
+
+                    heroVideo.addEventListener('loadedmetadata', () => {
+                        heroVideo.currentTime = 0;
+                    }, { once: true });
+                };
+
+                const heroObserver = new IntersectionObserver(([entry]) => {
+                    heroIsVisible = entry.isIntersecting;
+                    syncHeroMotion();
+                }, { threshold: 0.05 });
+
+                syncHeroMotion();
+                resetHeroFrame();
+                heroObserver.observe(heroVideo);
+                reducedMotion.addEventListener?.('change', () => {
+                    syncHeroMotion();
+                    resetHeroFrame();
+                });
+            })();
+        </script>
     </body>
 </html>

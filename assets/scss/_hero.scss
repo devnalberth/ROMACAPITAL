@@ -1539,9 +1539,21 @@
 .hero-8 {
     position: relative;
     z-index: 9;
+    background-color: #00171F;
     border-radius: 12px;
     padding: 250px 150px 190px;
     margin-top: 110px;
+
+    .hero-video {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        pointer-events: none;
+        z-index: -2;
+    }
 
     @include breakpoint(max-xxxl) {
         padding: 220px 120px 170px;

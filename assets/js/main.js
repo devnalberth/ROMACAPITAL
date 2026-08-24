@@ -24,28 +24,6 @@
 
      
 
-    /* ================================
-        Sidebar Toggle & Sticky Item Logic
-        ================================ */
-
-        // Open offcanvas
-        $(".sidebar__toggle").on("click", function () {
-        $(".offcanvas__info").addClass("info-open");
-        $(".offcanvas__overlay").addClass("overlay-open");
-
-        // Hide sticky item
-        $(".sidebar-sticky-item").fadeOut().removeClass("active");
-        });
-
-        // Close offcanvas
-        $(".offcanvas__close, .offcanvas__overlay").on("click", function () {
-        $(".offcanvas__info").removeClass("info-open");
-        $(".offcanvas__overlay").removeClass("overlay-open");
-
-        // Show sticky item
-        $(".sidebar-sticky-item").fadeIn().addClass("active");
-        });
-
         /* ================================
         Body Overlay Js Start
         ================================ */
@@ -59,15 +37,6 @@
         $(".sidebar-sticky-item").fadeIn().addClass("active");
         });
 
-        /* ================================
-        Offcanvas Link Click (Optional)
-        ================================ */
-
-        $(".offcanvas a").on("click", function () {
-        $(".sidebar-sticky-item").fadeIn().addClass("active");
-    });
-
-    
       /* ================================
        Sticky Header Js Start
     ================================ */
@@ -1023,47 +992,13 @@
     }); // End Document Ready Function
 
 
-    /* ================================
-       Preloader Js Start
-    ================================ */
-
     $windowOn.on("load", function () {
-
-        const Preloader = $(".preloader");
-
-        function initAnimations() {
-            if (typeof wowController === "function") {
-                wowController();
-            }
-            if (typeof gsapController === "function") {
-                gsapController();
-            }
+        if (typeof wowController === "function") {
+            wowController();
         }
-
-        const skipPreloader = document.documentElement.classList.contains("skip-preloader");
-
-        if (Preloader.length && !skipPreloader) {
-
-            setTimeout(function () {
-
-                Preloader.removeClass("is-loading").addClass("is-loaded");
-
-                setTimeout(function () {
-
-                    Preloader.fadeOut(400);
-                    initAnimations();
-
-                }, 700);
-
-            }, 2000);
-
-        } else {
-            if (Preloader.length) {
-                Preloader.removeClass("is-loading").addClass("is-loaded").hide();
-            }
-            initAnimations();
+        if (typeof gsapController === "function") {
+            gsapController();
         }
-
     });
 
 
@@ -1071,7 +1006,6 @@
 
   
   })(jQuery); // End jQuery
-
 
 
 

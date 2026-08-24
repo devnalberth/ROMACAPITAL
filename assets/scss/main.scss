@@ -144,3 +144,16 @@ img[src$="testi-shape-1.png"] {
     filter: grayscale(1) brightness(.62);
     opacity: .28;
 }
+
+/* Roma Capital: proporção da assinatura vertical no cabeçalho. */
+.header-1 .logo img[src$="logowhite.svg"] {
+    display: block;
+    width: 155px;
+    height: auto;
+}
+
+@media (max-width: 575px) {
+    .header-1 .logo img[src$="logowhite.svg"] {
+        width: 145px;
+    }
+}
