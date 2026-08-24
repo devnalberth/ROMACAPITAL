@@ -742,15 +742,67 @@
             ignoreMobileResize: true,
         });
 
-        if (window.location.hash === "#estrategias") {
-            const strategiesSection = document.querySelector("#estrategias");
+        const romaSectionHashes = ["#estrategias", "#como-funciona"];
 
-            if (strategiesSection) {
-                requestAnimationFrame(function () {
-                    smoother.scrollTo(strategiesSection, false, "top 112px");
+        function revealAnchoredSection(target) {
+            target.querySelectorAll(".wow").forEach(function(element) {
+                element.style.visibility = "visible";
+                element.classList.add("animated");
+            });
+
+            if (typeof gsap !== "undefined") {
+                gsap.set(target.querySelectorAll(".split-title .char, .tz-sub-tilte .char"), {
+                    opacity: 1,
+                    x: 0,
+                    clipPath: "inset(0% 0% -15% 0%)"
                 });
             }
         }
+
+        function scrollToRomaSection(hash, updateHistory) {
+            if (!romaSectionHashes.includes(hash)) return;
+
+            const target = document.querySelector(hash);
+            if (!target) return;
+
+            if (updateHistory && window.location.hash !== hash) {
+                window.history.pushState(null, "", hash);
+            }
+
+            ScrollTrigger.refresh();
+            smoother.scrollTo(target, false, "top 112px");
+
+            requestAnimationFrame(function() {
+                revealAnchoredSection(target);
+                ScrollTrigger.update();
+                window.dispatchEvent(new Event("scroll"));
+            });
+        }
+
+        $documentOn.on("click", 'a[href="#estrategias"], a[href="#como-funciona"]', function(event) {
+            const hash = this.getAttribute("href");
+
+            if (document.querySelector(hash)) {
+                event.preventDefault();
+                scrollToRomaSection(hash, true);
+            }
+        });
+
+        function syncInitialRomaSection() {
+            if (!romaSectionHashes.includes(window.location.hash)) return;
+
+            window.setTimeout(function() {
+                scrollToRomaSection(window.location.hash, false);
+            }, 120);
+        }
+
+        if (document.readyState === "complete") {
+            syncInitialRomaSection();
+        } else {
+            window.addEventListener("load", syncInitialRomaSection, { once: true });
+        }
+
+        window.addEventListener("hashchange", syncInitialRomaSection);
     }
 
     /* ================================
@@ -1006,7 +1058,6 @@
 
   
   })(jQuery); // End jQuery
-
 
 
 

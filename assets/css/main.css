@@ -4354,6 +4354,95 @@ span {
   transform: scale(1.015);
 }
 
+.roma-architecture-section.fix {
+  background-color: var(--header);
+  border-bottom: 1px solid rgba(178, 132, 44, 0.42);
+  border-top: 1px solid rgba(178, 132, 44, 0.42);
+  isolation: isolate;
+  overflow: visible;
+  position: relative;
+  z-index: 2;
+}
+.roma-architecture-section::before,
+.roma-architecture-section::after {
+  align-items: center;
+  background-color: var(--header);
+  border: 1px solid rgba(178, 132, 44, 0.72);
+  border-radius: 50%;
+  color: var(--accent);
+  content: "↓";
+  display: flex;
+  font-size: 17px;
+  height: 42px;
+  justify-content: center;
+  left: 50%;
+  line-height: 1;
+  pointer-events: none;
+  position: absolute;
+  width: 42px;
+  z-index: 2;
+}
+.roma-architecture-section::before {
+  animation: roma-divider-top 2.4s cubic-bezier(0.32, 0.72, 0, 1) infinite;
+  top: 0;
+}
+.roma-architecture-section::after {
+  animation: roma-divider-bottom 2.4s cubic-bezier(0.32, 0.72, 0, 1) infinite;
+  bottom: 0;
+}
+.roma-architecture-section > .container {
+  position: relative;
+  z-index: 1;
+}
+.roma-architecture-section .section-title h2,
+.roma-architecture-section .section-title .sub-title,
+.roma-architecture-section .section-title-area > p {
+  color: var(--white);
+}
+.roma-architecture-section .section-title h2 {
+  text-wrap: balance;
+}
+.roma-architecture-section .section-title-area > p {
+  line-height: 1.7;
+  max-width: 570px;
+}
+@media (max-width: 767px) {
+  .roma-architecture-section::before,
+  .roma-architecture-section::after {
+    font-size: 15px;
+    height: 36px;
+    width: 36px;
+  }
+}
+@keyframes roma-divider-top {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(-2px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(3px);
+  }
+}
+@keyframes roma-divider-bottom {
+  0%, 100% {
+    transform: translate(-50%, 50%) translateY(-2px);
+  }
+  50% {
+    transform: translate(-50%, 50%) translateY(3px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .roma-architecture-section::before,
+  .roma-architecture-section::after {
+    animation: none;
+  }
+  .roma-architecture-section::before {
+    transform: translate(-50%, -50%);
+  }
+  .roma-architecture-section::after {
+    transform: translate(-50%, 50%);
+  }
+}
+
 @media (max-width: 991px) {
   .build-industries-thumb-style-2 {
     height: 500px;
@@ -4450,6 +4539,16 @@ span {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.roma-activity-section .build-industries-box .build-list > img {
+  background-color: rgba(178, 132, 44, 0.1);
+  border: 1px solid rgba(178, 132, 44, 0.2);
+  border-radius: 8px;
+  flex: 0 0 64px;
+  height: 64px;
+  object-fit: contain;
+  padding: 14px;
+  width: 64px;
 }
 .build-industries-content-style-2 .build-industries-box ul li .build-industries-items .build-list.style-margin {
   margin-left: 100px;
@@ -6712,6 +6811,22 @@ span {
 
 .header-1 .header-main .main-menu ul li > a:hover,
 .header-1 .header-main .main-menu ul li:hover > a {
+  color: var(--accent) !important;
+}
+.header-1 #mobile-menu > ul > li > a[aria-current="page"] {
+  color: var(--accent) !important;
+}
+.header-1 #mobile-menu > ul > li > a[aria-current="page"]::before {
+  background-color: var(--accent);
+  border-radius: 999px;
+  bottom: 12px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.mean-container .mean-nav ul li a[aria-current="page"] {
   color: var(--accent) !important;
 }
 
@@ -9445,6 +9560,23 @@ span {
     font-size: 16px;
     line-height: 1.55;
     margin-top: 18px;
+  }
+}
+.inner-page-hero .hero-8 {
+  align-items: flex-end;
+  background-position: center;
+  display: flex;
+  min-height: clamp(560px, calc(100dvh - 130px), 760px);
+}
+.inner-page-hero .hero-8 > .row {
+  width: 100%;
+}
+.inner-page-hero .hero-content-style-8 .content {
+  max-width: 760px;
+}
+@media (max-width: 767px) {
+  .inner-page-hero .hero-8 {
+    min-height: 540px;
   }
 }
 .hero-8 .hero-content-style-8 .content .hero-button-area {
@@ -16201,6 +16333,13 @@ span {
   height: 100%;
   content: "";
   background: rgba(0, 23, 31, 0.58);
+}
+.roma-testimonial-section {
+  background-position: center;
+  background-size: cover;
+}
+.roma-testimonial-section::before {
+  background: rgba(0, 23, 31, 0.76);
 }
 .testimonial-section-3 .array-button {
   display: flex;
