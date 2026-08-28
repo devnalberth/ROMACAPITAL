@@ -13,22 +13,22 @@
         <title>Roma Capital | Estratégia financeira e patrimonial</title>
         <!--<< Favcion >>-->
         <link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon.svg?v=roma-capital-2">
+        <link rel="preload" href="assets/img/hero/videohero-poster.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap">
+<link rel="preload" href="assets/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!--<< All Min Css >>-->
-        <link rel="stylesheet" href="assets/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/icons.min.css">
         <!--<< Animate.css >>-->
         <link rel="stylesheet" href="assets/css/animate.css">
-        <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
         <!--<< MeanMenu.css >>-->
         <link rel="stylesheet" href="assets/css/meanmenu.css">
-        <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
         <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/main.min.css">
         <style>
             .brand-wordmark {
                 display: inline-block;
@@ -129,7 +129,7 @@
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
                         <a href="index.html" class="logo">
-                            <img src="assets/img/logo/logowhite.svg" alt="Roma Capital">
+                            <img src="assets/img/logo/logowhite.svg" alt="Roma Capital" width="731" height="323">
                         </a>
                         <div class="header-right d-flex justify-content-end align-items-center">
                             <div class="mean__menu-wrapper">
@@ -177,8 +177,8 @@
             <!-- Hero Section Start -->
             <section class="hero-section-8">
                 <div class="hero-8 fix bg-cover">
-                    <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1">
-                        <source src="assets/img/hero/videohero.m4v" type="video/mp4">
+                    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero/videohero-poster.webp" aria-hidden="true" tabindex="-1">
+                        <source data-src="assets/img/hero/videohero.m4v" type="video/mp4">
                     </video>
                     <div class="row">
                         <div class="col-lg-12">
@@ -217,7 +217,7 @@
                         <div class="col-xl-4 col-md-5">
                             <div class="about-left-thumb-style-8">
                                 <div class="about-image fix media-cover">
-                                    <img data-speed=".8" src="assets/img/sobre/sobre.webp" alt="" width="461" height="489" loading="lazy">
+                                    <img data-speed=".8" src="assets/img/sobre/sobre.webp" alt="" width="461" height="489" loading="lazy" decoding="async">
                                 </div>
                                 <div class="about-left-content wow fadeInUp" data-wow-delay=".2s">
                                     <p class="about-left-title">Nossa forma de atuar</p>
@@ -278,7 +278,7 @@
                         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="service-box-items-style-2 service-style-8">
                                 <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/estrategias/imoveis.webp" alt="" width="372" height="257" loading="lazy">
+                                    <img class="hover-img" src="assets/img/estrategias/imoveis.webp" alt="" width="372" height="257" loading="lazy" decoding="async">
                                 </div>
                                 <div class="service-content">
                                     <h3><a href="service-details.html">Aquisição de imóveis</a></h3>
@@ -302,7 +302,7 @@
                         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="service-box-items-style-2 service-style-8">
                                 <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/estrategias/carros.webp" alt="" width="372" height="257" loading="lazy">
+                                    <img class="hover-img" src="assets/img/estrategias/carros.webp" alt="" width="372" height="257" loading="lazy" decoding="async">
                                 </div>
                                 <div class="service-content">
                                     <h3><a href="service-details.html">Veículos e ativos</a></h3>
@@ -326,7 +326,7 @@
                         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="service-box-items-style-2 service-style-8">
                                 <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/estrategias/construction.webp" alt="" width="372" height="257" loading="lazy">
+                                    <img class="hover-img" src="assets/img/estrategias/construction.webp" alt="" width="372" height="257" loading="lazy" decoding="async">
                                 </div>
                                 <div class="service-content">
                                     <h3><a href="service-details.html">Construção e reforma</a></h3>
@@ -350,7 +350,7 @@
                         <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
                             <div class="service-box-items-style-2 service-style-8">
                                 <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/estrategias/entrepeneur.webp" alt="" width="372" height="257" loading="lazy">
+                                    <img class="hover-img" src="assets/img/estrategias/entrepeneur.webp" alt="" width="372" height="257" loading="lazy" decoding="async">
                                 </div>
                                 <div class="service-content">
                                     <h3><a href="service-details.html">Estratégias empresariais</a></h3>
@@ -402,7 +402,7 @@
                             <img src="assets/img/logo/logoicon.svg" alt="" width="42" height="42">
                         </div>
                         <div class="bar-shape">
-                            <img src="assets/img/home-8/work-process-top-shape.png" alt="" width="908" height="171" loading="lazy">
+                            <img src="assets/img/home-8/work-process-top-shape.png" alt="" width="908" height="171" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="row">
@@ -468,12 +468,12 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-5 wow fadeInUp" data-wow-delay=".3s">
                             <div class="choose-thumb-style-2 style-image2">
-                                <img src="assets/img/arquitetura/arquiteturaone.webp" alt="Profissional analisando informações para uma decisão financeira" width="460" height="379" loading="lazy">
+                                <img src="assets/img/arquitetura/arquiteturaone.webp" alt="Profissional analisando informações para uma decisão financeira" width="460" height="379" loading="lazy" decoding="async">
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-7 wow fadeInUp" data-wow-delay=".5s">
                             <div class="choose-thumb-style-2">
-                                <img src="assets/img/arquitetura/arquiteturatwo.webp" alt="Reunião reservada de planejamento patrimonial" width="740" height="370" loading="lazy">
+                                <img src="assets/img/arquitetura/arquiteturatwo.webp" alt="Reunião reservada de planejamento patrimonial" width="740" height="370" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -483,10 +483,10 @@
             <!-- Choose Us Section Start -->
             <section class="choose-section-3 roma-criteria-section roma-dark-sequence section-padding fix" aria-labelledby="criterios-atuacao">
                 <div class="shape-1 d-none d-xl-block">
-                    <img src="assets/img/home-3/project-shape-1.png" alt="" width="313" height="405" loading="lazy">
+                    <img src="assets/img/home-3/project-shape-1.png" alt="" width="313" height="405" loading="lazy" decoding="async">
                 </div>
                 <div class="shape-2 d-none d-xl-block">
-                    <img src="assets/img/home-3/project-shape-2.png" alt="" width="294" height="343" loading="lazy">
+                    <img src="assets/img/home-3/project-shape-2.png" alt="" width="294" height="343" loading="lazy" decoding="async">
                 </div>
                 <div class="container">
                     <div class="section-title-area justify-content-center justify-content-lg-between text-center text-lg-start">
@@ -501,9 +501,9 @@
                     <div class="row">
                         <div class="col-xl-7 col-lg-7 wow fadeInUp" data-wow-delay=".3s">
                             <div class="choose-us-left-thumb-style-8">
-                                <img src="assets/img/criterios/criteriosone.webp" class="wow img-custom-anim-left" alt="Análise de cenários financeiros" width="481" height="512" loading="lazy">
+                                <img src="assets/img/criterios/criteriosone.webp" class="wow img-custom-anim-left" alt="Análise de cenários financeiros" width="481" height="512" loading="lazy" decoding="async">
                                 <div class="thumb-2">
-                                    <img src="assets/img/criterios/criteriostwo.webp" class="wow img-custom-anim-right" alt="Planejamento conduzido em reunião consultiva" width="410" height="329" loading="lazy">
+                                    <img src="assets/img/criterios/criteriostwo.webp" class="wow img-custom-anim-right" alt="Planejamento conduzido em reunião consultiva" width="410" height="329" loading="lazy" decoding="async">
                                 </div>
                             </div>
                         </div> 
@@ -581,7 +581,7 @@
                         <div class="col-xl-5 col-lg-6">
                             <div class="faq-left-content">
                                 <div class="section-title mb-0">
-                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="img">Perguntas frequentes</span>
+                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="img" width="214" height="124">Perguntas frequentes</span>
                                     <h2 class="split-title">Clareza antes de decidir.</h2>
                                 </div>
                                 <p class="faq-text wow fadeInUp" data-wow-delay=".2s">
@@ -678,14 +678,14 @@
             <section id="conteudos" class="news-section section-padding pt-0 fix">
                 <div class="container">
                     <div class="section-title text-center">
-                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/logo/logoicon.svg" alt="img">Inteligência patrimonial</span>
+                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/logo/logoicon.svg" alt="img" width="214" height="124">Inteligência patrimonial</span>
                         <h2 class="split-title">Análises para decisões de longo prazo.</h2>
                     </div>
                     <div class="row">
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="news-box-main-area">
                                     <div class="news-box-items">
-                                        <img src="assets/img/blog/postum/postone.webp" alt="img">
+                                        <img src="assets/img/blog/postum/postone.webp" alt="img" width="1800" height="1200" loading="lazy" decoding="async">
                                         <div class="post-date">
                                                     <h3 class="date">23</h3>
                                             <p>JAN</p>
@@ -735,7 +735,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                                 <div class="news-box-main-area">
                                     <div class="news-box-items">
-                                        <img src="assets/img/blog/postdois/one.webp" alt="img">
+                                        <img src="assets/img/blog/postdois/one.webp" alt="img" width="1800" height="1201" loading="lazy" decoding="async">
                                         <div class="post-date">
                                             <h3 class="date">16</h3>
                                             <p>JAN</p>
@@ -785,7 +785,7 @@
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                                 <div class="news-box-main-area">
                                     <div class="news-box-items">
-                                        <img src="assets/img/blog/posttres/um.webp" alt="img">
+                                        <img src="assets/img/blog/posttres/um.webp" alt="img" width="1800" height="1200" loading="lazy" decoding="async">
                                         <div class="post-date">
                                             <h3 class="date">09</h3>
                                             <p>JAN</p>
@@ -932,10 +932,10 @@
                 <!-- Footer Section Start -->
                 <footer class="footer-section-3 fix">
                     <div class="shape-1">
-                        <img src="assets/img/home-3/footer-shape-1.png" alt="" width="643" height="444" loading="lazy" aria-hidden="true">
+                        <img src="assets/img/home-3/footer-shape-1.png" alt="" width="643" height="444" loading="lazy" aria-hidden="true" decoding="async">
                     </div>
                     <div class="shape-3">
-                        <img src="assets/img/home-3/footer-shape-3.png" alt="" width="459" height="337" loading="lazy" aria-hidden="true">
+                        <img src="assets/img/home-3/footer-shape-3.png" alt="" width="459" height="337" loading="lazy" aria-hidden="true" decoding="async">
                     </div>
                     <div class="container">
                         <div class="footer-widget-wrapper-3">
@@ -1009,19 +1009,8 @@
                             </p>
                             <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
                                 <li>
-                                    <a href="contact.html">
-                                    Política de privacidade
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">
-                                    Termos de uso
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">
-                                Configurações de cookies
-                                    </a>
+                                    Desenvolvido por
+                                    <a href="https://www.instagram.com/nalberthweb/" target="_blank" rel="noopener noreferrer">@nalberthweb</a>
                                 </li>
                             </ul>
                         </div>
@@ -1035,50 +1024,46 @@
         
         <!--<< All JS Plugins >>-->
         <script src="assets/js/jquery-3.7.1.min.js"></script>
-        <!--<< Viewport Js >>-->
-        <script src="assets/js/viewport.jquery.js"></script>
-        <!--<< Bootstrap Js >>-->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
         <!--<< Gsap Min Js >>-->
         <script src="assets/js/gsap.min.js"></script>
         <!--<< ScrollTrigger Min Js >>-->
         <script src="assets/js/ScrollTrigger.min.js"></script>
         <!--<< ScrollSmoother Min Js >>-->
         <script src="assets/js/ScrollSmoother.min.js"></script>
-        <!--<< ScrollToPlugin Min Js >>-->
-        <script src="assets/js/ScrollToPlugin.min.js"></script>
         <!--<< SplitText Min Js >>-->
         <script src="assets/js/SplitText.min.js"></script>
-        <!--<< TextPlugin Min Js >>-->
-        <script src="assets/js/TextPlugin.js"></script>
-        <!--<< nice-selec Js >>-->
-        <script src="assets/js/jquery.nice-select.min.js"></script>
         <!--<< Waypoints Js >>-->
         <script src="assets/js/jquery.waypoints.js"></script>
         <!--<< Counterup Js >>-->
         <script src="assets/js/jquery.counterup.min.js"></script>
-        <!--<< Swiper Slider Js >>-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
         <!--<< MeanMenu Js >>-->
         <script src="assets/js/jquery.meanmenu.min.js"></script>
-        <!--<< Magnific Popup Js >>-->
-        <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <!--<< Wow Animation Js >>-->
         <script src="assets/js/wow.min.js"></script>
         <!--<< Contact Form Js >>-->
         <script src="assets/js/ajax-mail.js"></script>
         <!--<< Main.js >>-->
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.min.js"></script>
         <script>
             (() => {
                 const heroVideo = document.querySelector('.hero-video');
                 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+                const desktopViewport = window.matchMedia('(min-width: 768px)');
+                const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
                 let heroIsVisible = true;
 
                 if (!heroVideo) return;
 
+                const heroSource = heroVideo.querySelector('source[data-src]');
+                const shouldLoadVideo = desktopViewport.matches && !reducedMotion.matches && !connection?.saveData;
+
+                if (heroSource && shouldLoadVideo) {
+                    heroSource.src = heroSource.dataset.src;
+                    heroVideo.load();
+                }
+
                 const syncHeroMotion = () => {
-                    if (reducedMotion.matches || !heroIsVisible) {
+                    if (!shouldLoadVideo || reducedMotion.matches || !heroIsVisible) {
                         heroVideo.pause();
                         return;
                     }

@@ -46,8 +46,6 @@
 /*----------------------------------------*/
 /*  01. Basic
 /*----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 :root {
   --body: #fff;
   --black: #000000;
@@ -1227,7 +1225,6 @@ span {
   left: 0;
   width: 40px;
   height: 33px;
-  background-image: url("../img/home-6/tranggle-shape.svg");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 88;
@@ -4135,7 +4132,6 @@ span {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  background-image: url(../../assets/img/home-2/bixoo-img.jpg);
   background-position: 7% 546px;
   background-size: 125% auto;
   font-size: 375px;
@@ -13262,6 +13258,15 @@ span {
   transition-duration: 500ms;
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
+}
+.service-box-items-style-2.service-style-8 .service-thumb {
+  aspect-ratio: 372 / 257;
+  width: 100%;
+}
+.service-box-items-style-2.service-style-8 .service-thumb .hover-img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 .service-box-items-style-2.service-style-8:hover {
   transform: translateY(-6px);

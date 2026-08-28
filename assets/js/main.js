@@ -41,26 +41,46 @@
        Sticky Header Js Start
     ================================ */
 
-       $windowOn.on("scroll", function () {
-        if ($(this).scrollTop() > 250) {
-          $("#header-sticky").addClass("sticky");
-        } else {
-          $("#header-sticky").removeClass("sticky");
+      const stickyHeader = document.getElementById("header-sticky");
+      const backToTop = document.getElementById("back-top");
+      let scrollFramePending = false;
+
+      const updateScrollUi = () => {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (stickyHeader) {
+          stickyHeader.classList.toggle("sticky", scrollTop > 250);
         }
-      });      
+
+        if (backToTop) {
+          const reachedBottom = scrollTop + window.innerHeight >= document.documentElement.scrollHeight - 10;
+          backToTop.classList.toggle("show", reachedBottom);
+        }
+
+        scrollFramePending = false;
+      };
+
+      window.addEventListener("scroll", () => {
+        if (!scrollFramePending) {
+          window.requestAnimationFrame(updateScrollUi);
+          scrollFramePending = true;
+        }
+      }, { passive: true });
+
+      updateScrollUi();
       
       /* ================================
        Video & Image Popup Js Start
     ================================ */
 
-      $(".img-popup").magnificPopup({
+      if ($.fn.magnificPopup && $(".img-popup").length) $(".img-popup").magnificPopup({
         type: "image",
         gallery: {
           enabled: true,
         },
       });
 
-      $(".video-popup").magnificPopup({
+      if ($.fn.magnificPopup && $(".video-popup").length) $(".video-popup").magnificPopup({
         type: "iframe",
         callbacks: {},
       });
@@ -69,7 +89,7 @@
        Counterup Js Start
     ================================ */
 
-      $(".count").counterUp({
+      if ($.fn.counterUp && $(".count").length) $(".count").counterUp({
         delay: 15,
         time: 4000,
       });
@@ -84,7 +104,7 @@
        Nice Select Js Start
     ================================ */
 
-    if ($('.single-select').length) {
+    if ($.fn.niceSelect && $('.single-select').length) {
         $('.single-select').niceSelect();
     }
 
@@ -92,7 +112,7 @@
        Progress Bar Js Start
     ================================ */
 
-    $('.progress-bar').waypoint(function() {
+    if ($.fn.waypoint && $('.progress-bar').length) $('.progress-bar').waypoint(function() {
         $('.progress-bar').css({
             animation: "animate-positive 2.6s",
             opacity: "1"
@@ -692,18 +712,6 @@
     /* ================================
         Back To Top Button Js Start
     ================================ */
-    $windowOn.on('scroll', function() {
-        var windowScrollTop = $(this).scrollTop();
-        var windowHeight = $(window).height();
-        var documentHeight = $(document).height();
-
-        if (windowScrollTop + windowHeight >= documentHeight - 10) {
-            $("#back-top").addClass("show");
-        } else {
-            $("#back-top").removeClass("show");
-        }
-    });
-
     $documentOn.on('click', '#back-top', function() {
         $('html, body').animate({ scrollTop: 0 }, 800);
         return false;
@@ -1058,7 +1066,5 @@
 
   
   })(jQuery); // End jQuery
-
-
 
 
