@@ -1,0 +1,5 @@
+# Arquivos de sistema
+.DS_Store
+
+# Fonte original pesada; o site utiliza a versão otimizada em .m4v.
+assets/img/hero/videohero.mov
