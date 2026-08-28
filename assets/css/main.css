@@ -4133,6 +4133,7 @@ span {
   background-size: cover;
   background-position: 50%;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   background-image: url(../../assets/img/home-2/bixoo-img.jpg);
   background-position: 7% 546px;
@@ -4354,9 +4355,12 @@ span {
   transform: scale(1.015);
 }
 
+.roma-dark-sequence {
+  background-color: var(--header);
+}
+
 .roma-architecture-section.fix {
   background-color: var(--header);
-  border-bottom: 1px solid rgba(178, 132, 44, 0.42);
   border-top: 1px solid rgba(178, 132, 44, 0.42);
   isolation: isolate;
   overflow: visible;
@@ -4364,7 +4368,7 @@ span {
   z-index: 2;
 }
 .roma-architecture-section::before,
-.roma-architecture-section::after {
+.roma-mandate-section::after {
   align-items: center;
   background-color: var(--header);
   border: 1px solid rgba(178, 132, 44, 0.72);
@@ -4386,7 +4390,7 @@ span {
   animation: roma-divider-top 2.4s cubic-bezier(0.32, 0.72, 0, 1) infinite;
   top: 0;
 }
-.roma-architecture-section::after {
+.roma-mandate-section::after {
   animation: roma-divider-bottom 2.4s cubic-bezier(0.32, 0.72, 0, 1) infinite;
   bottom: 0;
 }
@@ -4408,7 +4412,7 @@ span {
 }
 @media (max-width: 767px) {
   .roma-architecture-section::before,
-  .roma-architecture-section::after {
+  .roma-mandate-section::after {
     font-size: 15px;
     height: 36px;
     width: 36px;
@@ -4432,13 +4436,13 @@ span {
 }
 @media (prefers-reduced-motion: reduce) {
   .roma-architecture-section::before,
-  .roma-architecture-section::after {
+  .roma-mandate-section::after {
     animation: none;
   }
   .roma-architecture-section::before {
     transform: translate(-50%, -50%);
   }
-  .roma-architecture-section::after {
+  .roma-mandate-section::after {
     transform: translate(-50%, 50%);
   }
 }
@@ -4886,6 +4890,33 @@ span {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.roma-criteria-section {
+  background-color: var(--header);
+}
+.roma-criteria-section .shape-1,
+.roma-criteria-section .shape-2 {
+  opacity: 0.08;
+}
+.roma-criteria-section .section-title .sub-title,
+.roma-criteria-section .section-title h2,
+.roma-criteria-section .section-title-area > p,
+.roma-criteria-section .choose-us-right-content-style-3 .icon-area h3,
+.roma-criteria-section .choose-us-right-content-style-3 .choose-feature .box-title {
+  color: var(--white);
+}
+.roma-criteria-section .section-title-area > p,
+.roma-criteria-section .choose-us-right-content-style-3 > p,
+.roma-criteria-section .choose-us-right-content-style-3 .choose-feature > p {
+  color: rgba(255, 255, 255, 0.72);
+}
+.roma-criteria-section .choose-us-left-thumb-style-8::before {
+  background-color: var(--accent);
+}
+.roma-criteria-section .choose-us-left-thumb-style-8 > img,
+.roma-criteria-section .choose-us-left-thumb-style-8 .thumb-2 img {
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.18);
 }
 
 .roma-criteria-section .section-title h2 {
@@ -16788,6 +16819,20 @@ span {
   }
 }
 
+.roma-mandate-section.fix {
+  border-bottom: 1px solid rgba(178, 132, 44, 0.42);
+  isolation: isolate;
+  overflow: visible;
+  z-index: 9;
+}
+.roma-mandate-section::before {
+  background: transparent;
+  pointer-events: none;
+}
+.roma-mandate-section > .container {
+  position: relative;
+  z-index: 1;
+}
 .roma-mandate-section .roma-mandate-header {
   align-items: end;
   display: grid;
@@ -16803,9 +16848,13 @@ span {
   }
 }
 .roma-mandate-section .section-title h2 {
+  color: var(--white);
   font-size: 42px;
   line-height: 1.16;
   max-width: 700px;
+}
+.roma-mandate-section .section-title .sub-title {
+  color: var(--white);
 }
 @media (max-width: 1199px) {
   .roma-mandate-section .section-title h2 {
@@ -16818,7 +16867,7 @@ span {
   }
 }
 .roma-mandate-section .roma-mandate-intro {
-  color: #555555;
+  color: rgba(255, 255, 255, 0.72);
   font-size: 18px;
   line-height: 1.65;
   margin-left: auto;
@@ -16830,7 +16879,8 @@ span {
   }
 }
 .roma-mandate-section .roma-mandate-grid {
-  background-color: var(--header);
+  background-color: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(178, 132, 44, 0.26);
   border-radius: 16px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -16896,6 +16946,16 @@ span {
   font-size: 13px;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0;
+}
+.roma-mandate-section .roma-mandate-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .roma-mandate-section .roma-mandate-action {
+    margin-top: 32px;
+  }
 }
 
 .testimonial-content-10 .testi-text {
