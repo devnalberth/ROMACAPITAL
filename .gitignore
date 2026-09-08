@@ -3,3 +3,7 @@
 
 # Fonte original pesada; o site utiliza a versão otimizada em .m4v.
 assets/img/hero/videohero.mov
+
+# Credenciais locais/servidor — nunca versionar
+config.php
+.env

@@ -3,6 +3,17 @@ DirectoryIndex index.html
 
 RewriteEngine On
 
+# Nunca servir credenciais nem os includes do proxy como arquivo estático.
+<FilesMatch "^(config|config\.example)\.php$">
+    Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/includes/
+RedirectMatch 404 ^/api/cartas\.js$
+
+# Proxy do catálogo de cartas: /api/cartas -> api/cartas.php (QSA preserva ?tipo= e ?status=).
+# Na Vercel o mesmo caminho é atendido por api/cartas.js automaticamente.
+RewriteRule ^api/cartas/?$ api/cartas.php [L,QSA]
+
 # O blog foi descontinuado: as URLs antigas passam a apontar para a home.
 RewriteRule ^(conteudos|consorcio-como-estrategia|liquidez-e-aquisicao|expansao-empresarial)/?$ /inicio [R=301,L]
 RewriteRule ^(news|news-details|post-liquidez-aquisicao|post-expansao-empresarial)\.html$ /inicio [R=301,L]
@@ -14,6 +25,9 @@ RewriteRule ^index\.html$ /inicio [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+about\.html(?:[?\s]) [NC]
 RewriteRule ^about\.html$ /sobre [R=301,L]
 
+RewriteCond %{THE_REQUEST} \s/+contempladas\.html(?:[?\s]) [NC]
+RewriteRule ^contempladas\.html$ /contempladas [R=301,L]
+
 RewriteCond %{THE_REQUEST} \s/+contact\.html(?:[?\s]) [NC]
 RewriteRule ^contact\.html$ /contato [R=301,L]
 
@@ -24,7 +38,7 @@ RewriteCond %{THE_REQUEST} \s/+team-details\.html(?:[?\s]) [NC]
 RewriteRule ^team-details\.html$ /equipe [R=301,L]
 
 # Mantém uma única versão das URLs, sem barra final.
-RewriteRule ^(inicio|sobre|contato|estrategias-patrimoniais|equipe)/$ /$1 [R=301,L]
+RewriteRule ^(inicio|sobre|contempladas|contato|estrategias-patrimoniais|equipe)/$ /$1 [R=301,L]
 
 # A página inicial também utiliza seu nome, em vez do arquivo index.html.
 RewriteRule ^$ /inicio [R=301,L]
@@ -33,6 +47,7 @@ RewriteRule ^$ /inicio [R=301,L]
 RewriteRule ^inicio$ index.html [L]
 RewriteRule ^sobre$ about.html [L]
 RewriteRule ^contato$ contact.html [L]
+RewriteRule ^contempladas$ contempladas.html [L]
 RewriteRule ^estrategias-patrimoniais$ service-details.html [L]
 RewriteRule ^equipe$ team-details.html [L]
 
