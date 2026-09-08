@@ -3,6 +3,10 @@ DirectoryIndex index.html
 
 RewriteEngine On
 
+# O blog foi descontinuado: as URLs antigas passam a apontar para a home.
+RewriteRule ^(conteudos|consorcio-como-estrategia|liquidez-e-aquisicao|expansao-empresarial)/?$ /inicio [R=301,L]
+RewriteRule ^(news|news-details|post-liquidez-aquisicao|post-expansao-empresarial)\.html$ /inicio [R=301,L]
+
 # Redireciona acessos aos arquivos HTML para suas URLs amigáveis.
 RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
 RewriteRule ^index\.html$ /inicio [R=301,L]
@@ -10,20 +14,8 @@ RewriteRule ^index\.html$ /inicio [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+about\.html(?:[?\s]) [NC]
 RewriteRule ^about\.html$ /sobre [R=301,L]
 
-RewriteCond %{THE_REQUEST} \s/+news\.html(?:[?\s]) [NC]
-RewriteRule ^news\.html$ /conteudos [R=301,L]
-
 RewriteCond %{THE_REQUEST} \s/+contact\.html(?:[?\s]) [NC]
 RewriteRule ^contact\.html$ /contato [R=301,L]
-
-RewriteCond %{THE_REQUEST} \s/+news-details\.html(?:[?\s]) [NC]
-RewriteRule ^news-details\.html$ /consorcio-como-estrategia [R=301,L]
-
-RewriteCond %{THE_REQUEST} \s/+post-liquidez-aquisicao\.html(?:[?\s]) [NC]
-RewriteRule ^post-liquidez-aquisicao\.html$ /liquidez-e-aquisicao [R=301,L]
-
-RewriteCond %{THE_REQUEST} \s/+post-expansao-empresarial\.html(?:[?\s]) [NC]
-RewriteRule ^post-expansao-empresarial\.html$ /expansao-empresarial [R=301,L]
 
 RewriteCond %{THE_REQUEST} \s/+service-details\.html(?:[?\s]) [NC]
 RewriteRule ^service-details\.html$ /estrategias-patrimoniais [R=301,L]
@@ -32,7 +24,7 @@ RewriteCond %{THE_REQUEST} \s/+team-details\.html(?:[?\s]) [NC]
 RewriteRule ^team-details\.html$ /equipe [R=301,L]
 
 # Mantém uma única versão das URLs, sem barra final.
-RewriteRule ^(inicio|sobre|conteudos|contato|consorcio-como-estrategia|liquidez-e-aquisicao|expansao-empresarial|estrategias-patrimoniais|equipe)/$ /$1 [R=301,L]
+RewriteRule ^(inicio|sobre|contato|estrategias-patrimoniais|equipe)/$ /$1 [R=301,L]
 
 # A página inicial também utiliza seu nome, em vez do arquivo index.html.
 RewriteRule ^$ /inicio [R=301,L]
@@ -40,11 +32,7 @@ RewriteRule ^$ /inicio [R=301,L]
 # Entrega os arquivos existentes sem expor a extensão no navegador.
 RewriteRule ^inicio$ index.html [L]
 RewriteRule ^sobre$ about.html [L]
-RewriteRule ^conteudos$ news.html [L]
 RewriteRule ^contato$ contact.html [L]
-RewriteRule ^consorcio-como-estrategia$ news-details.html [L]
-RewriteRule ^liquidez-e-aquisicao$ post-liquidez-aquisicao.html [L]
-RewriteRule ^expansao-empresarial$ post-expansao-empresarial.html [L]
 RewriteRule ^estrategias-patrimoniais$ service-details.html [L]
 RewriteRule ^equipe$ team-details.html [L]
 

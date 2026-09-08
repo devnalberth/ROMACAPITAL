@@ -17863,3 +17863,47 @@ img[src$="testi-shape-1.png"] {
     transform: translate(-50%, 50%);
   }
 }
+
+/* --------------------------------------------
+    Roma Capital: correções — bullet ativo do carrossel e e-mail do rodapé
+ ---------------------------------------------- */
+
+/* O bullet ativo era esticado só no eixo X (scaleX), virando uma elipse. */
+.solutions-carousel-pagination .swiper-pagination-bullet {
+  border-radius: 50%;
+  transform: scale(1);
+}
+.solutions-carousel-pagination .swiper-pagination-bullet-active {
+  border-radius: 50%;
+  transform: scale(1.6);
+}
+
+/* O e-mail do rodapé quebrava no meio da palavra (overflow-wrap: anywhere).
+   Mantém em uma única linha e dá largura suficiente à coluna de contato. */
+@media (min-width: 1200px) {
+  .footer-widget-wrapper-3 .roma-footer-grid {
+    gap: clamp(28px, 3.2vw, 60px);
+    grid-template-columns: minmax(260px, 1.2fr) minmax(140px, 0.55fr) minmax(180px, 0.8fr) minmax(300px, 1.3fr);
+  }
+}
+.footer-widget-wrapper-3 .footer-widget-items.roma-footer-contact .footer-contact-item a {
+  overflow-wrap: normal;
+  white-space: nowrap;
+  word-break: normal;
+}
+
+@media (max-width: 1199px) {
+  .footer-widget-wrapper-3 .footer-widget-items.roma-footer-contact .footer-contact-item a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .footer-widget-wrapper-3 .footer-widget-items.roma-footer-contact .footer-contact-item a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .footer-widget-wrapper-3 .footer-widget-items.roma-footer-contact .footer-contact-item a {
+    font-size: 14px;
+  }
+}
