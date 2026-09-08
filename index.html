@@ -25,6 +25,8 @@
         <link rel="stylesheet" href="assets/css/icons.min.css">
         <!--<< Animate.css >>-->
         <link rel="stylesheet" href="assets/css/animate.css">
+        <!--<< Swiper.css >>-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
         <!--<< MeanMenu.css >>-->
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <!--<< Main.css >>-->
@@ -128,7 +130,7 @@
             <div class="container">
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
-                        <a href="index.html" class="logo">
+                        <a href="/inicio" class="logo">
                             <img src="assets/img/logo/logowhite.svg" alt="Roma Capital" width="731" height="323">
                         </a>
                         <div class="header-right d-flex justify-content-end align-items-center">
@@ -136,12 +138,13 @@
                                 <div class="main-menu">
                                     <nav id="mobile-menu" aria-label="Navegação principal">
                                         <ul>
-                                            <li><a href="index.html" aria-current="page">Início</a></li>
-                                            <li><a href="about.html">Sobre</a></li>
-                                            <li><a href="#estrategias">Estratégias</a></li>
-                                            <li><a href="#como-funciona">Método</a></li>
-                                            <li><a href="news.html">Conteúdos</a></li>
-                                            <li><a href="contact.html">Contato</a></li>
+                                            <li><a href="/inicio" aria-current="page">Início</a></li>
+                                            <li><a href="/inicio#estrategias">Estratégias</a></li>
+                                            <li><a href="/inicio#solucoes">Soluções</a></li>
+                                            <li><a href="/inicio#cartas-contempladas">Cartas Contempladas</a></li>
+                                            <li><a href="/inicio#para-empresas">Para Empresas</a></li>
+                                            <li><a href="/conteudos">Conteúdos</a></li>
+                                            <li><a href="/sobre">A Roma</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -149,7 +152,7 @@
                             <a href="#" class="main-header__search search-toggler" aria-label="Abrir busca">
                                 <i class="fa-regular fa-magnifying-glass" aria-hidden="true"></i>
                             </a>
-                            <a href="contact.html" class="theme-btn header-bg">Agendar Diagnóstico <i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i></a>
+                            <a href="https://wa.me/rodrigo.especialistafinanceiro" target="_blank" rel="noopener noreferrer" class="theme-btn header-bg">Solicitar análise estratégica <i class="fa-solid fa-arrow-up-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -185,21 +188,16 @@
                             <div class="hero-content-style-8">
                                 <div class="content">
                                     <h1 class="hero-title wow fadeInUp" data-wow-delay=".3s">
-                                        Antes da carta,<br>
-                                        vem a estratégia.
+                                        Construir patrimônio<br>
+                                        com estratégia
                                     </h1>
                                     <p class="hero-support wow fadeInUp" data-wow-delay=".45s">
-                                        Estruturamos decisões de aquisição, expansão e organização patrimonial a partir de uma análise criteriosa de objetivos, capital, prazos e cenários financeiros.
+                                        Planejamento personalizado para aquisição de imóveis, veículos, máquinas e ativos por meio das principais administradoras de consórcio do Brasil.
                                     </p>
                                     <div class="hero-button-area wow fadeInUp" data-wow-delay=".6s">
-                                        <a href="#diagnostico" class="theme-btn">
+                                        <a href="https://wa.me/rodrigo.especialistafinanceiro" target="_blank" rel="noopener noreferrer" class="theme-btn">
                                             <span class="btn-arrow-left" aria-hidden="true"> <i class="fa-solid fa-arrow-up-right"></i> </span>
-                                            <span class="btn-title">Agendar Diagnóstico</span>
-                                            <span class="btn-arrow-right" aria-hidden="true"> <i class="fa-solid fa-arrow-up-right"></i> </span>
-                                        </a>
-                                        <a href="#como-funciona" class="theme-btn bg-white-style">
-                                            <span class="btn-arrow-left" aria-hidden="true"> <i class="fa-solid fa-arrow-up-right"></i> </span>
-                                            <span class="btn-title">Como funciona</span>
+                                            <span class="btn-title">Solicitar análise estratégica</span>
                                             <span class="btn-arrow-right" aria-hidden="true"> <i class="fa-solid fa-arrow-up-right"></i> </span>
                                         </a>
                                     </div>
@@ -210,59 +208,37 @@
                 </div>
             </section>
 
-            <!-- About Section Start -->
-            <section id="sobre" class="about-section-8 section-padding fix">
+            <!-- Positioning Section Start -->
+            <section id="sobre" class="positioning-section section-padding fix" aria-labelledby="posicionamento-title">
                 <div class="container">
-                    <div class="row g-4">
-                        <div class="col-xl-4 col-md-5">
-                            <div class="about-left-thumb-style-8">
-                                <div class="about-image fix media-cover">
-                                    <img data-speed=".8" src="assets/img/sobre/sobre.webp" alt="" width="461" height="489" loading="lazy" decoding="async">
-                                </div>
-                                <div class="about-left-content wow fadeInUp" data-wow-delay=".2s">
-                                    <p class="about-left-title">Nossa forma de atuar</p>
-                                    <p>
-                                        Cada decisão é conduzida com análise, clareza e acompanhamento próximo. Da primeira conversa à execução do objetivo, o cliente entende os caminhos, os cenários e cada etapa da estratégia.
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="positioning-header">
+                        <div class="section-title">
+                            <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Consórcio estratégico</span>
+                            <h2 id="posicionamento-title" class="split-title">Consórcio não é apenas uma forma de comprar.<br>É uma ferramenta de planejamento patrimonial.</h2>
                         </div>
-                        <div class="col-xl-8 col-md-7">
-                            <div class="about-content-wrapper-8">
-                                <div class="section-title mb-0">
-                                    <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Sobre a Roma Capital</span>
-                                    <h2 class="split-title">Estratégia, transparência e acompanhamento para decisões patrimoniais mais inteligentes.</h2>
-                                </div>
-                                <div class="about-content-style-8">
-                                    <p class="about-text wow fadeInUp" data-wow-delay=".3s">
-                                        Atuamos ao lado de empresários, investidores e famílias na estruturação de decisões patrimoniais relevantes. Cada estratégia nasce de uma leitura aprofundada do objetivo, do horizonte financeiro e das alternativas disponíveis para mobilizar capital com inteligência.
-                                    </p>
-                                    <a href="#diagnostico" class="theme-btn wow fadeInUp" data-wow-delay=".5s">
-                                        <span class="btn-arrow-left" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </span>
-                                        <span class="btn-title">Agendar Diagnóstico</span>
-                                        <span class="btn-arrow-right" aria-hidden="true">
-                                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                                        </span>
-                                    </a>
-                                    <div class="about-counter-wrap-8" role="group" aria-label="Indicadores da Roma Capital">
-                                        <div class="about-counter-box wow fadeInUp" data-wow-delay=".7s">
-                                            <p class="metric-value"><span class="count">3</span></p>
-                                            <p class="metric-label">
-                                                Grandes administradoras nacionais representadas
-                                            </p>
-                                        </div>
-                                        <div class="about-counter-box wow fadeInUp" data-wow-delay=".9s">
-                                            <p class="metric-value"><span class="count">6</span></p>
-                                            <p class="metric-label">
-                                                Etapas de acompanhamento completo
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="positioning-intro wow fadeInUp" data-wow-delay=".2s">Quando estruturado de acordo com objetivos, horizonte financeiro e capacidade de capital, o consórcio pode ser utilizado para aquisição programada de imóveis, expansão empresarial, renovação de frota, aquisição de máquinas e formação patrimonial.</p>
+                    </div>
+                    <div class="positioning-grid wow fadeInUp" data-wow-delay=".3s">
+                        <article class="positioning-item">
+                            <div class="positioning-meta">Patrimônio</div>
+                            <h3>Aquisição de patrimônio</h3>
+                            <p>Imóveis residenciais, comerciais e ativos estratégicos.</p>
+                        </article>
+                        <article class="positioning-item">
+                            <div class="positioning-meta">Empresas</div>
+                            <h3>Expansão empresarial</h3>
+                            <p>Estruturação de crédito para projetos e crescimento.</p>
+                        </article>
+                        <article class="positioning-item">
+                            <div class="positioning-meta">Capital</div>
+                            <h3>Planejamento de capital</h3>
+                            <p>Preservação de liquidez para outras oportunidades.</p>
+                        </article>
+                        <article class="positioning-item">
+                            <div class="positioning-meta">Investimentos</div>
+                            <h3>Diversificação patrimonial</h3>
+                            <p>Estratégias para investidores que desejam ampliar patrimônio de forma planejada.</p>
+                        </article>
                     </div>
                 </div>
             </section>
@@ -271,114 +247,95 @@
             <section id="estrategias" class="service-section-2 service-style-8 section-padding section-bg mb-0">
                 <div class="container">
                     <div class="section-title text-center">
-                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Estratégias patrimoniais</span>
-                        <h2 class="split-title">Cada patrimônio exige uma estratégia própria.</h2>
+                        <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">NOSSAS SOLUÇÕES</span>
+                        <h2 class="split-title">Estratégias para aquisição e expansão patrimonial.</h2>
                     </div>
-                    <div class="row">
-                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                            <div class="service-box-items-style-2 service-style-8">
-                                <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/estrategias/imoveis.webp" alt="" width="372" height="257" loading="lazy" decoding="async">
-                                </div>
-                                <div class="service-content">
-                                    <h3><a href="service-details.html">Aquisição de imóveis</a></h3>
-                                    <p>Planejamento para aquisição de imóveis com análise de capital, horizonte, liquidez e alternativas de estruturação compatíveis com o objetivo patrimonial.</p>
-                                    <h4>
-                                        Possibilidades
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <img src="assets/img/home-8/service-check.svg" alt="" width="18" height="18">
-                                            Aquisição patrimonial
-                                        </li>
-                                        <li>
-                                            <img src="assets/img/home-8/service-check.svg" alt="" width="18" height="18">
-                                            Reorganização de passivos
-                                        </li>
-                                    </ul>
-                                </div>
+                    <div class="swiper solutions-carousel wow fadeInUp" data-wow-delay=".2s" aria-label="Soluções patrimoniais">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="service-box-items-style-2 service-style-8">
+                                    <div class="service-thumb">
+                                        <img class="hover-img" src="assets/img/estrategias/imoveis.webp" alt="Consultoria para aquisição de imóveis" width="372" height="257" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="service-content">
+                                        <h3><a href="/estrategias-patrimoniais">Imóveis</a></h3>
+                                        <p>Aquisição residencial, comercial e formação patrimonial.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="service-box-items-style-2 service-style-8">
+                                    <div class="service-thumb">
+                                        <img class="hover-img" src="assets/img/estrategias/entrepeneur.webp" alt="Planejamento para expansão empresarial" width="372" height="257" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="service-content">
+                                        <h3><a href="/estrategias-patrimoniais">Empresas</a></h3>
+                                        <p>Expansão empresarial: imóveis, frotas, máquinas e equipamentos.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="service-box-items-style-2 service-style-8">
+                                    <div class="service-thumb">
+                                        <img class="hover-img" src="assets/img/estrategias/construction.webp" alt="Estratégias para máquinas, equipamentos e propriedades" width="372" height="257" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="service-content">
+                                        <h3><a href="/estrategias-patrimoniais">Agronegócio</a></h3>
+                                        <p>Máquinas agrícolas, veículos, equipamentos e propriedades.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="service-box-items-style-2 service-style-8">
+                                    <div class="service-thumb">
+                                        <img class="hover-img" src="assets/img/estrategias/carros.webp" alt="Aquisição e renovação de veículos" width="372" height="257" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="service-content">
+                                        <h3><a href="/estrategias-patrimoniais">Veículos</a></h3>
+                                        <p>Aquisição e renovação programada de veículos.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="service-box-items-style-2 service-style-8">
+                                    <div class="service-thumb">
+                                        <img class="hover-img" src="assets/img/criterios/criteriostwo.webp" alt="Análise de projeto estruturado" width="372" height="257" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="service-content">
+                                        <h3><a href="/estrategias-patrimoniais">Projeto estruturado</a></h3>
+                                        <p>Operações de maior volume e composição de créditos.</p>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="service-box-items-style-2 service-style-8">
+                                    <div class="service-thumb">
+                                        <img class="hover-img" src="assets/img/criterios/criteriosone.webp" alt="Análise de cartas contempladas" width="372" height="257" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="service-content">
+                                        <h3><a href="/estrategias-patrimoniais">Cartas contempladas</a></h3>
+                                        <p>Crédito disponível para oportunidades que não podem esperar.</p>
+                                    </div>
+                                </article>
                             </div>
                         </div>
-                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                            <div class="service-box-items-style-2 service-style-8">
-                                <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/estrategias/carros.webp" alt="" width="372" height="257" loading="lazy" decoding="async">
-                                </div>
-                                <div class="service-content">
-                                    <h3><a href="service-details.html">Veículos e ativos</a></h3>
-                                    <p>Estratégias para aquisição de veículos e outros ativos, equilibrando disponibilidade de capital, previsibilidade financeira e preservação de liquidez.</p>
-                                    <h4>
-                                        Possibilidades
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <img src="assets/img/home-8/service-check.svg" alt="" width="18" height="18">
-                                            Veículos
-                                        </li>
-                                        <li>
-                                            <img src="assets/img/home-8/service-check.svg" alt="" width="18" height="18">
-                                            Aquisição de ativos
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                            <div class="service-box-items-style-2 service-style-8">
-                                <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/estrategias/construction.webp" alt="" width="372" height="257" loading="lazy" decoding="async">
-                                </div>
-                                <div class="service-content">
-                                    <h3><a href="service-details.html">Construção e reforma</a></h3>
-                                    <p>Estruturação financeira para construção e reforma, considerando cronograma, capital necessário e impacto sobre o planejamento patrimonial.</p>
-                                    <h4>
-                                        Possibilidades
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <img src="assets/img/home-8/service-check.svg" alt="" width="18" height="18">
-                                            Construção
-                                        </li>
-                                        <li>
-                                            <img src="assets/img/home-8/service-check.svg" alt="" width="18" height="18">
-                                            Reforma
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                            <div class="service-box-items-style-2 service-style-8">
-                                <div class="service-thumb">
-                                    <img class="hover-img" src="assets/img/estrategias/entrepeneur.webp" alt="" width="372" height="257" loading="lazy" decoding="async">
-                                </div>
-                                <div class="service-content">
-                                    <h3><a href="service-details.html">Estratégias empresariais</a></h3>
-                                    <p>Planejamento para empresários que desejam expandir ativos, organizar capital e financiar crescimento com visão financeira de longo prazo.</p>
-                                    <h4>
-                                        Possibilidades
-                                    </h4>
-                                    <ul>
-                                        <li>
-                                            <img src="assets/img/home-8/service-check.svg" alt="" width="18" height="18">
-                                            Expansão de ativos
-                                        </li>
-                                        <li>
-                                            <img src="assets/img/home-8/service-check.svg" alt="" width="18" height="18">
-                                            Estruturação de capital
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="solutions-carousel-controls">
+                            <button type="button" class="solutions-carousel-prev" aria-label="Solução anterior">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="M15 18 9 12l6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
+                            <div class="solutions-carousel-pagination" aria-hidden="true"></div>
+                            <button type="button" class="solutions-carousel-next" aria-label="Próxima solução">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true"><path d="m9 18 6-6-6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </button>
                         </div>
                     </div>
                     <div class="service-bottom-items-2 service-bottom-items-8 wow fadeInUp" data-wow-delay=".3s">
-                        <p>Decisões patrimoniais relevantes exigem mais do que acesso a produtos financeiros.<br class="d-none d-md-block"> Exigem contexto, análise e uma estrutura coerente com o momento de cada cliente.</p>
-                        <a href="#diagnostico" class="theme-btn strategy-bottom-cta">
+                        <p>Da aquisição de imóveis à expansão empresarial, cada solução transforma capacidade de capital em patrimônio com planejamento, prazo e segurança.</p>
+                        <a href="https://wa.me/rodrigo.especialistafinanceiro" target="_blank" rel="noopener noreferrer" class="theme-btn strategy-bottom-cta">
                             <span class="btn-arrow-left" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </span>
-                            <span class="btn-title">Agendar Diagnóstico</span>
+                            <span class="btn-title">Solicitar análise estratégica</span>
                             <span class="btn-arrow-right" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </span>
@@ -388,30 +345,34 @@
             </section>
 
             <!-- Work Process Section Start -->
-            <section id="como-funciona" class="work-process-section-3 work-process-style-8 section-padding fix">
+            <section id="como-funciona" class="work-process-section-3 work-process-style-8 method-flow-five section-padding fix">
                 <div class="container">
                     <div class="section-title text-center">
                         <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="assets/img/logo/logoicon.svg" alt="" width="20" height="20">Método Roma</span>
                         <h2 class="split-title">Decidir bem exige método.</h2>
                         <p class="mt-3 wow fadeInUp" data-wow-delay=".2s">
-                            Do diagnóstico à execução, organizamos cada projeto em três movimentos<br class="d-none d-md-block"> para que o cliente avance com clareza sobre escolhas, impactos e próximos passos.
+                            Do diagnóstico ao acompanhamento, organizamos cada projeto em cinco etapas<br class="d-none d-md-block"> para que o cliente avance com clareza, consistência e controle.
                         </p>
                     </div>
                     <div class="title-shape-box">
                         <div class="title-icon">
                             <img src="assets/img/logo/logoicon.svg" alt="" width="42" height="42">
                         </div>
-                        <div class="bar-shape">
-                            <img src="assets/img/home-8/work-process-top-shape.png" alt="" width="908" height="171" loading="lazy" decoding="async">
+                        <div class="bar-shape method-flow-branches" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="method-flow-grid">
+                        <div class="method-flow-step wow fadeInUp" data-wow-delay=".3s">
                             <div class="work-process-box-items-style-3 items-style-8">
-                                <h3>Diagnóstico patrimonial</h3>
+                                <h3>Diagnóstico</h3>
                                 <div class="line"></div>
                                 <p>
-                                    Compreendemos o objetivo, o horizonte, a liquidez, a capacidade financeira e as prioridades que condicionam a decisão.
+                                    Entendimento do objetivo, patrimônio, capacidade financeira e horizonte de aquisição.
                                 </p>
                                 <span>01</span>
                                 <div class="circle-icon">
@@ -419,12 +380,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="method-flow-step wow fadeInUp" data-wow-delay=".4s">
                             <div class="work-process-box-items-style-3 items-style-8">
-                                <h3>Estruturação de cenários</h3>
+                                <h3>Estruturação</h3>
                                 <div class="line"></div>
                                 <p>
-                                    Comparamos alternativas, prazos, impactos e riscos para definir uma arquitetura de capital coerente com o momento do cliente.
+                                    Definição de valores de crédito, prazos, administradoras e grupos.
                                 </p>
                                 <span>02</span>
                                 <div class="circle-icon">
@@ -432,23 +393,49 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                        <div class="method-flow-step wow fadeInUp" data-wow-delay=".5s">
                             <div class="work-process-box-items-style-3 items-style-8">
-                                <h3>Acompanhamento da execução</h3>
+                                <h3>Estratégia</h3>
                                 <div class="line"></div>
                                 <p>
-                                    Conduzimos a implementação e acompanhamos cada etapa, mantendo estratégia, documentação e próximos movimentos sob controle.
+                                    Construção dos cenários de contemplação.
                                 </p>
                                 <span>03</span>
+                                <div class="circle-icon">
+                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="work-process-btn wow fadeInUp" data-wow-delay=".9s">
-                            <a href="#diagnostico" class="theme-btn">
+                        <div class="method-flow-step wow fadeInUp" data-wow-delay=".6s">
+                            <div class="work-process-box-items-style-3 items-style-8">
+                                <h3>Implementação</h3>
+                                <div class="line"></div>
+                                <p>
+                                    Formalização das operações junto às administradoras.
+                                </p>
+                                <span>04</span>
+                                <div class="circle-icon">
+                                    <i class="fa-regular fa-arrow-right" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="method-flow-step wow fadeInUp" data-wow-delay=".7s">
+                            <div class="work-process-box-items-style-3 items-style-8">
+                                <h3>Acompanhamento</h3>
+                                <div class="line"></div>
+                                <p>
+                                    Monitoramento da estratégia e evolução da operação.
+                                </p>
+                                <span>05</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-process-btn wow fadeInUp" data-wow-delay=".9s">
+                            <a href="https://wa.me/rodrigo.especialistafinanceiro" target="_blank" rel="noopener noreferrer" class="theme-btn">
                                 <span class="btn-arrow-left" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                                <span class="btn-title">Agendar Diagnóstico</span>
+                                <span class="btn-title">Solicitar análise estratégica</span>
                                 <span class="btn-arrow-right" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                             </a>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -526,9 +513,9 @@
                                     <h3 class="box-title">Acompanhamento do início à execução</h3>
                                     <p>O relacionamento continua depois da decisão, com orientação próxima em cada etapa da estratégia.</p>
                                 </div>
-                                <a href="#diagnostico" class="theme-btn bg-white-style wow fadeInUp" data-wow-delay=".9s">
+                                <a href="https://wa.me/rodrigo.especialistafinanceiro" target="_blank" rel="noopener noreferrer" class="theme-btn bg-white-style wow fadeInUp" data-wow-delay=".9s">
                                     <span class="btn-arrow-left" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                                    <span class="btn-title">Agendar Diagnóstico</span>
+                                    <span class="btn-title">Solicitar análise estratégica</span>
                                     <span class="btn-arrow-right" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                                 </a>
                             </div>
@@ -565,9 +552,9 @@
                         </article>
                     </div>
                     <div class="roma-mandate-action wow fadeInUp" data-wow-delay=".5s">
-                        <a href="#diagnostico" class="theme-btn bg-white-style">
+                        <a href="https://wa.me/rodrigo.especialistafinanceiro" target="_blank" rel="noopener noreferrer" class="theme-btn bg-white-style">
                             <span class="btn-arrow-left" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                            <span class="btn-title">Agendar Diagnóstico</span>
+                            <span class="btn-title">Solicitar análise estratégica</span>
                             <span class="btn-arrow-right" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                         </a>
                     </div>
@@ -587,9 +574,9 @@
                                 <p class="faq-text wow fadeInUp" data-wow-delay=".2s">
                                     Respostas objetivas sobre a consultoria, o uso estratégico do consórcio e o acompanhamento em cada etapa.
                                 </p>
-                                <a href="#diagnostico" class="theme-btn wow fadeInUp mt-4" data-wow-delay=".4s">
+                                <a href="https://wa.me/rodrigo.especialistafinanceiro" target="_blank" rel="noopener noreferrer" class="theme-btn wow fadeInUp mt-4" data-wow-delay=".4s">
                                     <span class="btn-arrow-left" aria-hidden="true"><i class="fa-solid fa-arrow-up-right"></i></span>
-                                    <span class="btn-title">Agendar Diagnóstico</span>
+                                    <span class="btn-title">Solicitar análise estratégica</span>
                                     <span class="btn-arrow-right" aria-hidden="true"><i class="fa-solid fa-arrow-up-right"></i></span>
                                 </a>
                             </div>
@@ -701,7 +688,7 @@
                                                     Estratégia patrimonial
                                                 </li>
                                             </ul>
-                                            <h3><a href="news-details.html">Consórcio como estratégia: quando faz sentido</a></h3>
+                                            <h3><a href="/consorcio-como-estrategia">Consórcio como estratégia: quando faz sentido</a></h3>
                                         </div>
                                     </div>
                                     <div class="news-hover-box-items">
@@ -721,12 +708,12 @@
                                                 Estratégia patrimonial
                                             </li>
                                         </ul>
-                                        <h3><a href="news-details.html">Consórcio como estratégia: quando faz sentido</a></h3>
+                                        <h3><a href="/consorcio-como-estrategia">Consórcio como estratégia: quando faz sentido</a></h3>
                                         <div class="line"></div>
                                         <p class="news-text">
                                             Como avaliar objetivo, prazo e capacidade financeira antes de escolher o consórcio como instrumento patrimonial.
                                         </p>
-                                        <a href="news-details.html" class="link-btn">Ler análise
+                                        <a href="/consorcio-como-estrategia" class="link-btn">Ler análise
                                             <i class="far fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -751,7 +738,7 @@
                                                     Estrutura de capital
                                                 </li>
                                             </ul>
-                                            <h3><a href="post-liquidez-aquisicao.html">Liquidez e aquisição: como equilibrar capital e prazo</a></h3>
+                                            <h3><a href="/liquidez-e-aquisicao">Liquidez e aquisição: como equilibrar capital e prazo</a></h3>
                                         </div>
                                     </div>
                                     <div class="news-hover-box-items">
@@ -771,12 +758,12 @@
                                                 Estrutura de capital
                                             </li>
                                         </ul>
-                                        <h3><a href="post-liquidez-aquisicao.html">Liquidez e aquisição: como equilibrar capital e prazo</a></h3>
+                                        <h3><a href="/liquidez-e-aquisicao">Liquidez e aquisição: como equilibrar capital e prazo</a></h3>
                                         <div class="line"></div>
                                         <p class="news-text">
                                             Critérios para preservar liquidez ao estruturar aquisições relevantes sem desorganizar o planejamento financeiro.
                                         </p>
-                                        <a href="post-liquidez-aquisicao.html" class="link-btn">Ler análise
+                                        <a href="/liquidez-e-aquisicao" class="link-btn">Ler análise
                                             <i class="far fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -801,7 +788,7 @@
                                                     Estratégia empresarial
                                                 </li>
                                             </ul>
-                                            <h3><a href="post-expansao-empresarial.html">Expansão empresarial: ativos sem pressionar o caixa</a></h3>
+                                            <h3><a href="/expansao-empresarial">Expansão empresarial: ativos sem pressionar o caixa</a></h3>
                                         </div>
                                     </div>
                                     <div class="news-hover-box-items">
@@ -821,12 +808,12 @@
                                                 Estratégia empresarial
                                             </li>
                                         </ul>
-                                        <h3><a href="post-expansao-empresarial.html">Expansão empresarial: ativos sem pressionar o caixa</a></h3>
+                                        <h3><a href="/expansao-empresarial">Expansão empresarial: ativos sem pressionar o caixa</a></h3>
                                         <div class="line"></div>
                                         <p class="news-text">
                                             Como organizar prazo, capacidade financeira e aquisição de ativos em uma estratégia empresarial consistente.
                                         </p>
-                                        <a href="post-expansao-empresarial.html" class="link-btn">Ler análise
+                                        <a href="/expansao-empresarial" class="link-btn">Ler análise
                                             <i class="far fa-arrow-right"></i>
                                         </a>
                                     </div>
@@ -859,7 +846,7 @@
                                     Cada contato é tratado de forma individual, confidencial e sem recomendações genéricas.
                                 </p>
                                 <p class="contact-email">
-                                    <a href="mailto:contato@romacapital.com.br">contato@romacapital.com.br</a>
+                                    <a href="mailto:contato@romacapsolucoes.com.br">contato@romacapsolucoes.com.br</a>
                                 </p>
                             </div>
                         </div>
@@ -912,7 +899,7 @@
                                             <div class="contact-button">
                                                 <button type="submit" class="theme-btn">
                                                     <span class="btn-arrow-left" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-                                                    <span class="btn-title">Agendar Diagnóstico</span>
+                                                    <span class="btn-title">Solicitar análise estratégica</span>
                                                     <span class="btn-arrow-right" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                                                 </button>
                                             </div>
@@ -942,7 +929,7 @@
                             <div class="roma-footer-grid">
                                 <div class="footer-widget-items roma-footer-brand wow fadeInUp" data-wow-delay=".2s">
                                     <div class="widget-head">
-                                        <a href="index.html" aria-label="Roma Capital — página inicial">
+                                        <a href="/inicio" aria-label="Roma Capital — página inicial">
                                             <img src="assets/img/logo/logoblack.svg" alt="Roma Capital" width="155" height="69" loading="lazy">
                                         </a>
                                     </div>
@@ -962,11 +949,11 @@
                                         <h2 id="footer-quick-title">Menu rápido</h2>
                                     </div>
                                     <ul class="list-area">
-                                        <li><a href="index.html"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Início</a></li>
-                                        <li><a href="about.html"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Sobre a Roma</a></li>
-                                        <li><a href="index.html#como-funciona"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Método Roma</a></li>
-                                        <li><a href="news.html"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Conteúdos</a></li>
-                                        <li><a href="contact.html"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Agendar diagnóstico</a></li>
+                                        <li><a href="/inicio"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Início</a></li>
+                                        <li><a href="/sobre"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Sobre a Roma</a></li>
+                                        <li><a href="/inicio#como-funciona"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Método Roma</a></li>
+                                        <li><a href="/conteudos"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Conteúdos</a></li>
+                                        <li><a href="/contato"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Agendar diagnóstico</a></li>
                                     </ul>
                                 </nav>
 
@@ -975,10 +962,10 @@
                                         <h2 id="footer-strategy-title">Estratégias</h2>
                                     </div>
                                     <ul class="list-area">
-                                        <li><a href="index.html#estrategias"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Aquisição de imóveis</a></li>
-                                        <li><a href="index.html#estrategias"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Veículos e ativos</a></li>
-                                        <li><a href="index.html#estrategias"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Construção e reforma</a></li>
-                                        <li><a href="index.html#estrategias"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Estratégias empresariais</a></li>
+                                        <li><a href="/inicio#estrategias"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Aquisição de imóveis</a></li>
+                                        <li><a href="/inicio#estrategias"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Veículos e ativos</a></li>
+                                        <li><a href="/inicio#estrategias"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Construção e reforma</a></li>
+                                        <li><a href="/inicio#estrategias"><i class="fa-regular fa-chevrons-right" aria-hidden="true"></i>Estratégias empresariais</a></li>
                                     </ul>
                                 </nav>
 
@@ -986,15 +973,15 @@
                                     <div class="widget-head">
                                         <h2>Contato</h2>
                                     </div>
-                                    <!-- Dados provisórios: substituir quando os canais oficiais forem informados. -->
-                                    <address class="footer-contact-list" data-contact-status="provisorio">
+                                    <!-- Canais oficiais da Roma Capital. -->
+                                    <address class="footer-contact-list" data-contact-status="oficial">
                                         <div class="footer-contact-item">
                                             <span>Telefone</span>
-                                            <a href="tel:+5500000000000">(00) 00000-0000</a>
+                                            <a href="tel:+5547988751429">+55 47 98875-1429</a>
                                         </div>
                                         <div class="footer-contact-item">
                                             <span>E-mail</span>
-                                            <a href="mailto:contato@romacapital.com.br">contato@romacapital.com.br</a>
+                                            <a href="mailto:contato@romacapsolucoes.com.br">contato@romacapsolucoes.com.br</a>
                                         </div>
                                     </address>
                                 </div>
@@ -1005,7 +992,7 @@
                     <div class="container">
                         <div class="footer-bottom-wrapper-3">
                             <p class="wow fadeInLeft" data-wow-delay=".5s">
-                                © 2026 <a href="index.html">Roma Capital</a>. Todos os direitos reservados
+                                © 2026 <a href="/inicio">Roma Capital</a>. Todos os direitos reservados
                             </p>
                             <ul class="footer-menu wow fadeInRight" data-wow-delay=".5s">
                                 <li>
@@ -1042,10 +1029,46 @@
         <script src="assets/js/wow.min.js"></script>
         <!--<< Contact Form Js >>-->
         <script src="assets/js/ajax-mail.js"></script>
+        <!--<< Swiper.js >>-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
         <!--<< Main.js >>-->
         <script src="assets/js/main.min.js"></script>
         <script>
             (() => {
+                const solutionsCarousel = document.querySelector('.solutions-carousel');
+
+                if (solutionsCarousel && typeof Swiper !== 'undefined') {
+                    new Swiper(solutionsCarousel, {
+                        slidesPerView: 1,
+                        spaceBetween: 24,
+                        speed: 800,
+                        loop: true,
+                        grabCursor: true,
+                        keyboard: {
+                            enabled: true,
+                        },
+                        autoplay: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? false : {
+                            delay: 4500,
+                            disableOnInteraction: false,
+                            pauseOnMouseEnter: true,
+                        },
+                        navigation: {
+                            prevEl: '.solutions-carousel-prev',
+                            nextEl: '.solutions-carousel-next',
+                        },
+                        pagination: {
+                            el: '.solutions-carousel-pagination',
+                            clickable: true,
+                        },
+                        breakpoints: {
+                            576: { slidesPerView: 1.35 },
+                            768: { slidesPerView: 2 },
+                            992: { slidesPerView: 3 },
+                            1400: { slidesPerView: 4 },
+                        },
+                    });
+                }
+
                 const heroVideo = document.querySelector('.hero-video');
                 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
                 const desktopViewport = window.matchMedia('(min-width: 768px)');

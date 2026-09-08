@@ -28,7 +28,7 @@ if ($name === '' || !filter_var($email, FILTER_VALIDATE_EMAIL) || $phone === '' 
     exit;
 }
 
-$recipient = 'contato@romacapital.com.br';
+$recipient = 'contato@romacapsolucoes.com.br';
 $subject = 'Novo diagnóstico solicitado pelo site';
 $emailBody = implode("\n", [
     'Nova solicitação de diagnóstico',
@@ -44,7 +44,7 @@ $emailBody = implode("\n", [
 ]);
 
 $headers = implode("\r\n", [
-    'From: Roma Capital <noreply@romacapital.com.br>',
+    'From: Roma Capital <noreply@romacapsolucoes.com.br>',
     "Reply-To: {$name} <{$email}>",
     'MIME-Version: 1.0',
     'Content-Type: text/plain; charset=UTF-8',
@@ -57,4 +57,4 @@ if (mail($recipient, $subject, $emailBody, $headers)) {
 }
 
 http_response_code(500);
-echo 'Não foi possível enviar sua solicitação. Tente novamente ou escreva para contato@romacapital.com.br.';
+echo 'Não foi possível enviar sua solicitação. Tente novamente ou escreva para contato@romacapsolucoes.com.br.';
