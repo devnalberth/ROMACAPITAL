@@ -27,17 +27,17 @@ const decimalFormatter = new Intl.NumberFormat("pt-BR", {
 
 const adminLogos = {
     Embracon: {
-        src: "assets/img/parceiras/embracon.svg",
+        src: "/assets/img/parceiras/embracon.svg",
         alt: "Logo Embracon Consórcio Nacional",
         aliases: ["embracon", "embraconconsorcio", "embraconconsorcios"]
     },
     Bradesco: {
-        src: "assets/img/parceiras/bradesco.svg",
+        src: "/assets/img/parceiras/bradesco.svg",
         alt: "Logo Bradesco Consórcios",
         aliases: ["bradesco", "bradescoconsorcio", "bradescoconsorcios"]
     },
     Volkswagen: {
-        src: "assets/img/parceiras/volkswagen.svg",
+        src: "/assets/img/parceiras/volkswagen.svg",
         alt: "Logo Consórcio Nacional Volkswagen",
         aliases: ["volkswagen", "volkswagem", "volks", "vw", "consorciovw", "vwconsorcio", "consorcionacionalvolkswagen"]
     }
