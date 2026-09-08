@@ -4358,94 +4358,35 @@ span {
   background-color: var(--header);
 }
 
-.roma-architecture-section.fix {
+.roma-dark-sequence-start.fix {
   background-color: var(--header);
-  border-top: 1px solid rgba(178, 132, 44, 0.42);
   isolation: isolate;
   overflow: visible;
   position: relative;
   z-index: 2;
 }
-.roma-architecture-section::before,
-.roma-mandate-section::after {
-  align-items: center;
-  background-color: var(--header);
-  border: 1px solid rgba(178, 132, 44, 0.72);
-  border-radius: 50%;
-  color: var(--accent);
-  content: "↓";
-  display: flex;
-  font-size: 17px;
-  height: 42px;
-  justify-content: center;
-  left: 50%;
-  line-height: 1;
-  pointer-events: none;
-  position: absolute;
-  width: 42px;
+.roma-dark-sequence-end.fix {
+  isolation: isolate;
+  overflow: visible;
+  position: relative;
   z-index: 2;
 }
-.roma-architecture-section::before {
-  animation: roma-divider-top 2.4s cubic-bezier(0.32, 0.72, 0, 1) infinite;
-  top: 0;
-}
-.roma-mandate-section::after {
-  animation: roma-divider-bottom 2.4s cubic-bezier(0.32, 0.72, 0, 1) infinite;
-  bottom: 0;
-}
-.roma-architecture-section > .container {
+.roma-dark-sequence-start > .container {
   position: relative;
   z-index: 1;
 }
-.roma-architecture-section .section-title h2,
-.roma-architecture-section .section-title .sub-title,
-.roma-architecture-section .section-title-area > p {
+.roma-dark-sequence-start .section-title h2,
+.roma-dark-sequence-start .section-title .sub-title,
+.roma-dark-sequence-start .section-title-area > p {
   color: var(--white);
 }
-.roma-architecture-section .section-title h2 {
+.roma-dark-sequence-start .section-title h2 {
   text-wrap: balance;
 }
-.roma-architecture-section .section-title-area > p {
+.roma-dark-sequence-start .section-title-area > p {
   line-height: 1.7;
   max-width: 570px;
 }
-@media (max-width: 767px) {
-  .roma-architecture-section::before,
-  .roma-mandate-section::after {
-    font-size: 15px;
-    height: 36px;
-    width: 36px;
-  }
-}
-@keyframes roma-divider-top {
-  0%, 100% {
-    transform: translate(-50%, -50%) translateY(-2px);
-  }
-  50% {
-    transform: translate(-50%, -50%) translateY(3px);
-  }
-}
-@keyframes roma-divider-bottom {
-  0%, 100% {
-    transform: translate(-50%, 50%) translateY(-2px);
-  }
-  50% {
-    transform: translate(-50%, 50%) translateY(3px);
-  }
-}
-@media (prefers-reduced-motion: reduce) {
-  .roma-architecture-section::before,
-  .roma-mandate-section::after {
-    animation: none;
-  }
-  .roma-architecture-section::before {
-    transform: translate(-50%, -50%);
-  }
-  .roma-mandate-section::after {
-    transform: translate(-50%, 50%);
-  }
-}
-
 @media (max-width: 991px) {
   .build-industries-thumb-style-2 {
     height: 500px;
@@ -17130,145 +17071,6 @@ span {
   }
 }
 
-.roma-mandate-section.fix {
-  border-bottom: 1px solid rgba(178, 132, 44, 0.42);
-  isolation: isolate;
-  overflow: visible;
-  z-index: 9;
-}
-.roma-mandate-section::before {
-  background: transparent;
-  pointer-events: none;
-}
-.roma-mandate-section > .container {
-  position: relative;
-  z-index: 1;
-}
-.roma-mandate-section .roma-mandate-header {
-  align-items: end;
-  display: grid;
-  gap: clamp(40px, 8vw, 120px);
-  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.65fr);
-  margin-bottom: 56px;
-}
-@media (max-width: 991px) {
-  .roma-mandate-section .roma-mandate-header {
-    gap: 24px;
-    grid-template-columns: 1fr;
-    margin-bottom: 36px;
-  }
-}
-.roma-mandate-section .section-title h2 {
-  color: var(--white);
-  font-size: 42px;
-  line-height: 1.16;
-  max-width: 700px;
-}
-.roma-mandate-section .section-title .sub-title {
-  color: var(--white);
-}
-@media (max-width: 1199px) {
-  .roma-mandate-section .section-title h2 {
-    font-size: 36px;
-  }
-}
-@media (max-width: 767px) {
-  .roma-mandate-section .section-title h2 {
-    font-size: 30px;
-  }
-}
-.roma-mandate-section .roma-mandate-intro {
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 18px;
-  line-height: 1.65;
-  margin-left: auto;
-  max-width: 500px;
-}
-@media (max-width: 991px) {
-  .roma-mandate-section .roma-mandate-intro {
-    margin-left: 0;
-  }
-}
-.roma-mandate-section .roma-mandate-grid {
-  background-color: rgba(255, 255, 255, 0.035);
-  border: 1px solid rgba(178, 132, 44, 0.26);
-  border-radius: 16px;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  overflow: hidden;
-}
-@media (max-width: 991px) {
-  .roma-mandate-section .roma-mandate-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.roma-mandate-section .roma-mandate-item {
-  display: flex;
-  flex-direction: column;
-  min-height: 350px;
-  padding: clamp(32px, 3vw, 50px);
-  transition-duration: 500ms;
-  transition-property: background-color;
-  transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
-}
-.roma-mandate-section .roma-mandate-item + .roma-mandate-item {
-  border-left: 1px solid rgba(255, 255, 255, 0.12);
-}
-.roma-mandate-section .roma-mandate-item:hover {
-  background-color: rgba(255, 255, 255, 0.045);
-}
-@media (max-width: 991px) {
-  .roma-mandate-section .roma-mandate-item {
-    min-height: 0;
-  }
-  .roma-mandate-section .roma-mandate-item + .roma-mandate-item {
-    border-left: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-  }
-}
-.roma-mandate-section .roma-mandate-item h3 {
-  color: var(--white);
-  font-size: 26px;
-  line-height: 1.28;
-  margin-bottom: 20px;
-  max-width: 270px;
-}
-.roma-mandate-section .roma-mandate-item > p {
-  color: rgba(255, 255, 255, 0.68);
-  font-size: 16px;
-  line-height: 1.65;
-  margin-bottom: 0;
-  max-width: 320px;
-}
-.roma-mandate-section .roma-mandate-meta {
-  align-items: center;
-  color: rgba(255, 255, 255, 0.58);
-  display: flex;
-  font-size: 11px;
-  font-weight: 600;
-  justify-content: space-between;
-  letter-spacing: 0.14em;
-  margin-bottom: auto;
-  padding-bottom: 56px;
-  text-transform: uppercase;
-}
-.roma-mandate-section .roma-mandate-meta span:first-child {
-  color: #B2842C;
-  font-size: 13px;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0;
-}
-.roma-mandate-section .roma-mandate-action {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
-@media (max-width: 767px) {
-  .roma-mandate-section .roma-mandate-action {
-    margin-top: 32px;
-  }
-}
-
 .positioning-section {
   background-color: var(--bg);
   border-bottom: 1px solid rgba(0, 23, 31, 0.1);
@@ -17443,5 +17245,621 @@ img[src$="testi-shape-1.png"] {
 @media (max-width: 575px) {
   .header-1 .logo img[src$="logowhite.svg"] {
     width: 145px;
+  }
+}
+
+/* --------------------------------------------
+    Roma Capital: Projeto Estruturado
+    Linha do tempo — uma única operação, seis etapas.
+ ---------------------------------------------- */
+.roma-blueprint-section {
+  background-color: var(--bg);
+  color: var(--header);
+}
+.roma-blueprint-section .container {
+  max-width: 1265px;
+}
+.roma-blueprint-header {
+  margin: 0 auto clamp(52px, 5.5vw, 84px);
+  max-width: 820px;
+  text-align: center;
+}
+.roma-blueprint-section .section-title {
+  margin-bottom: 0;
+}
+.roma-blueprint-section .section-title .sub-title {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.14em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.roma-blueprint-section .section-title .sub-title img[src$="logoicon.svg"] {
+  flex: 0 0 16px;
+  height: 16px;
+  width: 16px;
+}
+.roma-blueprint-section .section-title h2 {
+  color: var(--header);
+  font-size: 44px;
+  line-height: 1.16;
+  margin-bottom: 0;
+  text-wrap: balance;
+}
+.roma-blueprint-intro {
+  color: rgba(0, 23, 31, 0.66);
+  font-size: 17px;
+  line-height: 1.7;
+  margin: 24px auto 0;
+  max-width: 620px;
+}
+
+/* A linha do tempo */
+.roma-blueprint-rail {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  list-style: none;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0;
+  position: relative;
+}
+.roma-blueprint-rail::before,
+.roma-blueprint-rail::after {
+  content: "";
+  height: 1px;
+  left: 8.3333%;
+  pointer-events: none;
+  position: absolute;
+  right: 8.3333%;
+  top: 41px;
+}
+.roma-blueprint-rail::before {
+  background-color: rgba(0, 23, 31, 0.16);
+}
+.roma-blueprint-rail::after {
+  background-color: var(--accent);
+  transform-origin: left center;
+}
+.roma-blueprint-step {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.roma-blueprint-node {
+  align-items: center;
+  background-color: var(--bg);
+  border: 1px solid rgba(0, 23, 31, 0.18);
+  border-radius: 50%;
+  display: flex;
+  flex: 0 0 84px;
+  height: 84px;
+  justify-content: center;
+  transition: border-color 500ms cubic-bezier(0.32, 0.72, 0, 1), transform 400ms cubic-bezier(0.32, 0.72, 0, 1);
+  width: 84px;
+}
+.roma-blueprint-step:hover .roma-blueprint-node,
+.roma-blueprint-step:focus-within .roma-blueprint-node {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+.roma-blueprint-step:hover .roma-blueprint-icon,
+.roma-blueprint-step:focus-within .roma-blueprint-icon {
+  background-color: var(--bg);
+}
+.roma-blueprint-icon {
+  background-color: var(--accent);
+  display: block;
+  height: 34px;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  width: 34px;
+}
+.roma-blueprint-icon--objetivo {
+  -webkit-mask-image: url("../img/icons/bullseye-arrow.svg");
+  mask-image: url("../img/icons/bullseye-arrow.svg");
+}
+.roma-blueprint-icon--diagnostico {
+  -webkit-mask-image: url("../img/icons/document-signed.svg");
+  mask-image: url("../img/icons/document-signed.svg");
+}
+.roma-blueprint-icon--estruturacao {
+  -webkit-mask-image: url("../img/icons/bank.svg");
+  mask-image: url("../img/icons/bank.svg");
+}
+.roma-blueprint-icon--grupos {
+  -webkit-mask-image: url("../img/icons/group.svg");
+  mask-image: url("../img/icons/group.svg");
+}
+.roma-blueprint-icon--contemplacao {
+  -webkit-mask-image: url("../img/icons/contemplacao.svg");
+  mask-image: url("../img/icons/contemplacao.svg");
+}
+.roma-blueprint-icon--aquisicao {
+  -webkit-mask-image: url("../img/icons/aquisicao.svg");
+  mask-image: url("../img/icons/aquisicao.svg");
+}
+.roma-blueprint-label {
+  color: var(--header);
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 22px;
+  max-width: 140px;
+}
+
+/* Revelação: a linha percorre o trilho e acende cada etapa. */
+.roma-blueprint-rail.is-armed::after {
+  transform: scaleX(var(--roma-progress, 0));
+}
+.roma-blueprint-rail.is-armed .roma-blueprint-step {
+  opacity: 0.32;
+  transition: opacity 450ms cubic-bezier(0.32, 0.72, 0, 1);
+}
+.roma-blueprint-rail.is-armed .roma-blueprint-step.is-active {
+  opacity: 1;
+}
+
+.roma-blueprint-action {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(52px, 5vw, 76px);
+}
+.roma-blueprint-section .theme-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1399px) {
+  .roma-blueprint-label {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1199px) {
+  .roma-blueprint-section .section-title h2 {
+    font-size: 36px;
+  }
+  .roma-blueprint-rail {
+    grid-template-columns: minmax(0, 1fr);
+    margin: 0 auto;
+    max-width: 100%;
+    width: -webkit-fit-content;
+    width: fit-content;
+  }
+  .roma-blueprint-rail::before,
+  .roma-blueprint-rail::after {
+    bottom: 32px;
+    height: auto;
+    left: 32px;
+    right: auto;
+    top: 32px;
+    width: 1px;
+  }
+  .roma-blueprint-rail::after {
+    transform-origin: center top;
+  }
+  .roma-blueprint-rail.is-armed::after {
+    transform: scaleY(var(--roma-progress, 0));
+  }
+  .roma-blueprint-step {
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    padding: 14px 0;
+    text-align: left;
+  }
+  .roma-blueprint-node {
+    flex: 0 0 64px;
+    height: 64px;
+    width: 64px;
+  }
+  .roma-blueprint-icon {
+    height: 26px;
+    width: 26px;
+  }
+  .roma-blueprint-label {
+    font-size: 17px;
+    margin-top: 0;
+    max-width: none;
+  }
+}
+@media (max-width: 767px) {
+  .roma-blueprint-section .section-title h2 {
+    font-size: 30px;
+  }
+  .roma-blueprint-intro {
+    font-size: 16px;
+  }
+  .roma-blueprint-section .section-title .sub-title {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+  .roma-blueprint-rail::before,
+  .roma-blueprint-rail::after {
+    bottom: 27px;
+    left: 27px;
+    top: 27px;
+  }
+  .roma-blueprint-step {
+    gap: 18px;
+    padding: 11px 0;
+  }
+  .roma-blueprint-node {
+    flex: 0 0 54px;
+    height: 54px;
+    width: 54px;
+  }
+  .roma-blueprint-icon {
+    height: 22px;
+    width: 22px;
+  }
+  .roma-blueprint-label {
+    font-size: 16px;
+  }
+  .roma-blueprint-action .theme-btn {
+    justify-content: center;
+    padding-left: 28px;
+    padding-right: 58px;
+    width: 100%;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .roma-blueprint-rail.is-armed::after,
+  .roma-blueprint-rail.is-armed .roma-blueprint-step {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .roma-blueprint-node,
+  .roma-blueprint-step:hover .roma-blueprint-node {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* --------------------------------------------
+    Roma Capital: Administradoras Parceiras
+    Faixa contínua — o acesso não é a uma marca, é ao mercado.
+ ---------------------------------------------- */
+.roma-partners-section {
+  background-color: var(--bg);
+  color: var(--header);
+  padding: clamp(64px, 6vw, 92px) 0;
+}
+.roma-partners-section .container {
+  max-width: 1265px;
+}
+.roma-partners-header {
+  margin: 0 auto;
+  max-width: 880px;
+  text-align: center;
+}
+.roma-partners-section .section-title {
+  margin-bottom: 0;
+}
+.roma-partners-section .section-title .sub-title {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.14em;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.roma-partners-section .section-title .sub-title img[src$="logoicon.svg"] {
+  flex: 0 0 16px;
+  height: 16px;
+  width: 16px;
+}
+.roma-partners-section .section-title h2 {
+  color: var(--header);
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+/* A faixa: sangra de ponta a ponta e dissolve nas bordas. */
+.roma-partners-lane {
+  border-block: 1px solid rgba(0, 23, 31, 0.1);
+  margin: clamp(40px, 4vw, 56px) 0;
+  padding: clamp(26px, 2.6vw, 36px) 0;
+}
+.roma-partners-viewport {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  overflow: hidden;
+}
+.roma-partners-track {
+  animation: roma-partners-drift 46s linear infinite;
+  display: flex;
+  width: -webkit-max-content;
+  width: max-content;
+}
+.roma-partners-viewport:hover .roma-partners-track,
+.roma-partners-track:focus-within {
+  animation-play-state: paused;
+}
+.roma-partners-set {
+  align-items: center;
+  display: flex;
+  gap: clamp(48px, 5vw, 80px);
+  list-style: none;
+  margin: 0;
+  padding: 0 clamp(24px, 2.5vw, 40px);
+}
+.roma-partners-item {
+  flex: 0 0 auto;
+  line-height: 0;
+}
+.roma-partners-item img {
+  height: 60px;
+  width: auto;
+}
+@keyframes roma-partners-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.roma-partners-note {
+  color: rgba(0, 23, 31, 0.62);
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 620px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .roma-partners-section .section-title h2 {
+    font-size: 30px;
+  }
+  .roma-partners-item img {
+    height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .roma-partners-section .section-title h2 {
+    font-size: 26px;
+  }
+  .roma-partners-section .section-title .sub-title {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+  .roma-partners-viewport {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  }
+  .roma-partners-item img {
+    height: 42px;
+  }
+  .roma-partners-note {
+    font-size: 15px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .roma-partners-track {
+    animation: none;
+    justify-content: center;
+    width: 100%;
+  }
+  .roma-partners-set:not(:first-child) {
+    display: none;
+  }
+  .roma-partners-set {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------
+    Roma Capital: Por que a Roma — critérios em lista
+ ---------------------------------------------- */
+.roma-criteria-section .section-title h2 {
+  max-width: 720px;
+}
+.roma-why-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.roma-why-item {
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  padding: 16px 0;
+}
+.roma-why-item + .roma-why-item {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.roma-why-item:first-child {
+  padding-top: 0;
+}
+.roma-why-item:last-child {
+  padding-bottom: 0;
+}
+.roma-why-icon {
+  background-color: var(--accent);
+  display: block;
+  flex: 0 0 30px;
+  height: 30px;
+  margin-top: 3px;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  width: 30px;
+}
+.roma-why-icon--curadoria {
+  -webkit-mask-image: url("../img/porque%20a%20roma/curadoria.svg");
+  mask-image: url("../img/porque%20a%20roma/curadoria.svg");
+}
+.roma-why-icon--grupos {
+  -webkit-mask-image: url("../img/porque%20a%20roma/group.svg");
+  mask-image: url("../img/porque%20a%20roma/group.svg");
+}
+.roma-why-icon--estrutura {
+  -webkit-mask-image: url("../img/porque%20a%20roma/structure.svg");
+  mask-image: url("../img/porque%20a%20roma/structure.svg");
+}
+.roma-why-icon--financeira {
+  -webkit-mask-image: url("../img/porque%20a%20roma/finance.svg");
+  mask-image: url("../img/porque%20a%20roma/finance.svg");
+}
+.roma-why-icon--conducao {
+  -webkit-mask-image: url("../img/porque%20a%20roma/consulting.svg");
+  mask-image: url("../img/porque%20a%20roma/consulting.svg");
+}
+.roma-why-text {
+  min-width: 0;
+}
+.roma-criteria-section .roma-why-text h3 {
+  color: var(--white);
+  font-size: 19px;
+  line-height: 1.3;
+  margin-bottom: 8px;
+}
+.roma-criteria-section .roma-why-text p {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 15px;
+  line-height: 1.65;
+  margin-bottom: 0;
+  margin-top: 0;
+  max-width: none;
+}
+
+@media (max-width: 1199px) {
+  .roma-criteria-section .section-title h2 {
+    max-width: 560px;
+  }
+}
+@media (max-width: 991px) {
+  .roma-why-list {
+    margin-top: 8px;
+  }
+  .roma-criteria-section .roma-why-text h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575px) {
+  .roma-why-item {
+    gap: 16px;
+    padding: 18px 0;
+  }
+  .roma-why-icon {
+    flex: 0 0 26px;
+    height: 26px;
+    width: 26px;
+  }
+}
+
+@media (min-width: 992px) {
+  .roma-criteria-section .choose-us-right-content-style-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 0;
+  }
+  .roma-criteria-section .choose-us-right-content-style-3 .theme-btn {
+    align-self: flex-start;
+    margin-top: auto;
+  }
+}
+
+/* --------------------------------------------
+    Roma Capital: Sobre a Roma sobre o fundo escuro
+    (abre a sequência escura no lugar da antiga Arquitetura patrimonial)
+ ---------------------------------------------- */
+.roma-about-dark .about-text {
+  color: rgba(255, 255, 255, 0.72);
+}
+.roma-about-dark .list-items li {
+  color: var(--white);
+}
+.roma-about-dark .about-left-image-style-3 img {
+  box-shadow: 0 20px 54px rgba(0, 0, 0, 0.18);
+}
+
+/* --------------------------------------------
+    Roma Capital: setas de transição da sequência escura
+    (sem a linha divisória — apenas o marcador circular)
+ ---------------------------------------------- */
+.roma-dark-sequence-start::before,
+.roma-dark-sequence-end::after {
+  align-items: center;
+  background-color: var(--header);
+  border: 1px solid rgba(178, 132, 44, 0.72);
+  border-radius: 50%;
+  color: var(--accent);
+  content: "↓";
+  display: flex;
+  font-size: 17px;
+  height: 42px;
+  justify-content: center;
+  left: 50%;
+  line-height: 1;
+  pointer-events: none;
+  position: absolute;
+  width: 42px;
+  z-index: 2;
+}
+.roma-dark-sequence-start::before {
+  animation: roma-divider-top 2.4s cubic-bezier(0.32, 0.72, 0, 1) infinite;
+  top: 0;
+}
+.roma-dark-sequence-end::after {
+  animation: roma-divider-bottom 2.4s cubic-bezier(0.32, 0.72, 0, 1) infinite;
+  bottom: 0;
+}
+@keyframes roma-divider-top {
+  0%, 100% {
+    transform: translate(-50%, -50%) translateY(-2px);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(3px);
+  }
+}
+@keyframes roma-divider-bottom {
+  0%, 100% {
+    transform: translate(-50%, 50%) translateY(-2px);
+  }
+  50% {
+    transform: translate(-50%, 50%) translateY(3px);
+  }
+}
+@media (max-width: 767px) {
+  .roma-dark-sequence-start::before,
+  .roma-dark-sequence-end::after {
+    font-size: 15px;
+    height: 36px;
+    width: 36px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .roma-dark-sequence-start::before,
+  .roma-dark-sequence-end::after {
+    animation: none;
+  }
+  .roma-dark-sequence-start::before {
+    transform: translate(-50%, -50%);
+  }
+  .roma-dark-sequence-end::after {
+    transform: translate(-50%, 50%);
   }
 }
