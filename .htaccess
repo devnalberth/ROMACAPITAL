@@ -8,11 +8,15 @@ RewriteEngine On
     Require all denied
 </FilesMatch>
 RedirectMatch 404 ^/includes/
+# Só o arquivo da Vercel, que no Apache seria texto inútil. NÃO bloquear ^/api/
+# inteiro: /api/cartas é a rota real do catálogo.
 RedirectMatch 404 ^/api/cartas\.js$
 
-# Proxy do catálogo de cartas: /api/cartas -> api/cartas.php (QSA preserva ?tipo= e ?status=).
-# Na Vercel o mesmo caminho é atendido por api/cartas.js automaticamente.
-RewriteRule ^api/cartas/?$ api/cartas.php [L,QSA]
+# Proxy do catálogo de cartas: /api/cartas -> proxy/cartas.php (QSA preserva ?tipo= e ?status=).
+# O PHP fica FORA de /api/ porque a Vercel reserva essa pasta para Serverless Functions
+# e recusa dois arquivos com o mesmo nome-base (cartas.js + cartas.php).
+# Na Vercel o mesmo caminho /api/cartas é atendido por api/cartas.js automaticamente.
+RewriteRule ^api/cartas/?$ proxy/cartas.php [L,QSA]
 
 # O blog foi descontinuado: as URLs antigas passam a apontar para a home.
 RewriteRule ^(conteudos|consorcio-como-estrategia|liquidez-e-aquisicao|expansao-empresarial)/?$ /inicio [R=301,L]

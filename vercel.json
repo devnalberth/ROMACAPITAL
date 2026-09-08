@@ -1,5 +1,158 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/sobre",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/contempladas.html",
+      "destination": "/contempladas",
+      "permanent": true
+    },
+    {
+      "source": "/service-details.html",
+      "destination": "/estrategias-patrimoniais",
+      "permanent": true
+    },
+    {
+      "source": "/team-details.html",
+      "destination": "/equipe",
+      "permanent": true
+    },
+    {
+      "source": "/inicio/",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/sobre/",
+      "destination": "/sobre",
+      "permanent": true
+    },
+    {
+      "source": "/contato/",
+      "destination": "/contato",
+      "permanent": true
+    },
+    {
+      "source": "/contempladas/",
+      "destination": "/contempladas",
+      "permanent": true
+    },
+    {
+      "source": "/estrategias-patrimoniais/",
+      "destination": "/estrategias-patrimoniais",
+      "permanent": true
+    },
+    {
+      "source": "/equipe/",
+      "destination": "/equipe",
+      "permanent": true
+    },
+    {
+      "source": "/conteudos",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/conteudos/",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/consorcio-como-estrategia",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/consorcio-como-estrategia/",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/liquidez-e-aquisicao",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/liquidez-e-aquisicao/",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/expansao-empresarial",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/expansao-empresarial/",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/news.html",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/news-details.html",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/post-liquidez-aquisicao.html",
+      "destination": "/inicio",
+      "permanent": true
+    },
+    {
+      "source": "/post-expansao-empresarial.html",
+      "destination": "/inicio",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/inicio",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/sobre",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/contato",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/contempladas",
+      "destination": "/contempladas.html"
+    },
+    {
+      "source": "/estrategias-patrimoniais",
+      "destination": "/service-details.html"
+    },
+    {
+      "source": "/equipe",
+      "destination": "/team-details.html"
+    }
+  ],
   "headers": [
     {
       "source": "/assets/img/(.*)",

@@ -1,0 +1,10 @@
+# O proxy PHP e seus includes só valem em hospedagem Apache (Hostinger).
+# Na Vercel quem atende /api/cartas é api/cartas.js.
+proxy/
+includes/
+config.php
+config.example.php
+contact.php
+docs-cartas-contempladas.md
+CONTEXTO_PROJETO.md
+.htaccess

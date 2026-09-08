@@ -34,7 +34,7 @@ O sistema Invest Master já está no ar em `https://sistema.investmaisparcerias.
    ```
 
 3. Envie os arquivos para o `public_html`, **incluindo** `config.php`,
-   `.htaccess`, `api/cartas.php` e `includes/api-config.php`.
+   `.htaccess`, `proxy/cartas.php` e `includes/api-config.php`.
    O `config.php` está no `.gitignore` de propósito — ele não sobe por Git,
    você o coloca direto no servidor (Gerenciador de Arquivos ou FTP).
 4. Confirme que o domínio da Roma está **liberado no CORS/allowlist** do sistema,
@@ -55,9 +55,20 @@ Defina em **Project → Settings → Environment Variables** e refaça o deploy:
 | `INVESTMASTER_API_KEY` | chave da Roma |
 | `INVESTMASTER_API_BASE_URL` | `https://sistema.investmaisparcerias.com.br` |
 
-> Atenção: o `vercel.json` atual **não tem `rewrites`**, então as URLs amigáveis
-> do `.htaccess` (`/contempladas`, `/inicio`, `/sobre`…) não funcionam na Vercel.
-> Em hospedagem Apache, tudo já está resolvido pelo `.htaccess`.
+As URLs amigáveis (`/inicio`, `/sobre`, `/contempladas`…) estão duplicadas nos
+dois lugares de propósito: `rewrites`/`redirects` no `vercel.json` para a Vercel,
+e `RewriteRule` no `.htaccess` para o Apache. **Ao criar ou renomear uma página,
+atualize os dois.**
+
+### Por que o PHP não fica em `/api/`
+
+A Vercel reserva `/api/` para Serverless Functions e recusa dois arquivos com o
+mesmo nome-base — `api/cartas.js` + `api/cartas.php` quebrava o build com
+*"Two or more files have conflicting paths or names"*. Por isso o proxy PHP mora
+em `proxy/cartas.php`, e o `.htaccess` aponta `/api/cartas` para lá. O front-end
+chama `/api/cartas` nos dois ambientes, sem saber quem responde.
+
+O `.vercelignore` mantém `proxy/`, `includes/` e os `.php` fora do deploy da Vercel.
 
 ## Arquivos da funcionalidade
 
@@ -66,7 +77,8 @@ Defina em **Project → Settings → Environment Variables** e refaça o deploy:
 | `contempladas.html` | página (shell da Roma + catálogo + modais) |
 | `assets/css/pages/contempladas.css` | estilos do catálogo nos tokens da Roma |
 | `assets/js/pages/contempladas.js` | busca, filtros, ordenação, seleção, exportação |
-| `api/cartas.js` / `api/cartas.php` | proxy que protege a chave da API |
+| `api/cartas.js` | proxy da Vercel (Serverless Function) |
+| `proxy/cartas.php` | proxy do Apache/Hostinger |
 | `includes/api-config.php` | resolução de credenciais do proxy PHP |
 
 ## Comportamento
