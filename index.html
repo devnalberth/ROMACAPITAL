@@ -214,7 +214,7 @@
                     <div class="positioning-header">
                         <div class="section-title">
                             <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle"><img src="/assets/img/logo/logoicon.svg" alt="" width="20" height="20">Consórcio estratégico</span>
-                            <h2 id="posicionamento-title" class="split-title">Consórcio não é apenas uma forma de comprar.<br>É uma ferramenta de planejamento patrimonial.</h2>
+                            <h2 id="posicionamento-title" class="split-title">Consórcio não é apenas uma forma de comprar.<br> É uma ferramenta de planejamento patrimonial.</h2>
                         </div>
                         <p class="positioning-intro wow fadeInUp" data-wow-delay=".2s">Quando estruturado de acordo com objetivos, horizonte financeiro e capacidade de capital, o consórcio pode ser utilizado para aquisição programada de imóveis, expansão empresarial, renovação de frota, aquisição de máquinas e formação patrimonial.</p>
                     </div>
@@ -447,7 +447,7 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div class="about-left-image-style-3 fix">
-                                <img data-speed=".8" src="/assets/img/sobre/sobre.webp" alt="Consultoria estratégica para decisões patrimoniais" width="1200" height="801" loading="lazy" decoding="async">
+                                <img data-speed=".8" src="/assets/img/sobre/sobre-04.webp" alt="Equipe de especialistas da Roma Capital" width="1600" height="1056" loading="lazy" decoding="async">
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-6">
@@ -505,15 +505,15 @@
                     <div class="section-title-area justify-content-center justify-content-lg-between text-center text-lg-start">
                         <div class="section-title">
                             <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center justify-content-lg-start"><img src="/assets/img/logo/logoicon.svg" alt="" width="20" height="20">Por que a Roma Capital?</span>
-                            <h2 id="criterios-atuacao" class="split-title">Antes de apresentar uma proposta, entendemos o patrimônio.</h2>
+                            <h2 id="criterios-atuacao" class="split-title">Antes de apresentar uma proposta, entendemos o perfil e necessidade de cada cliente.</h2>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xl-7 col-lg-7 wow fadeInUp" data-wow-delay=".3s">
                             <div class="choose-us-left-thumb-style-8">
-                                <img src="/assets/img/criterios/criteriosone.webp" class="wow img-custom-anim-left" alt="Análise de cenários financeiros" width="481" height="512" loading="lazy" decoding="async">
+                                <img src="/assets/img/criterios/criterios-01.webp" class="wow img-custom-anim-left" alt="Consultora da Roma Capital em ambiente de trabalho" width="481" height="512" loading="lazy" decoding="async">
                                 <div class="thumb-2">
-                                    <img src="/assets/img/criterios/criteriostwo.webp" class="wow img-custom-anim-right" alt="Planejamento conduzido em reunião consultiva" width="410" height="329" loading="lazy" decoding="async">
+                                    <img src="/assets/img/criterios/criterios-02.webp" class="wow img-custom-anim-right" alt="Análise de cenários conduzida junto ao cliente" width="410" height="329" loading="lazy" decoding="async">
                                 </div>
                             </div>
                         </div> 
@@ -977,6 +977,8 @@
         <script src="/assets/js/swiper-bundle.min.js"></script>
         <!--<< Main.js >>-->
         <script src="/assets/js/main.min.js"></script>
+        <!--<< Vídeo da hero >>-->
+        <script src="/assets/js/hero-video.js" defer></script>
         <script>
             (() => {
                 const solutionsCarousel = document.querySelector('.solutions-carousel');
@@ -1012,57 +1014,6 @@
                         },
                     });
                 }
-
-                const heroVideo = document.querySelector('.hero-video');
-                const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-                const desktopViewport = window.matchMedia('(min-width: 768px)');
-                const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
-                let heroIsVisible = true;
-
-                if (!heroVideo) return;
-
-                const heroSource = heroVideo.querySelector('source[data-src]');
-                const shouldLoadVideo = desktopViewport.matches && !reducedMotion.matches && !connection?.saveData;
-
-                if (heroSource && shouldLoadVideo) {
-                    heroSource.src = heroSource.dataset.src;
-                    heroVideo.load();
-                }
-
-                const syncHeroMotion = () => {
-                    if (!shouldLoadVideo || reducedMotion.matches || !heroIsVisible) {
-                        heroVideo.pause();
-                        return;
-                    }
-
-                    heroVideo.play().catch(() => {});
-                };
-
-                const resetHeroFrame = () => {
-                    if (!reducedMotion.matches) return;
-
-                    if (heroVideo.readyState >= 1) {
-                        heroVideo.currentTime = 0;
-                        return;
-                    }
-
-                    heroVideo.addEventListener('loadedmetadata', () => {
-                        heroVideo.currentTime = 0;
-                    }, { once: true });
-                };
-
-                const heroObserver = new IntersectionObserver(([entry]) => {
-                    heroIsVisible = entry.isIntersecting;
-                    syncHeroMotion();
-                }, { threshold: 0.05 });
-
-                syncHeroMotion();
-                resetHeroFrame();
-                heroObserver.observe(heroVideo);
-                reducedMotion.addEventListener?.('change', () => {
-                    syncHeroMotion();
-                    resetHeroFrame();
-                });
             })();
 
             (() => {

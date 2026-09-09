@@ -63,7 +63,7 @@
                                             <li><a href="/inicio#solucoes">Soluções</a></li>
                                             <li><a href="/contempladas" aria-current="page">Cartas Contempladas</a></li>
                                             <li><a href="/inicio#para-empresas">Para Empresas</a></li>
-                                            <li><a href="/sobre" aria-current="page">A Roma</a></li>
+                                            <li><a href="/sobre">A Roma</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -97,14 +97,17 @@
 
                 <!-- Internal Hero Section Start -->
                 <section class="hero-section-8 inner-page-hero">
-                    <div class="hero-8 fix bg-cover" style="background-image: url('/assets/img/hero/abouthero.webp');">
+                    <div class="hero-8 fix bg-cover">
+                        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/assets/img/hero/videohero-poster.webp" aria-hidden="true" tabindex="-1">
+                            <source data-src="/assets/img/hero/videohero.m4v" type="video/mp4">
+                        </video>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="hero-content-style-8">
                                     <div class="content">
-                                        <h1 class="hero-title wow fadeInUp" data-wow-delay=".2s">Crédito disponível,<br>sem esperar sorteio.</h1>
+                                        <h1 class="hero-title hero-title--compact wow fadeInUp" data-wow-delay=".2s">Crédito disponível para transformar seus planos em realidade.</h1>
                                         <p class="hero-support wow fadeInUp" data-wow-delay=".4s">
-                                            Cotas já contempladas, prontas para transferência. Compare crédito, entrada e parcelas e fale com a Roma sobre a que faz sentido para o seu projeto.
+                                            Cartas de consórcio já contempladas, com diferentes valores de crédito, entradas e condições de pagamento. Conte com a assessoria especializada da Roma Capital para analisar as opções e encontrar a solução mais adequada ao seu projeto.
                                         </p>
                                         <div class="hero-button-area wow fadeInUp" data-wow-delay=".6s">
                                             <a href="#catalogo-contempladas" class="theme-btn">
@@ -353,6 +356,8 @@
         <script src="/assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="/assets/js/main.min.js"></script>
+        <!--<< Vídeo da hero >>-->
+        <script src="/assets/js/hero-video.js" defer></script>
         <script>
             (() => {
                 const rail = document.querySelector('.roma-blueprint-rail');

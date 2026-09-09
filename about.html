@@ -95,12 +95,15 @@
 
                 <!-- Internal Hero Section Start -->
                 <section class="hero-section-8 inner-page-hero">
-                    <div class="hero-8 fix bg-cover" style="background-image: url('/assets/img/hero/abouthero.webp');">
+                    <div class="hero-8 fix bg-cover">
+                        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/assets/img/hero/videohero-poster.webp" aria-hidden="true" tabindex="-1">
+                            <source data-src="/assets/img/hero/videohero.m4v" type="video/mp4">
+                        </video>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="hero-content-style-8">
                                     <div class="content">
-                                        <h1 class="hero-title wow fadeInUp" data-wow-delay=".2s">Estratégia que<br>preserva valor.</h1>
+                                        <h1 class="hero-title wow fadeInUp" data-wow-delay=".2s">Estratégia que<br> preserva valor.</h1>
                                         <p class="hero-support wow fadeInUp" data-wow-delay=".4s">
                                             Decisões patrimoniais conduzidas com análise, discrição e visão de longo prazo.
                                         </p>
@@ -124,7 +127,7 @@
                         <div class="row g-4 align-items-center">
                             <div class="col-xl-5 col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="about-left-image-style-3 fix">
-                                    <img data-speed=".8" src="/assets/img/sobre/sobre.webp" alt="Consultoria estratégica para decisões patrimoniais" width="1200" height="801" loading="lazy" decoding="async">
+                                    <img data-speed=".8" src="/assets/img/sobre/sobre-04.webp" alt="Equipe de especialistas da Roma Capital" width="1600" height="1056" loading="lazy" decoding="async">
                                 </div>
                             </div>
                             <div class="col-xl-7 col-lg-6">
@@ -669,6 +672,8 @@
         <script src="/assets/js/wow.min.js"></script>
         <!--<< Main.js >>-->
         <script src="/assets/js/main.min.js"></script>
+        <!--<< Vídeo da hero >>-->
+        <script src="/assets/js/hero-video.js" defer></script>
         <script>
             (() => {
                 const rail = document.querySelector('.roma-blueprint-rail');

@@ -93,12 +93,15 @@
 
                 <!-- Internal Hero Section Start -->
                 <section class="hero-section-8 inner-page-hero">
-                    <div class="hero-8 fix bg-cover" style="background-image: url('/assets/img/hero/contatohero.webp');">
+                    <div class="hero-8 fix bg-cover">
+                        <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="/assets/img/hero/videohero-poster.webp" aria-hidden="true" tabindex="-1">
+                            <source data-src="/assets/img/hero/videohero.m4v" type="video/mp4">
+                        </video>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="hero-content-style-8">
                                     <div class="content">
-                                        <h1 class="hero-title wow fadeInUp" data-wow-delay=".2s">Seu patrimônio<br>exige contexto.</h1>
+                                        <h1 class="hero-title wow fadeInUp" data-wow-delay=".2s">Seu patrimônio<br> exige contexto.</h1>
                                         <p class="hero-support wow fadeInUp" data-wow-delay=".4s">
                                             Uma conversa reservada para compreender objetivos, horizonte e capital.
                                         </p>
@@ -122,7 +125,7 @@
                         <div class="contact-top">
                             <div class="section-title text-center">
                                 <span class="sub-title sub-title tz-sub-tilte tz-sub-anim tx-subTitle justify-content-center"><img src="/assets/img/logo/logoicon.svg" alt="" width="214" height="124">Diagnóstico estratégico</span>
-                                <h2 class="split-title">Toda estratégia começa<br>por uma leitura precisa.</h2>
+                                <h2 class="split-title">Toda estratégia começa<br> por uma leitura precisa.</h2>
                             </div>
                             <div class="row">
                                 <div class="col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
@@ -325,5 +328,7 @@
         <script src="/assets/js/ajax-mail.js"></script>
         <!--<< Main.js >>-->
         <script src="/assets/js/main.min.js"></script>
+        <!--<< Vídeo da hero >>-->
+        <script src="/assets/js/hero-video.js" defer></script>
     </body>
 </html>
