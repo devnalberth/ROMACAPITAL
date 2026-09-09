@@ -11,12 +11,14 @@
     if (!heroVideo) return;
 
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const desktopViewport = window.matchMedia('(min-width: 768px)');
     const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
     let heroIsVisible = true;
 
     const heroSource = heroVideo.querySelector('source[data-src]');
-    const shouldLoadVideo = desktopViewport.matches && !reducedMotion.matches && !connection?.saveData;
+    // O vídeo agora pesa ~0,9 MB, então também carrega no celular.
+    // Continua fora do ar em prefers-reduced-motion, economia de dados e 2G.
+    const redeLenta = /(^|-)2g$/.test(connection?.effectiveType || '');
+    const shouldLoadVideo = !reducedMotion.matches && !connection?.saveData && !redeLenta;
 
     if (heroSource && shouldLoadVideo) {
         heroSource.src = heroSource.dataset.src;

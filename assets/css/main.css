@@ -17934,3 +17934,48 @@ img[src$="testi-shape-1.png"] {
     font-size: clamp(30px, 4.1vw, 56px);
     max-width: 720px;
 }
+
+/* Por que a Roma Capital — ajustes de mobile.
+   O tema aplica margin-left:50px na coluna de conteúdo, o que no celular
+   rouba espaço e desalinha o bloco em relação ao resto da página.
+   E o .theme-btn reserva 70px à direita (seta) + 40px à esquerda,
+   sobrando pouco para o texto do CTA em telas estreitas. */
+@media (max-width: 991px) {
+    .roma-criteria-section .choose-us-right-content-style-3 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .roma-criteria-section .choose-us-right-content-style-3 .theme-btn {
+        font-size: 14px;
+        padding-left: 22px;
+        padding-right: 58px;
+    }
+
+    .roma-criteria-section .choose-us-right-content-style-3 .theme-btn .btn-title {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+
+/* Telas muito estreitas (SE, 320px): aperta mais para o CTA não transbordar. */
+@media (max-width: 360px) {
+    .roma-criteria-section .choose-us-right-content-style-3 .theme-btn {
+        padding-left: 18px;
+        padding-right: 54px;
+    }
+
+    .roma-criteria-section .choose-us-right-content-style-3 .theme-btn .btn-title {
+        font-size: 13px;
+    }
+}
+
+/* O homem aparece na metade direita do quadro. No celular a hero é estreita
+   e o recorte central (object-position: center) o deixava de fora. */
+@media (max-width: 767px) {
+    .hero-8 .hero-video,
+    .breadcrumb-wrapper .hero-video {
+        object-position: 78% center;
+    }
+}

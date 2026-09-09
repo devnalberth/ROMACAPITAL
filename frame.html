@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8">
+<style>body{margin:0;background:#666;display:flex;gap:8px;align-items:flex-start}iframe{border:0;height:780px}</style>
+<iframe id="a" src="index.html" width="390"></iframe>
+<iframe id="b" src="contempladas.html" width="390"></iframe>
+<script>
+for(const id of ['a','b']){const f=document.getElementById(id);
+ f.addEventListener('load',()=>setTimeout(()=>{const d=f.contentDocument;
+  const st=d.createElement('style');
+  st.textContent='*{animation:none!important;transition:none!important;opacity:1!important;visibility:visible!important;transform:none!important}';
+  d.head.appendChild(st);
+  const v=d.querySelector('.hero-video'); if(v){v.pause(); v.currentTime=12;}
+ },2200));}
+</script>
