@@ -750,7 +750,7 @@
             ignoreMobileResize: true,
         });
 
-        const romaSectionHashes = ["#estrategias", "#como-funciona"];
+        const romaSectionHashes = ["#estrategias", "#solucoes", "#para-empresas", "#como-funciona"];
 
         function revealAnchoredSection(target) {
             target.querySelectorAll(".wow").forEach(function(element) {
@@ -787,7 +787,7 @@
             });
         }
 
-        $documentOn.on("click", 'a[href="#estrategias"], a[href="#como-funciona"]', function(event) {
+        $documentOn.on("click", 'a[href="#estrategias"], a[href="#solucoes"], a[href="#para-empresas"], a[href="#como-funciona"]', function(event) {
             const hash = this.getAttribute("href");
 
             if (document.querySelector(hash)) {
@@ -796,11 +796,29 @@
             }
         });
 
+        function revealPassedSections() {
+            const limite = window.innerHeight;
+            document.querySelectorAll("section").forEach(function(secao) {
+                if (secao.getBoundingClientRect().top < limite) {
+                    revealAnchoredSection(secao);
+                }
+            });
+        }
+
         function syncInitialRomaSection() {
-            if (!romaSectionHashes.includes(window.location.hash)) return;
+            if (!window.location.hash) return;
+            if (!romaSectionHashes.includes(window.location.hash)) {
+                // hash fora da lista: ainda assim garante que nada fique invisível
+                window.setTimeout(function() {
+                    ScrollTrigger.refresh();
+                    revealPassedSections();
+                }, 160);
+                return;
+            }
 
             window.setTimeout(function() {
                 scrollToRomaSection(window.location.hash, false);
+                revealPassedSections();
             }, 120);
         }
 
