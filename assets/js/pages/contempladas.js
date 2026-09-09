@@ -32,7 +32,7 @@ const adminLogos = {
         aliases: ["embracon", "embraconconsorcio", "embraconconsorcios"]
     },
     Bradesco: {
-        src: "/assets/img/parceiras/bradesco.svg",
+        src: "/assets/img/parceiras/bradesco.webp",
         alt: "Logo Bradesco Consórcios",
         aliases: ["bradesco", "bradescoconsorcio", "bradescoconsorcios"]
     },
