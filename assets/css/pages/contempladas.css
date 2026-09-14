@@ -51,7 +51,7 @@
     margin-bottom: clamp(32px, 4vw, 48px);
 }
 
-.rc-catalog .section-title h2 {
+.rc-catalog .section-title h1 {
     color: var(--rc-ink);
     font-size: 42px;
     line-height: 1.16;
@@ -1021,7 +1021,7 @@
 
 /* ------------------------------------------------------------- responsivo */
 @media (max-width: 1199px) {
-    .rc-catalog .section-title h2 {
+    .rc-catalog .section-title h1 {
         font-size: 36px;
     }
 }
@@ -1051,7 +1051,7 @@
 }
 
 @media (max-width: 767px) {
-    .rc-catalog .section-title h2 {
+    .rc-catalog .section-title h1 {
         font-size: 30px;
     }
 
