@@ -19,6 +19,12 @@
     color: var(--rc-ink);
 }
 
+/* O catálogo é uma superfície de dados: usa mais largura que as seções editoriais. */
+.rc-catalog > .container {
+    max-width: 1600px;
+    width: calc(100% - 48px);
+}
+
 .rc-sr-only {
     position: absolute;
     width: 1px;
@@ -231,8 +237,7 @@
 
 /* ------------------------------------------------------------------ tabela */
 .rc-table-shell {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: visible;
 }
 
 .rc-table-shell:focus-visible {
@@ -242,9 +247,20 @@
 
 .rc-desktop-table {
     border-collapse: collapse;
-    min-width: 1080px;
+    table-layout: fixed;
     width: 100%;
 }
+
+.rc-desktop-table th:nth-child(1) { width: 7%; }
+.rc-desktop-table th:nth-child(2) { width: 10%; }
+.rc-desktop-table th:nth-child(3) { width: 7%; }
+.rc-desktop-table th:nth-child(4) { width: 8%; }
+.rc-desktop-table th:nth-child(5) { width: 12%; }
+.rc-desktop-table th:nth-child(6) { width: 11%; }
+.rc-desktop-table th:nth-child(7) { width: 5%; }
+.rc-desktop-table th:nth-child(8) { width: 20%; }
+.rc-desktop-table th:nth-child(9) { width: 6%; }
+.rc-desktop-table th:nth-child(10) { width: 14%; }
 
 .rc-desktop-table thead th {
     background-color: var(--rc-soft);
@@ -356,7 +372,16 @@
 .rc-term-cell,
 .rc-installment-cell {
     color: var(--rc-muted);
+}
+
+.rc-term-cell {
     white-space: nowrap;
+}
+
+.rc-installment-cell {
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    white-space: normal;
 }
 
 .rc-product-pill,
@@ -971,6 +996,21 @@
     justify-content: center;
 }
 
+/* O modal fica fora de .rc-catalog; suas cores não podem depender dos tokens locais. */
+.rc-modal .rc-selection-link {
+    background-color: #B2842C;
+    border-color: #B2842C;
+    color: #FFFFFF;
+    min-width: 190px;
+    justify-content: center;
+}
+
+.rc-modal .rc-selection-link:hover {
+    background-color: #00171F;
+    border-color: #00171F;
+    color: #FFFFFF;
+}
+
 .rc-proposta-block {
     margin-top: 20px;
 }
@@ -1026,7 +1066,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .rc-table-shell,
     .rc-desktop-table {
         display: none;
@@ -1051,6 +1091,10 @@
 }
 
 @media (max-width: 767px) {
+    .rc-catalog > .container {
+        width: calc(100% - 24px);
+    }
+
     .rc-catalog .section-title h1 {
         font-size: 30px;
     }
