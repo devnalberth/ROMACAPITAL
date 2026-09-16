@@ -6,31 +6,31 @@ sistema Invest Master** que abastece os sites da Invest Master, TM Consórcios e
 ## Como os dados chegam à página
 
 ```
-navegador → /api/cartas (proxy same-origin) → {API_BASE_URL}/api/v1/cartas
+navegador → /api/cartas (proxy same-origin) → catálogo Invest Master
 ```
 
 O front-end **nunca** vê a chave da API: quem guarda a credencial é o proxy no
 servidor. Por isso a página chama `/api/cartas`, e não a API diretamente.
 
-## Configuração obrigatória
+## Configuração
 
-Sem as credenciais a tabela não carrega — a página mostra o estado
-"Estamos com instabilidade momentânea" com botão de tentar de novo.
-**Subir o site sozinho não faz as cotas aparecerem.**
+Na hospedagem Apache, a integração usa automaticamente o catálogo público
+compartilhado da Pluscon quando não há credenciais locais. A configuração direta
+abaixo é opcional e tem prioridade sobre esse fallback.
 
 ### Hostinger / Apache (hospedagem compartilhada) — cenário atual
 
 O sistema Invest Master já está no ar em `https://sistema.investmaisparcerias.com.br`.
 É esse endereço que a Roma vai consultar (o mesmo que a TM Consórcios usa).
 
-1. **Peça uma API Key própria da Roma Capital** ao administrador do sistema
-   Invest Master. Não reaproveite a chave da TM nem a da Invest Master: uma
-   chave por parceiro permite revogar o acesso de um sem derrubar os outros.
+1. Use a **credencial compartilhada do catálogo Invest Master**, a mesma das
+   integrações da TM Consórcios, Pluscon e RBS. Não existe uma chave exclusiva
+   da Roma Capital.
 2. Copie `config.example.php` para `config.php` e preencha:
 
    ```php
    define('CONTEMPLADAS_API_BASE_URL', 'https://sistema.investmaisparcerias.com.br');
-   define('CONTEMPLADAS_API_KEY', 'a-chave-da-roma');
+   define('CONTEMPLADAS_API_KEY', 'a-chave-compartilhada');
    ```
 
 3. Envie os arquivos para o `public_html`, **incluindo** `config.php`,
@@ -52,7 +52,7 @@ Defina em **Project → Settings → Environment Variables** e refaça o deploy:
 
 | Variável | Valor |
 | --- | --- |
-| `INVESTMASTER_API_KEY` | chave da Roma |
+| `INVESTMASTER_API_KEY` | credencial compartilhada do catálogo |
 | `INVESTMASTER_API_BASE_URL` | `https://sistema.investmaisparcerias.com.br` |
 
 As URLs amigáveis (`/inicio`, `/sobre`, `/contempladas`…) estão duplicadas nos

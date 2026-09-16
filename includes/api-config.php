@@ -47,3 +47,14 @@ function roma_api_base_url(): string
     }
     return '';
 }
+
+function roma_shared_catalog_url(): string
+{
+    $envUrl = getenv('CONTEMPLADAS_SHARED_CATALOG_URL');
+    if ($envUrl !== false && trim($envUrl) !== '') {
+        return trim($envUrl);
+    }
+
+    // Catálogo compartilhado já utilizado pelas operações parceiras.
+    return 'https://plusconsorcio.com.br/api/cartas.php';
+}

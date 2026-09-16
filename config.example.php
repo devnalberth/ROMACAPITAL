@@ -6,7 +6,8 @@ declare(strict_types=1);
  *
  * COMO USAR
  *   1. Copie este arquivo para `config.php` (na mesma pasta, a raiz do site).
- *   2. Preencha a chave abaixo com a API Key emitida pelo sistema Invest Master.
+ *   2. Preencha a chave abaixo com a credencial compartilhada já utilizada
+ *      pelas integrações da TM Consórcios, Pluscon e RBS.
  *   3. Envie o `config.php` para a hospedagem. Ele NÃO vai para o Git.
  *
  * O `config.php` fica apenas no servidor: a chave nunca chega ao navegador,
@@ -16,5 +17,5 @@ declare(strict_types=1);
 // URL base do sistema Invest Master — só protocolo + domínio, sem /api/v1 no final.
 define('CONTEMPLADAS_API_BASE_URL', 'https://sistema.investmaisparcerias.com.br');
 
-// Chave de API da Roma Capital (peça uma chave própria ao administrador do sistema).
-define('CONTEMPLADAS_API_KEY', 'COLE_AQUI_A_CHAVE_DA_ROMA');
+// Credencial compartilhada do catálogo Invest Master (não existe chave própria da Roma).
+define('CONTEMPLADAS_API_KEY', 'COLE_AQUI_A_CHAVE_COMPARTILHADA');

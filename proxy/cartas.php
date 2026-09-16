@@ -109,20 +109,37 @@ function roma_fallback_resolve(string $baseUrl): array
 $apiKey = roma_api_key();
 $baseUrl = roma_api_base_url();
 
-if ($apiKey === '') {
-    roma_json_error(
-        500,
-        'missing_api_key',
-        'Configure CONTEMPLADAS_API_KEY em config.php ou nas variáveis de ambiente do servidor.'
-    );
+$query = [];
+foreach ($_GET as $key => $value) {
+    if ($value === null || $value === '') {
+        continue;
+    }
+    $query[(string) $key] = is_array($value) ? array_map('strval', $value) : (string) $value;
 }
 
-if ($baseUrl === '') {
-    roma_json_error(
-        500,
-        'missing_api_base_url',
-        'Defina CONTEMPLADAS_API_BASE_URL em config.php com a URL base da API (protocolo + domínio, sem /api/v1 no final).'
-    );
+// A Roma exibe o mesmo catálogo das operações parceiras. Quando a hospedagem
+// não possui a credencial compartilhada, consulta o proxy público já ativo da
+// Pluscon. A integração direta continua prioritária sempre que estiver configurada.
+if ($apiKey === '' || $baseUrl === '') {
+    $sharedCatalogUrl = roma_shared_catalog_url();
+    if (filter_var($sharedCatalogUrl, FILTER_VALIDATE_URL) === false) {
+        roma_json_error(500, 'invalid_shared_catalog_url', 'A URL do catálogo compartilhado é inválida.');
+    }
+
+    $sharedUrl = roma_build_upstream_url($sharedCatalogUrl, '', $query);
+    $shared = roma_fetch_upstream_json($sharedUrl, ['Accept: application/json']);
+
+    if (isset($shared['networkError'])) {
+        roma_json_error(502, 'shared_catalog_unreachable', 'Não foi possível carregar o catálogo compartilhado.');
+    }
+    if (!empty($shared['parseError'])) {
+        roma_json_error(502, 'invalid_shared_catalog_json', 'O catálogo compartilhado retornou uma resposta inválida.');
+    }
+
+    header('Cache-Control: public, max-age=0, s-maxage=5, stale-while-revalidate=20');
+    http_response_code((int) ($shared['status'] ?? 502));
+    echo json_encode($shared['body'] ?? null, JSON_UNESCAPED_UNICODE);
+    exit;
 }
 
 if (filter_var($baseUrl, FILTER_VALIDATE_URL) === false) {
@@ -131,14 +148,6 @@ if (filter_var($baseUrl, FILTER_VALIDATE_URL) === false) {
         'invalid_api_base_url',
         'CONTEMPLADAS_API_BASE_URL inválida. Use uma URL absoluta, ex.: https://api.seuprovedor.com'
     );
-}
-
-$query = [];
-foreach ($_GET as $key => $value) {
-    if ($value === null || $value === '') {
-        continue;
-    }
-    $query[(string) $key] = is_array($value) ? array_map('strval', $value) : (string) $value;
 }
 
 $headers = [
