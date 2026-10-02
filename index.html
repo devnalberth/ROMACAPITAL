@@ -17,6 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;600;700&display=swap">
 <link rel="preload" href="/assets/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
         <!--<< Bootstrap min.css >>-->
@@ -33,6 +34,7 @@
         <link rel="stylesheet" href="/assets/css/main.min.css">
         <link rel="stylesheet" href="/assets/css/mobile-navigation.css?v=20260927-2">
         <link rel="stylesheet" href="/assets/css/about-leadership.css">
+        <link rel="stylesheet" href="/assets/css/certification.css?v=20261002-1">
         <style>
             .brand-wordmark {
                 display: inline-block;
@@ -525,6 +527,26 @@
             </section>
 
 
+            <!-- Certificação PCA-10 -->
+            <section class="section section--alt roma-certification" id="certificacao" aria-labelledby="t-cert">
+              <div class="container">
+                <div class="cert">
+                  <a class="cert__seal" href="#" data-pca target="_blank" rel="noopener" aria-label="Validar a certificação PCA-10 de Rodrigo Batista da Silva no site oficial">
+                    <img src="/assets/img/certificacao/selo-abac-pca10.webp" alt="Selo oficial ABAC: Profissional de Consórcios, Certificação PCA-10" width="480" height="480" loading="lazy" decoding="async">
+                  </a>
+                  <div class="cert__body">
+                    <span class="rbs-eyebrow">Certificação e qualificação profissional</span>
+                    <h2 class="rbs-h2" id="t-cert">Profissional certificado <span class="rbs-accent"><span style="white-space:nowrap">PCA-10</span> pela ABAC</span></h2>
+                    <p class="rbs-text">Rodrigo Batista da Silva, fundador da RBS Consultoria Inteligente, possui a certificação PCA-10, concedida pela Associação Brasileira de Administradoras de Consórcios (ABAC), com apoio institucional do Banco Central do Brasil.</p>
+                    <p class="rbs-text">A certificação atesta conhecimentos sobre o funcionamento do Sistema de Consórcios, legislação, cálculos financeiros, ética e boas práticas no atendimento ao cliente.</p>
+                    <a class="rbs-btn rbs-btn--primary" href="#" data-pca target="_blank" rel="noopener">Validar certificação<span class="rbs-btn__icon"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+                    <p class="cert__note"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5M12 7.5v.5"/></svg><span>A certificação PCA-10 é pessoal, vinculada ao profissional, e não representa autorização, homologação ou garantia de resultados pelo Banco Central do Brasil.</span></p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
             <!-- Choose Us Section Start -->
             <section class="choose-section-3 roma-criteria-section roma-dark-sequence roma-dark-sequence-end section-padding fix" aria-labelledby="criterios-atuacao">
                 <div class="shape-1 d-none d-xl-block">
@@ -1010,6 +1032,7 @@
         <script src="/assets/js/main.min.js"></script>
         <!--<< Vídeo da hero >>-->
         <script src="/assets/js/hero-video.js" defer></script>
+        <script src="/assets/js/certification.js" defer></script>
         <script>
             (() => {
                 const solutionsCarousel = document.querySelector('.solutions-carousel');

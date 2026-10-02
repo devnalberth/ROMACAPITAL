@@ -1,0 +1,227 @@
+/* ==========================================================================
+   Certificação PCA-10 — seção portada da RBS para a identidade Roma Capital
+   ========================================================================== */
+
+.roma-certification {
+    --cert-navy: #00171F;
+    --cert-gold: #B2842C;
+    --cert-white: #FFFFFF;
+    --cert-bg: #F5F5F5;
+    --cert-text: #555555;
+    --cert-line: #D6D6D6;
+    background: var(--cert-bg);
+    padding-block: 120px;
+}
+
+.roma-certification .cert {
+    align-items: center;
+    background: var(--cert-white);
+    border: 1px solid var(--cert-line);
+    border-radius: 24px;
+    display: grid;
+    gap: 64px;
+    grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+    padding: 48px 64px;
+}
+
+.roma-certification .cert__seal {
+    border-radius: 50%;
+    box-shadow: 0 16px 40px rgba(0, 23, 31, 0.18);
+    display: block;
+    margin-inline: auto;
+    max-width: 280px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    width: 100%;
+}
+
+.roma-certification .cert__seal img {
+    border-radius: 50%;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.roma-certification .cert__seal:hover {
+    box-shadow: 0 20px 48px rgba(0, 23, 31, 0.24);
+    transform: translateY(-3px) rotate(-2deg);
+}
+
+.roma-certification .cert__body {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.roma-certification .rbs-eyebrow {
+    color: var(--cert-gold);
+    display: inline-block;
+    font-family: "Manrope", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.roma-certification .rbs-h2 {
+    color: var(--cert-navy);
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 48px;
+    margin: 0;
+    text-wrap: balance;
+}
+
+.roma-certification .rbs-accent {
+    color: var(--cert-gold);
+    display: block;
+    font-family: "Instrument Serif", Georgia, "Times New Roman", serif;
+    font-size: 1.06em;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.roma-certification .rbs-text {
+    color: var(--cert-text);
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    max-width: 64ch;
+}
+
+.roma-certification .rbs-btn {
+    align-items: center;
+    background: var(--cert-navy);
+    border: 0;
+    border-radius: 999px;
+    color: var(--cert-white);
+    cursor: pointer;
+    display: inline-flex;
+    font: 600 15px/20px "Manrope", sans-serif;
+    gap: 12px;
+    margin-top: 8px;
+    min-height: 52px;
+    padding: 0 8px 0 24px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    white-space: nowrap;
+}
+
+.roma-certification .rbs-btn__icon {
+    align-items: center;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 50%;
+    display: inline-flex;
+    flex: none;
+    height: 36px;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    width: 36px;
+}
+
+.roma-certification .rbs-btn__icon .ico {
+    fill: none;
+    height: 18px;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    width: 18px;
+}
+
+.roma-certification .rbs-btn:hover {
+    background: var(--cert-gold);
+    color: var(--cert-navy);
+}
+
+.roma-certification .rbs-btn:hover .rbs-btn__icon {
+    transform: translateX(2px);
+}
+
+.roma-certification .cert__note {
+    align-items: flex-start;
+    border-top: 1px solid var(--cert-line);
+    color: var(--cert-text);
+    display: flex;
+    font: 400 13px/20px "Manrope", sans-serif;
+    gap: 12px;
+    margin: 8px 0 0;
+    padding-top: 16px;
+    width: 100%;
+}
+
+.roma-certification .cert__note .ico {
+    color: var(--cert-gold);
+    fill: none;
+    flex: none;
+    height: 20px;
+    margin-top: 0;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5;
+    width: 20px;
+}
+
+.roma-certification :where(a):focus-visible {
+    outline: 2px solid var(--cert-gold);
+    outline-offset: 3px;
+}
+
+@media (max-width: 1023px) {
+    .roma-certification {
+        padding-block: 96px;
+    }
+
+    .roma-certification .cert {
+        gap: 32px;
+        grid-template-columns: minmax(0, 1fr);
+        padding: 48px;
+    }
+
+    .roma-certification .cert__seal {
+        max-width: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+    .roma-certification {
+        padding-block: 72px;
+    }
+
+    .roma-certification .cert {
+        padding: 32px 24px;
+    }
+
+    .roma-certification .cert__seal {
+        max-width: 180px;
+    }
+
+    .roma-certification .rbs-h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .roma-certification .rbs-btn {
+        padding-block: 8px;
+        text-align: left;
+        white-space: normal;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .roma-certification .cert__seal,
+    .roma-certification .rbs-btn,
+    .roma-certification .rbs-btn__icon {
+        transition: none;
+    }
+
+    .roma-certification .cert__seal:hover {
+        transform: none;
+    }
+}
