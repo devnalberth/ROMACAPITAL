@@ -5,6 +5,4 @@ includes/
 config.php
 config.example.php
 contact.php
-docs-cartas-contempladas.md
-CONTEXTO_PROJETO.md
 .htaccess
