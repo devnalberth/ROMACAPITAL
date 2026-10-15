@@ -1,0 +1,4197 @@
+
+.btn-red,.btn-outline-red,.btn-white,.btn-outline-white {
+    font-family: 'Bradesco';
+    font-size: 14px;
+    font-weight: 700 !important;
+    letter-spacing: .5;
+    text-align: center;
+    border-radius: 24px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none
+}
+
+.custom-navbar {
+    margin-top: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: white;
+    justify-content: space-between;
+    z-index: 2;
+    box-shadow: 0px 10px 15px -15px black
+}
+
+.custom-navbar .logo-burguer {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%
+}
+
+.custom-navbar .logo {
+    margin-left: 60px
+}
+
+.custom-navbar .burguer {
+    background: transparent;
+    border: none;
+    display: none
+}
+
+.custom-navbar .content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    overflow: hidden;
+    align-items: center
+}
+
+.custom-navbar .content.pr36 {
+    padding-right: 36px
+}
+
+.custom-navbar .content button {
+    margin: 0 24px
+}
+
+.custom-navbar .content button.links {
+    font-size: 14px;
+    color: #47484C;
+    font-weight: normal;
+    background: transparent;
+    border: none
+}
+
+.custom-navbar .content button.links.mr36 {
+    margin-right: 36px
+}
+
+.custom-navbar .content .btn-red {
+    max-width: 218px
+}
+
+@media (max-width: 768px) {
+    .custom-navbar {
+        display:block;
+        box-shadow: none
+    }
+
+    .custom-navbar .logo-burguer {
+        width: 100%;
+        box-shadow: 0px 10px 15px -15px black;
+        height: 64px
+    }
+
+    .custom-navbar .logo {
+        margin-left: 24px
+    }
+
+    .custom-navbar .logo img {
+        width: 140px
+    }
+
+    .custom-navbar .burguer {
+        display: block;
+        margin-right: 24px
+    }
+
+    .custom-navbar .content {
+        height: 0;
+        transition: .4s;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .custom-navbar .content.pr36 {
+        padding-right: 0
+    }
+
+    .custom-navbar .content button {
+        margin-bottom: 24px
+    }
+
+    .custom-navbar.open .content {
+        height: calc(100vh - 131px);
+        padding: 72px 0
+    }
+}
+
+.btn-red {
+    height: 48px;
+    color: #fff !important;
+    background-color: #e1173f
+}
+
+.btn-red:hover,.btn-red:active {
+    background-color: #e1173f;
+    transition: all 0.3s ease
+}
+
+.btn-red:hover,.btn-red:active {
+    background: #c50030
+}
+
+.btn-outline-red {
+    height: 48px;
+    color: #e1173f !important;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #e1173f;
+    padding: 14px 0
+}
+
+.btn-outline-red:hover,.btn-outline-red:active {
+    background-color: #e1173f;
+    transition: all 0.3s ease
+}
+
+.btn-outline-red:hover,.btn-outline-red:active {
+    color: white !important;
+    border: 1px solid #c50030 !important
+}
+
+.btn-white {
+    height: 48px;
+    color: #e1173f !important;
+    background-color: #fff
+}
+
+.btn-white:hover,.btn-white:active {
+    background-color: #e1173f;
+    transition: all 0.3s ease
+}
+
+.btn-white:hover,.btn-white:active {
+    color: white !important
+}
+
+.btn-outline-white {
+    height: 48px;
+    color: #fff !important;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    padding: 14px 0
+}
+
+.btn-outline-white:hover,.btn-outline-white:active {
+    background-color: #e1173f;
+    transition: all 0.3s ease
+}
+
+.btn-outline-white:hover,.btn-outline-white:active {
+    color: #e1173f;
+    background-color: white !important;
+    border: 1px solid white !important
+}
+
+.btn-outline-white.b-selected {
+    color: #e1173f;
+    background-color: white !important;
+    border: 1px solid white !important
+}
+
+.path-link {
+    position: absolute;
+    z-index: 2;
+    padding-left: 60px;
+    padding-top: 8px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    width: 100%;
+    padding-bottom: 12px
+}
+
+.path-link a {
+    font-size: 14px;
+    font-weight: 600;
+    color: white
+}
+
+.path-link span {
+    font-size: 14px;
+    font-weight: 600;
+    color: white
+}
+
+@media (max-width: 768px) {
+    .path-link {
+        display:none;
+        padding-left: 24px
+    }
+}
+
+.banner {
+    position: relative
+}
+
+.banner .carrossel-banner {
+    position: relative;
+    margin-bottom: 0 !important
+}
+
+.banner .carrossel-banner .item-banner img {
+    width: 100%
+}
+
+.banner .carrossel-banner .item-banner img.mobile {
+    display: none
+}
+
+.banner .carrossel-banner .item-banner .mobile {
+    position: relative;
+    display: none
+}
+
+.banner .carrossel-banner .item-banner .mobile.text p {
+    position: absolute
+}
+
+.banner .carrossel-banner .item-banner .mobile.text p.red {
+    font-size: 5.6vw;
+    color: #E1173F;
+    font-weight: 700;
+    left: 36vw;
+    top: 15vw
+}
+
+.banner .carrossel-banner .item-banner .mobile.text p.white {
+    font-size: 7vw;
+    color: white;
+    font-weight: normal;
+    top: 62vw;
+    left: 36vw
+}
+
+.banner .carrossel-banner .item-banner .mobile.text p a {
+    font-size: 7vw;
+    color: white
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner1 {
+    position: relative
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner1 .texts-absolute {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    width: 100%
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner1 .texts-absolute p.texto1 {
+    font-size: 3.2vw;
+    color: white;
+    font-weight: 700;
+    margin-top: 62vw;
+    margin-left: 11vw;
+    position: relative;
+    z-index: 2;
+    letter-spacing: 2px
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner1 .texts-absolute p.texto3 {
+    font-size: 3.6vw;
+    color: white;
+    font-weight: 500;
+    text-align: center
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner1 .texts-absolute p.texto4 {
+    font-size: 2vw;
+    color: white;
+    font-weight: 500;
+    margin-left: 11vw;
+    text-align: center;
+    margin-top: 2vw
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner1 .texts-absolute h1 span {
+    font-size: 12vw;
+    color: #e1173f;
+    font-weight: 700;
+    margin-left: 11vw;
+    margin-top: 2vw;
+    background: -webkit-linear-gradient(24deg, #e1173f 46%, #702f8a 86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner1 .texts-absolute h1 span.t1 {
+    font-size: 6vw;
+    color: white;
+    font-weight: 500;
+    margin-top: -1vw;
+    background: none;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: white
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner1 .texts-absolute .parcela {
+    margin-left: 11vw;
+    background: rgba(125,62,88,0.7);
+    border-radius: 4px;
+    padding: 0.2vw;
+    margin-top: 1vw
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 {
+    position: relative
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute {
+    position: absolute;
+    width: 100%;
+    padding: 0 24px
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute p.texto1 {
+    font-size: 6vw;
+    color: white;
+    font-weight: 700;
+    margin-top: 12vw
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute h2 {
+    font-size: 6vw;
+    color: white;
+    font-weight: 700;
+    margin-top: 12vw
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute .btn-canal-consorciado {
+    background: rgb(168 29 177 / 96%);
+    border-radius: 25px;
+    padding: 1.2vw;
+    margin-top: 1vw;
+    width: 280px;
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute p.texto-canal-consorciado {
+    font-size: 5vw;
+    color: #FFF;
+    font-weight: 500;
+    margin-left: 1vw;
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute p.texto2 {
+    font-size: 6vw;
+    color: white;
+    font-weight: normal;
+    margin-top: 1vw
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute p.texto3 {
+    font-size: 4.3vw;
+    color: white;
+    font-weight: normal;
+    margin-top: 6vw
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute p.texto4 {
+    font-size: 4.6vw;
+    color: white;
+    font-weight: 700;
+    text-align: center
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute p.texto5 {
+    font-size: 2.6vw;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 2vw;
+    width: 100%
+}
+
+.banner .carrossel-banner .item-banner .mobile.banner3 .texts-absolute a {
+    border: 2px solid white;
+    padding: 2vw;
+    margin-top: 6vw;
+    display: block
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk {
+    position: relative
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk .texts-absolute {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    width: 100%
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk .texts-absolute p.texto1 {
+    font-size: 2vw;
+    color: white;
+    font-weight: 700;
+    margin-top: 6vw;
+    margin-left: 14vw;
+    position: relative;
+    z-index: 2
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk .texts-absolute p.texto3 {
+    font-size: 1.6vw;
+    color: white;
+    font-weight: 500;
+    text-align: center
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk .texts-absolute p.texto4 {
+    font-size: 1.1vw;
+    color: white;
+    font-weight: 500;
+    margin-left: 14vw;
+    text-align: center
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk .texts-absolute h1 {
+    margin-top: -2.3vw
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk .texts-absolute h1 span {
+    font-size: 10vw;
+    color: #e1173f;
+    font-weight: 700;
+    margin-left: 14vw;
+    margin-top: 2vw;
+    background: -webkit-linear-gradient(24deg, #e1173f 46%, #702f8a 86%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk .texts-absolute h1 span.t1 {
+    font-size: 3vw;
+    color: white;
+    font-weight: 500;
+    margin-top: -1vw;
+    background: none;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: white;
+    line-height: 0
+}
+
+.banner .carrossel-banner .item-banner .banner1-desk .texts-absolute .parcela {
+    margin-left: 14vw;
+    background: rgba(125,62,88,0.7);
+    border-radius: 4px;
+    padding: 0.2vw;
+    margin-top: 1vw
+}
+
+.banner .carrossel-banner .item-banner .banner2-desk {
+    position: relative
+}
+
+.banner .carrossel-banner .item-banner .banner2-desk .texts-absolute {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    width: 100%
+}
+
+.banner .carrossel-banner .item-banner .banner2-desk .texts-absolute p.texto1 {
+    font-size: 2.5vw;
+    color: #e1173f;
+    font-weight: 400;
+    margin-top: 12vw;
+    margin-left: 21vw;
+    letter-spacing: 1vw;
+}
+
+.banner .carrossel-banner .item-banner .banner2-desk .texts-absolute p.texto2 {
+    font-size: 2.5vw;
+    color: #e1173f;
+    font-weight: bold;
+    margin-top: -8px;
+    margin-left: 21vw;
+}
+
+.banner .carrossel-banner .item-banner .banner2-desk .texts-absolute p.texto3 {
+    font-size: 2vw;
+    color: #FFF;
+    font-weight: 500;
+    margin-top: 12vw;
+    margin-left: 17vw;
+}
+
+.banner .carrossel-banner .item-banner .banner2-desk .texts-absolute .saiba-mais {
+    margin-left: 17vw;
+    background: rgb(168 29 177 / 96%);
+    border-radius: 25px;
+    padding: 0.2vw;
+    margin-top: 1vw;
+    width: 208px;
+}
+
+.banner .carrossel-banner .item-banner .banner2-desk .texts-absolute p.texto-saiba-mais {
+    font-size: 2vw;
+    color: #FFF;
+    font-weight: 500;
+    margin-left: 1vw;
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute .btn-canal-consorciado {
+    margin-left: 10vw;
+    background: rgb(168 29 177 / 96%);
+    border-radius: 25px;
+    padding: 0.2vw;
+    margin-top: 1vw;
+    width: 496px;
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute p.texto-canal-consorciado {
+    font-size: 2vw;
+    color: #FFF;
+    font-weight: 500;
+    margin-left: 1vw;
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk {
+    position: relative
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    width: 100%
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute h2 {
+    font-size: 4vw;
+    color: white;
+    font-weight: 700;
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute p.texto1 {
+    font-size: 2vw;
+    color: white;
+    font-weight: 700;
+    margin-top: 10vw;
+    margin-left: 10vw;
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute p.texto2 {
+    font-size: 1.5vw;
+    color: white;
+    font-weight: normal;
+    text-align: left;
+    margin-left: 10vw;
+    line-height: 1.5;
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute p.texto3 {
+    font-size: 1.3vw;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 2vw
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute p.texto4 {
+    font-size: 1.6vw;
+    color: white;
+    font-weight: 700
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute p.texto5 {
+    font-size: 1vw;
+    color: white;
+    font-weight: normal;
+    text-align: right;
+    margin-top: 9vw;
+    margin-right: 5vw;
+    width: 100%
+}
+
+.banner .carrossel-banner .item-banner .banner3-desk .texts-absolute a {
+    border: 2px solid white;
+    padding: 1vw;
+    margin-top: 2vw;
+    display: block
+}
+
+.banner .carrossel-banner .slick-dots {
+    position: absolute;
+    bottom: 36px;
+    width: initial;
+    right: 140px;
+    width: 200px
+}
+
+.banner .carrossel-banner .slick-dots li {
+    width: 23px;
+    height: 10px
+}
+
+.banner .carrossel-banner .slick-dots .slick-active button {
+    background: #C50030
+}
+
+.banner .carrossel-banner .slick-dots .slick-active button::before {
+    opacity: 1
+}
+
+.banner .carrossel-banner .slick-dots button {
+    width: 26px;
+    padding: 2px;
+    height: 0px;
+    background: white;
+}
+
+.banner .carrossel-banner .slick-dots button::before {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 16px;
+    content: '';
+    opacity: 0
+}
+
+.banner .carrossel-banner .slick-dots button::before.slick-active {
+    opacity: 1
+}
+
+@media (max-width: 768px) {
+    .banner .carrossel-banner .slick-dots {
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .carrossel-banner .item-banner img {
+        display:none
+    }
+
+    .banner .carrossel-banner .item-banner img.mobile {
+        display: block !important
+    }
+
+    .banner .carrossel-banner .item-banner .mobile {
+        display: block !important
+    }
+
+    .banner .carrossel-banner .item-banner .mobile img {
+        display: block
+    }
+
+    .banner .carrossel-banner .item-banner .banner1-desk,.banner .carrossel-banner .item-banner .banner2-desk,.banner .carrossel-banner .item-banner .banner3-desk {
+        display: none
+    }
+}
+
+.banner .cards {
+    position: absolute;
+    bottom: -116px;
+    left: 128px
+}
+
+.banner .cards .carrossel-cards {
+    position: relative;
+    z-index: 1;
+    display: flex
+}
+
+.banner .cards .carrossel-cards .card {
+    width: 173px;
+    max-width: 173px;
+    background: white;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    border-radius: 4px;
+    padding: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    cursor: pointer
+}
+
+.banner .cards .carrossel-cards .card .icon1 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/banner-icon1.svg");
+    background-repeat: no-repeat;
+    width: 49px;
+    height: 49px
+}
+
+.banner .cards .carrossel-cards .card .icon2 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/banner-icon2.svg");
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px
+}
+
+.banner .cards .carrossel-cards .card .icon3 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/banner-icon3.svg");
+    background-repeat: no-repeat;
+    width: 49px;
+    height: 49px
+}
+
+.banner .cards .carrossel-cards .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #47484C;
+    line-height: 24px;
+    margin-top: 40px
+}
+
+.banner .cards .carrossel-cards .card .line {
+    margin-top: 12px;
+    width: 30px;
+    border-bottom: 2px solid #E1173F
+}
+
+.banner .cards .carrossel-cards .card.selected {
+    background: linear-gradient(180deg, #e1173f 65%, #8322a5 100%)
+}
+
+.banner .cards .carrossel-cards .card.selected .icon1 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/banner-icon1-white.svg")
+}
+
+.banner .cards .carrossel-cards .card.selected .icon2 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/banner-icon2-white.svg")
+}
+
+.banner .cards .carrossel-cards .card.selected .icon3 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/banner-icon3-white.svg")
+}
+
+.banner .cards .carrossel-cards .card.selected h2 {
+    color: white
+}
+
+.banner .cards .carrossel-cards .card.selected .line {
+    border-bottom: 2px solid #ffffff
+}
+
+.banner .cards .slick-dots {
+    width: calc( 100% - 24px);
+    left: 0
+}
+
+.banner .cards .slick-dots li {
+    width: 8px;
+    height: 10px
+}
+
+.banner .cards .slick-dots .slick-active button {
+    background: #C50030
+}
+
+.banner .cards .slick-dots .slick-active button::before {
+    opacity: 1
+}
+
+.banner .cards .slick-dots button {
+    width: 10px;
+    height: 10px;
+    background: #B1B1B1;
+    border-radius: 16px
+}
+
+.banner .cards .slick-dots button::before {
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 16px;
+    content: '';
+    opacity: 0
+}
+
+.banner .cards .slick-dots button::before.slick-active {
+    opacity: 1
+}
+
+.banner .line1 {
+    max-width: 307px;
+    min-width: 100px;
+    width: 19vw;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0
+}
+
+.banner .line2 {
+    max-width: 115px;
+    min-width: 50px;
+    width: 8vw;
+    position: absolute;
+    right: 0;
+    bottom: -24px;
+    z-index: 0
+}
+
+.banner .line3 {
+    max-width: 206px;
+    min-width: 70px;
+    width: 12vw;
+    position: absolute;
+    left: -18px;
+    top: 0;
+    z-index: 0
+}
+
+.banner .line4 {
+    max-width: 186px;
+    min-width: 60px;
+    width: 10vw;
+    position: absolute;
+    left: -16px;
+    bottom: 90px;
+    z-index: 0
+}
+
+@media (max-width: 1400px) {
+    .banner .cards {
+        bottom:-138px
+    }
+}
+
+@media (max-width: 1024px) {
+    .banner .cards {
+        left:60px
+    }
+
+    .banner .cards .carrossel-cards .card {
+        width: 152px;
+        min-width: 152px
+    }
+
+    .banner .cards .carrossel-cards .card h2 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 8px
+    }
+
+    .contemplacao .contemplacao__row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .cards {
+        width:100%
+    }
+
+    .banner .cards .carrossel-cards .card:hover {
+        transform: none
+    }
+}
+
+@media (max-width: 600px) {
+    .banner .cards {
+        left:24px
+    }
+
+    .banner .cards .carrossel-cards .card {
+        width: 111px;
+        min-width: 111px;
+        padding: 8px;
+        margin-right: 8px
+    }
+
+    .banner .cards .carrossel-cards .card h2 {
+        font-size: 12px
+    }
+
+}
+
+@media (max-width: 400px) {
+    .banner .cards {
+        left:12px
+    }
+}
+
+.facilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8.75rem 0 6rem;
+    background: #F8F8F8
+}
+
+.facilidades h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #47484C;
+    text-align: center;
+    margin: 0 3.75rem
+}
+
+.facilidades .contents {
+    margin-top: 4.5rem;
+    width: calc( 100% - 240px)
+}
+
+.facilidades .contents .carrossel {
+    display: flex;
+    justify-content: center
+}
+
+.facilidades .contents .carrossel .c-item {
+    display: flex;
+    justify-content: center
+}
+
+.facilidades .contents .carrossel .c-item .item {
+    align-items: center;
+    max-width: 250px;
+    margin: 0 16px
+}
+
+.facilidades .contents .carrossel .c-item .item .icon-1 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/2-icon-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4.5rem;
+    height: 4.625rem;
+    margin: 0 auto
+}
+
+.facilidades .contents .carrossel .c-item .item .icon-2 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/2-icon-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 3.5625rem;
+    height: 4.625rem;
+    margin: 0 auto
+}
+
+.facilidades .contents .carrossel .c-item .item .icon-3 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/2-icon-3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 5.625rem;
+    height: 4.625rem;
+    margin: 0 auto
+}
+
+.facilidades .contents .carrossel .c-item .item .icon-4 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/2-icon-4.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 4.8125rem;
+    height: 4.625rem;
+    margin: 0 auto
+}
+
+.facilidades .contents .carrossel .c-item .item h3 {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #47484C;
+    text-align: center;
+    margin: 1rem 0
+}
+
+.facilidades .contents .carrossel .c-item .item p {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #47484C;
+    text-align: center
+}
+
+.facilidades .contents .carrossel .slick-dots {
+    left: 0
+}
+
+.facilidades .contents .carrossel .slick-dots li {
+    width: 0.5rem;
+    height: 0.625rem
+}
+
+.facilidades .contents .carrossel .slick-dots .slick-active button {
+    background: #C50030
+}
+
+.facilidades .contents .carrossel .slick-dots .slick-active button::before {
+    opacity: 1
+}
+
+.facilidades .contents .carrossel .slick-dots button {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #B1B1B1;
+    border-radius: 16px
+}
+
+.facilidades .contents .carrossel .slick-dots button::before {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: transparent;
+    border-radius: 16px;
+    content: '';
+    opacity: 0
+}
+
+.facilidades .contents .carrossel .slick-dots button::before.slick-active {
+    opacity: 1
+}
+
+@media (max-width: 1400px) {
+    .facilidades {
+        padding:11.75rem 0 6rem
+    }
+}
+
+@media (max-width: 1024px) {
+    .facilidades {
+        padding-top:10rem
+    }
+
+    .facilidades .contents {
+        width: calc( 100% - 7.5rem)
+    }
+}
+
+@media (max-width: 48rem) {
+    .facilidades {
+        padding-top:13.125rem
+    }
+
+    .facilidades h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin: 0 1.5rem
+    }
+
+    .facilidades .contents {
+        width: 100%
+    }
+}
+
+.entenda {
+    display: flex;
+    padding: 3rem 0 4.375rem
+}
+
+.entenda .c-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.entenda .c-img img {
+    width: 85%;
+    margin: 0 auto;
+    flex-shrink: 0
+}
+
+.entenda .c-img button {
+    background: transparent;
+    border: none;
+    margin-top: 2.625rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #499ED0
+}
+
+.entenda .contents {
+    width: 50%
+}
+
+.entenda .contents .carrossel .item1 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #47484C;
+    margin-bottom: 2.5rem
+}
+
+.entenda .contents .carrossel .item1 p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #47484C;
+    line-height: 2.4375rem
+}
+
+.entenda .contents .carrossel .item2 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #47484C;
+    margin-bottom: 1.5rem;
+    text-align: center
+}
+
+.entenda .contents .carrossel .item2 .cards-etapas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.entenda .contents .carrossel .item2 .cards-etapas .card-etapa {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    padding: 0.875rem;
+    max-width: 11.375rem;
+    min-height: 14.0625rem;
+    max-height: 14.0625rem;
+    margin: 0.5rem
+}
+
+.entenda .contents .carrossel .item2 .cards-etapas .card-etapa h5 {
+    font-size: 3.3125rem;
+    font-weight: 700;
+    color: #F36279;
+    text-align: center
+}
+
+.entenda .contents .carrossel .item2 .cards-etapas .card-etapa h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+.entenda .contents .carrossel .item2 .cards-etapas .card-etapa p {
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: black;
+    text-align: center
+}
+
+.entenda .contents .carrossel .item3 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #47484C;
+    margin-bottom: 2rem
+}
+
+.entenda .contents .carrossel .item3 p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #47484C;
+    line-height: 2.4375rem
+}
+
+.entenda .contents .slick-dots-custom {
+    width: 11.25rem;
+    margin: 0 auto;
+    position: relative
+}
+
+.entenda .contents .slick-dots-custom .slick-prev {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.0625rem;
+    height: 2.0625rem;
+    left: 0
+}
+
+.entenda .contents .slick-dots-custom .slick-prev::before {
+    content: ''
+}
+
+.entenda .contents .slick-dots-custom .slick-next {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.0625rem;
+    height: 2.0625rem;
+    right: 0
+}
+
+.entenda .contents .slick-dots-custom .slick-next::before {
+    content: ''
+}
+
+.entenda .contents .slick-dots-custom .slick-dots {
+    position: static;
+    height: 1.875rem
+}
+
+.entenda .contents .slick-dots-custom .slick-dots li {
+    width: 0.5rem;
+    height: 0.625rem
+}
+
+.entenda .contents .slick-dots-custom .slick-dots .slick-active button {
+    background: #C50030
+}
+
+.entenda .contents .slick-dots-custom .slick-dots .slick-active button::before {
+    opacity: 1
+}
+
+.entenda .contents .slick-dots-custom .slick-dots button {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #B1B1B1;
+    border-radius: 16px
+}
+
+.entenda .contents .slick-dots-custom .slick-dots button::before {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: transparent;
+    border-radius: 16px;
+    content: '';
+    opacity: 0
+}
+
+.entenda .contents .slick-dots-custom .slick-dots button::before.slick-active {
+    opacity: 1
+}
+
+.entenda .contents .buttom-item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem
+}
+
+.entenda .contents .buttom-item1 p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #47484C;
+    margin-right: 1rem
+}
+
+.entenda .contents .buttom-item1 .btn-red {
+    width: 10.8125rem
+}
+
+@media (max-width: 1500px) {
+    .entenda .c-img {
+        width:50%
+    }
+
+    .entenda .contents {
+        width: 50%
+    }
+}
+
+@media (max-width: 1280px) {
+    .entenda .contents .carrossel .item2 .cards-etapas .card-etapa {
+        padding:0.5rem;
+        max-width: 9.125rem;
+        min-height: 12.25rem;
+        max-height: 12.25rem;
+        margin: 0.5rem
+    }
+
+    .entenda .contents .carrossel .item2 .cards-etapas .card-etapa h5 {
+        font-size: 2rem
+    }
+
+    .entenda .contents .carrossel .item3 p {
+        line-height: 2.0625rem
+    }
+}
+
+@media (max-width: 992px) {
+    .entenda {
+        display:none
+    }
+}
+
+.entenda-mobile {
+    padding: 3rem 3.75rem;
+    display: none
+}
+
+.entenda-mobile .head-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #E4E5E9
+}
+
+.entenda-mobile .head-tab button {
+    background: transparent;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #47484C;
+    text-align: center;
+    width: 33.3%;
+    padding: 0 0 1rem;
+    position: relative
+}
+
+.entenda-mobile .head-tab button::before {
+    content: ' ';
+    border-top: 4px solid #E1173F;
+    width: 100%;
+    height: 0.1875rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: 0.3s;
+    border-radius: 8px 8px 0 0
+}
+
+.entenda-mobile .head-tab button.open {
+    font-weight: 600;
+    color: #E1173F
+}
+
+.entenda-mobile .head-tab button.open::before {
+    transform: scaleX(1)
+}
+
+.entenda-mobile .tab-contents .tab-content {
+    display: none
+}
+
+.entenda-mobile .tab-contents .tab-content.open {
+    display: block
+}
+
+.entenda-mobile .tab-contents .textos h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #47484C;
+    text-align: center;
+    margin: 2.5rem 0
+}
+
+.entenda-mobile .tab-contents .textos p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #47484C;
+    text-align: left;
+    padding: 0 1rem
+}
+
+.entenda-mobile .tab-contents .textos p.left {
+    text-align: left
+}
+
+.entenda-mobile .tab-contents .textos p.mb-48 {
+    margin-bottom: 3rem
+}
+
+.entenda-mobile .tab-contents .textos h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #47484C;
+    margin-bottom: 0.5rem;
+    padding: 0 1rem
+}
+
+.entenda-mobile .tab-contents .textos .c-func {
+    margin: 4rem 0;
+    border-top: 1px solid #E0E1E6;
+    border-bottom: 1px solid #E0E1E6;
+    padding: 1.5rem 0.5rem
+}
+
+.entenda-mobile .tab-contents #c-etapa h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #47484C;
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 0 1rem
+}
+
+.entenda-mobile .tab-contents #c-etapa .content {
+    padding-bottom: 1.5rem
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .card-etapa {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    padding: 0.875rem;
+    max-width: 17.5rem;
+    min-height: 11.8125rem;
+    max-height: 11.8125rem;
+    margin: 0.5rem
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .card-etapa h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #F36279;
+    text-align: center
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .card-etapa h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #47484C;
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .card-etapa h3 {
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .card-etapa p {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #47484C;
+    text-align: left
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .slick-dots li {
+    width: 0.5rem;
+    height: 0.625rem
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .slick-dots .slick-active button {
+    background: #C50030
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .slick-dots .slick-active button::before {
+    opacity: 1
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .slick-dots button {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #B1B1B1;
+    border-radius: 16px
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .slick-dots button::before {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: transparent;
+    border-radius: 16px;
+    content: '';
+    opacity: 0
+}
+
+.entenda-mobile .tab-contents #c-etapa .content .carrossel .slick-dots button::before.slick-active {
+    opacity: 1
+}
+
+.entenda-mobile .tab-contents .bottom h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #47484C;
+    margin-bottom: 24px;
+    text-align: center
+}
+
+.entenda-mobile .tab-contents .bottom .btn-red {
+    width: calc(100% - 48px);
+    margin: 0 auto 16px
+}
+
+.entenda-mobile .tab-contents .bottom .duvida {
+    font-size: 16px;
+    font-weight: 600;
+    color: #3B69FF;
+    text-align: center;
+    display: block;
+    margin: 0 auto
+}
+
+@media (max-width: 992px) {
+    .entenda-mobile {
+        display:block
+    }
+}
+
+@media (max-width: 768px) {
+    .entenda-mobile {
+        padding:48px 8px
+    }
+}
+
+.simule .c-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem
+}
+
+.simule .c-title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #47484C;
+    width: 50%;
+    padding-right: 1rem
+}
+
+.simule .c-title .vertical-line {
+    border-left: 4px solid #E1173F;
+    width: 50%;
+    height: 48px
+}
+
+.simule .bg {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/bg-simule.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 2rem 7.5rem 2rem
+}
+
+.simule .bg .title-mobile {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin: 0;
+    display: none
+}
+
+.simule .bg p {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 24px
+}
+
+.simule .bg .content .carrossel {
+    display: flex;
+    justify-content: space-between
+}
+
+.simule .bg .content .carrossel .c-card .card {
+    display: flex;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    padding: 2.25rem;
+    max-width: 18.375rem;
+    min-height: 24.375rem;
+    height: 24.375rem;
+    margin: 0.5rem
+}
+
+.simule .bg .content .carrossel .c-card .card .icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem
+}
+
+.simule .bg .content .carrossel .c-card .card .icon-text .icon-1 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/3-icon-1.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 3.125rem;
+    height: 2.75rem
+}
+
+.simule .bg .content .carrossel .c-card .card .icon-text .icon-2 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/3-icon-2.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 3.125rem;
+    height: 2.75rem
+}
+
+.simule .bg .content .carrossel .c-card .card .icon-text .icon-3 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/3-icon-3.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 3.5625rem;
+    height: 2.75rem
+}
+
+.simule .bg .content .carrossel .c-card .card .icon-text .icon-4 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/3-icon-4.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 3.125rem;
+    height: 2.75rem
+}
+
+.simule .bg .content .carrossel .c-card .card .icon-text h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #47484C;
+    margin-left: 1.5rem
+}
+
+.simule .bg .content .carrossel .c-card .card p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #47484C;
+    line-height: 1.375rem;
+    padding-top: 0;
+    margin-left: 0;
+    margin-bottom: 8px
+}
+
+.simule .bg .content .carrossel .c-card .card .c-button .btn-red {
+    max-width: 9.375rem
+}
+
+.simule .bg .content .carrossel .c-card .card .c-button .line {
+    margin-top: 1.5rem;
+    width: 1.875rem;
+    border-bottom: 2px solid #E1173F
+}
+
+.simule .bg .content .carrossel .slick-dots {
+    left: 0rem
+}
+
+.simule .bg .content .carrossel .slick-dots li {
+    width: 0.5rem;
+    height: 0.625rem
+}
+
+.simule .bg .content .carrossel .slick-dots .slick-active button {
+    background: #C50030
+}
+
+.simule .bg .content .carrossel .slick-dots .slick-active button::before {
+    opacity: 1
+}
+
+.simule .bg .content .carrossel .slick-dots button {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #B1B1B1;
+    border-radius: 16px
+}
+
+.simule .bg .content .carrossel .slick-dots button::before {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: transparent;
+    border-radius: 16px;
+    content: '';
+    opacity: 0
+}
+
+.simule .bg .content .carrossel .slick-dots button::before.slick-active {
+    opacity: 1
+}
+
+@media (max-width: 1440px) {
+    .simule .bg {
+        padding:0px 2rem 2.5rem
+    }
+
+    .simule .bg h2,.simule .bg p {
+        padding-top: 0;
+        margin-left: 0;
+        padding-top: 2rem
+    }
+}
+
+@media (max-width: 1280px) {
+    .simule .bg .content .carrossel .c-card .card {
+        padding:1.5rem
+    }
+
+    .simule .bg .content .carrossel .c-card .card .icon-text h3 {
+        margin-left: 0.75rem
+    }
+}
+
+@media (max-width: 1024px) {
+    .simule .c-title {
+        padding:0 3.75rem;
+        width: 100%
+    }
+
+    .simule .bg {
+        padding: 0px 0px 5rem
+    }
+
+    .simule .bg p {
+        margin-left: 0.75rem
+    }
+
+    .simule .bg .content {
+        width: 100%;
+        margin-left: 2.75rem
+    }
+}
+
+@media (max-width: 768px) {
+    .simule .c-title {
+        padding:0 1.5rem;
+        display: none
+    }
+
+    .simule .bg {
+        padding: 0px 0px 5rem
+    }
+
+    .simule .bg .title-mobile {
+        display: block
+    }
+
+    .simule .bg p {
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        text-align: center
+    }
+
+    .simule .bg p br {
+        display: none
+    }
+
+    .simule .bg .content {
+        margin-left: 0
+    }
+
+    .simule .bg .content .carrossel .c-card .card p {
+        text-align: left
+    }
+}
+
+.section {
+    display: flex;
+    align-items: start;
+    padding: 3rem 0 4.375rem
+}
+
+.section p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #47484C;
+    line-height: 2.25rem
+}
+
+.section .c-img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.section .c-img img {
+    width: 85%;
+    margin: 0 auto;
+    flex-shrink: 0
+}
+
+.section .c-img button {
+    background: transparent;
+    border: none;
+    margin-top: 2.625rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #499ED0
+}
+
+.section .contents {
+    width: 50%
+}
+
+.section .contents h3 {
+    color: #47484C;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem
+}
+
+.section .contents h3 img {
+    margin-right: 10px;
+}
+
+.section .contents .qrcode {
+    max-width: 280px;
+    margin-top: 1rem;
+}
+
+.section .contents .qrcode .btn-app-store {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+.section .contents .qrcode > img {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.section .contents .qrcode a:first-child {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.section.contents .qrcode a:last-child {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.section .contents .atendimento {
+    color: #47484C;
+}
+
+.section .contents .atendimento strong {
+    font-size: 1.5rem;
+    display: block;
+    margin: 1rem 0 0.2rem;
+}
+
+.section .contents .atendimento small {
+    font-size: 1rem;
+    display: block;
+}
+
+.section .contents .carrossel .item1 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #47484C;
+    margin-bottom: 2.5rem
+}
+
+.section .contents .carrossel .item1 p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #47484C;
+    line-height: 1.7rem
+}
+
+.section .contents .carrossel .item2 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #47484C;
+    margin-bottom: 1.5rem;
+    text-align: center
+}
+
+.section .contents .carrossel .item2 .cards-etapas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+.section .contents .carrossel .item2 .cards-etapas .card-etapa {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    padding: 0.875rem;
+    max-width: 11.375rem;
+    min-height: 14.0625rem;
+    max-height: 14.0625rem;
+    margin: 0.5rem
+}
+
+.section .contents .carrossel .item2 .cards-etapas .card-etapa h5 {
+    font-size: 3.3125rem;
+    font-weight: 700;
+    color: #F36279;
+    text-align: center
+}
+
+.section .contents .carrossel .item2 .cards-etapas .card-etapa h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+.section .contents .carrossel .item2 .cards-etapas .card-etapa p {
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: black;
+    text-align: center
+}
+
+.section .contents .carrossel .item3 h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #47484C;
+    margin-bottom: 2rem
+}
+
+.section .contents .carrossel .item3 p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #47484C;
+    line-height: 2.4375rem
+}
+
+.section .contents .slick-dots-custom {
+    width: 11.25rem;
+    margin: 0 auto;
+    position: relative
+}
+
+.section .contents .slick-dots-custom .slick-prev {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/arrow-left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.0625rem;
+    height: 2.0625rem;
+    left: 0
+}
+
+.section .contents .slick-dots-custom .slick-prev::before {
+    content: ''
+}
+
+.section .contents .slick-dots-custom .slick-next {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.0625rem;
+    height: 2.0625rem;
+    right: 0
+}
+
+.section .contents .slick-dots-custom .slick-next::before {
+    content: ''
+}
+
+.section .contents .slick-dots-custom .slick-dots {
+    position: static;
+    height: 1.875rem
+}
+
+.section .contents .slick-dots-custom .slick-dots li {
+    width: 0.5rem;
+    height: 0.625rem
+}
+
+.section .contents .slick-dots-custom .slick-dots .slick-active button {
+    background: #C50030
+}
+
+.section .contents .slick-dots-custom .slick-dots .slick-active button::before {
+    opacity: 1
+}
+
+.section .contents .slick-dots-custom .slick-dots button {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #B1B1B1;
+    border-radius: 16px
+}
+
+.section .contents .slick-dots-custom .slick-dots button::before {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: transparent;
+    border-radius: 16px;
+    content: '';
+    opacity: 0
+}
+
+.section .contents .slick-dots-custom .slick-dots button::before.slick-active {
+    opacity: 1
+}
+
+.section .contents .buttom-item1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem
+}
+
+.section .contents .buttom-item1 p {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #47484C;
+    margin-right: 1rem
+}
+
+.section .contents .buttom-item1 .btn-red {
+    width: 10.8125rem
+}
+
+.quero-agro {
+    max-width: 158px;
+    margin: 40px 0;
+}
+
+
+@media (max-width: 1500px) {
+    .section .c-img {
+        width:50%
+    }
+
+    .section .contents {
+        width: 50%
+    }
+}
+
+@media (max-width: 1280px) {
+    .section .contents .carrossel .item2 .cards-etapas .card-etapa {
+        padding:0.5rem;
+        max-width: 9.125rem;
+        min-height: 12.25rem;
+        max-height: 12.25rem;
+        margin: 0.5rem
+    }
+
+    .section .contents .carrossel .item2 .cards-etapas .card-etapa h5 {
+        font-size: 2rem
+    }
+
+    .section .contents .carrossel .item3 p {
+        line-height: 2.0625rem
+    }
+}
+
+@media (max-width: 992px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .section .c-img {
+        width: 100%
+    }
+
+    .section .contents {
+        width: 100%;
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #id-perguntas-frequentes {
+        padding: 2rem;
+    }
+
+    #canal-consorciado {
+        flex-flow: column-reverse;
+    }
+
+    .section .contents .qrcode {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: initial;
+        width: 100%;
+        margin-top: 2rem;
+        gap: 15px;
+    }
+
+    .section .contents .qrcode > img {
+        display: none;
+    }
+
+    .section .contents .qrcode .btn-app-store {
+        display: flex;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+.planos {
+    padding: 4.25rem 0
+}
+
+.section .c-title,
+.planos .c-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem
+}
+
+.section .c-title h2,
+.planos .c-title h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #47484C;
+    width: 50%;
+    padding-right: 4rem
+}
+
+.section .c-title .vertical-line,
+.planos .c-title .vertical-line {
+    border-left: 4px solid #E1173F;
+    width: 50%;
+    height: 5.375rem
+}
+
+.planos .descr {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #47484C;
+    line-height: 2.4375rem;
+    text-align: center;
+    padding: 0 1.5rem
+}
+
+.planos .descr.d2 {
+    margin-bottom: 2.5rem
+}
+
+.planos .descr a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #456CF6
+}
+
+.planos .content {
+    margin-bottom: 1.5rem
+}
+
+.planos .content .carrossel {
+    display: flex;
+    justify-content: center
+}
+
+.planos .content .carrossel .card-plano {
+    width: 15rem;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    border-radius: 4px;
+    margin: 0px 0.25rem;
+    background: transparent;
+    border: none;
+    padding: 0
+}
+
+.planos .content .carrossel .card-plano .image {
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 7.5625rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover
+}
+
+.planos .content .carrossel .card-plano .image.img1 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/4-img-1.jpg")
+}
+
+.planos .content .carrossel .card-plano .image.img2 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/4-img-2.jpg")
+}
+
+.planos .content .carrossel .card-plano .image.img3 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/4-img-3.jpg")
+}
+
+.planos .content .carrossel .card-plano .image.img4 {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/4-img-4.jpg")
+}
+
+.planos .content .carrossel .card-plano .text {
+    position: relative;
+    height: 5.8125rem;
+    padding: 2.125rem 1.5rem 0;
+    border-radius: 0 0 4px 4px;
+    background: white
+}
+
+.planos .content .carrossel .card-plano .text .bg-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #e1173f 70%, #8322a5 100%);
+    width: 0;
+    height: 100%;
+    border-radius: 0 0 4px 4px;
+    z-index: 0;
+    transition: 0.4s
+}
+
+.planos .content .carrossel .card-plano .text h3 {
+    position: relative;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #47484C;
+    z-index: 1;
+    transition: 0.4s;
+    text-align: left
+}
+
+.planos .content .carrossel .card-plano .text .line {
+    margin-top: 1rem;
+    width: 1.875rem;
+    border-bottom: 2px solid #E1173F;
+    position: relative;
+    z-index: 1;
+    transition: 0.4s
+}
+
+.planos .content .carrossel .card-plano:focus .text h3,.planos .content .carrossel .card-plano:active .text h3,.planos .content .carrossel .card-plano.selected .text h3 {
+    color: white
+}
+
+.planos .content .carrossel .card-plano:focus .text .bg-gradient,.planos .content .carrossel .card-plano:active .text .bg-gradient,.planos .content .carrossel .card-plano.selected .text .bg-gradient {
+    width: 100%
+}
+
+.planos .content .carrossel .card-plano:focus .text .line,.planos .content .carrossel .card-plano:active .text .line,.planos .content .carrossel .card-plano.selected .text .line {
+    border-bottom: 2px solid white
+}
+
+.planos .content .carrossel .slick-dots {
+    left: 0;
+    margin-bottom: 16px
+}
+
+.planos .content .carrossel .slick-dots li {
+    width: 0.5rem;
+    height: 0.625rem
+}
+
+.planos .content .carrossel .slick-dots .slick-active button {
+    background: #C50030
+}
+
+.planos .content .carrossel .slick-dots .slick-active button::before {
+    opacity: 1
+}
+
+.planos .content .carrossel .slick-dots button {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: #B1B1B1;
+    border-radius: 16px
+}
+
+.planos .content .carrossel .slick-dots button::before {
+    width: 0.625rem;
+    height: 0.625rem;
+    background: transparent;
+    border-radius: 16px;
+    content: '';
+    opacity: 0
+}
+
+.planos .content .carrossel .slick-dots button::before.slick-active {
+    opacity: 1
+}
+
+.planos .descr-bottom {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #47484C;
+    line-height: 2.4375rem;
+    text-align: center;
+    padding: 0 1.5rem;
+    max-width: 800px;
+    margin: 0 auto
+}
+
+@media (max-width: 1024px) {
+    .section .c-title,
+    .planos .c-title {
+        padding:0 3.75rem
+    }
+
+    .planos .content {
+        padding-left: 1.5rem
+    }
+
+    .planos .content .carrossel .card-plano {
+        margin-top: 1rem;
+        margin-bottom: 1rem
+    }
+}
+
+@media (max-width: 768px) {
+    .section .c-title,
+    .planos .c-title {
+        padding:0 1.5rem;
+        margin-bottom: 2rem
+    }
+
+    .section .c-title h2,
+    .planos .c-title h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        padding: 0
+    }
+
+    .section .c-title .vertical-line,
+    .planos .c-title .vertical-line {
+        display: none
+    }
+
+    .planos .descr {
+        font-size: 1.125rem;
+        font-weight: normal;
+        line-height: 1.5rem;
+        margin-bottom: 1.5rem
+    }
+
+    .planos .descr.d2 {
+        display: none
+    }
+
+    .planos .descr-bottom {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem
+    }
+}
+
+.perguntas .c-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px
+}
+
+.perguntas .c-title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #47484C;
+    width: 50%;
+    padding-right: 64px
+}
+
+.perguntas .c-title .vertical-line {
+    border-left: 4px solid #E1173F;
+    width: 50%;
+    height: 59px
+}
+
+.perguntas .questions .pergunta {
+    width: 100%;
+    margin-bottom: 1rem
+}
+
+.perguntas .questions .pergunta button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #E4E5E9;
+    padding: 0 0 0.5rem
+}
+
+.perguntas .questions .pergunta button h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #47484C;
+    text-align: left
+}
+
+.perguntas .questions .pergunta button .seta {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/seta.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 1.0625rem;
+    height: 0.625rem;
+    transition: 0.4s
+}
+
+.perguntas .questions .pergunta button.open .seta {
+    transform: rotate(180deg)
+}
+
+.perguntas .questions .pergunta .expansivel-content {
+    max-height: 0;
+    transition: 0.4s;
+    overflow: hidden
+}
+
+.perguntas .questions .pergunta .expansivel-content a {
+    color: #456CF6;
+    font-weight: 600
+}
+
+.perguntas .questions .pergunta button.open ~ .expansivel-content {
+    max-height: 50rem;
+    padding: 1.5rem 0
+}
+
+@media (max-width: 1024px) {
+    .perguntas .c-title {
+        padding:0 3.75rem
+    }
+
+    .perguntas .questions {
+        padding: 0 3.75rem
+    }
+}
+
+@media (max-width: 768px) {
+    .perguntas .c-title {
+        padding:0 24px
+    }
+
+    .perguntas .c-title h2 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        text-align: center;
+        width: 100%;
+        padding: 0
+    }
+
+    .perguntas .c-title .vertical-line {
+        display: none
+    }
+
+    .perguntas .questions {
+        padding: 0 1.5rem
+    }
+
+    .perguntas .questions .pergunta button {
+        padding-bottom: 1rem
+    }
+}
+
+.servicos-content .c-content-cards {
+    margin-top: 2.5rem
+}
+
+.servicos-content .c-content-cards .content-card {
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    width: 100%;
+    padding: 2.625rem;
+    position: relative;
+    display: none
+}
+
+.servicos-content .c-content-cards .content-card #frmConsorcioFormPFconsulta {
+    width: 100%;
+    height: 68.75rem;
+    overflow-y: auto
+}
+
+.servicos-content .c-content-cards .content-card .close {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/fechar.svg");
+    background-repeat: no-repeat;
+    width: 1.0625rem;
+    height: 1.0625rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 3.5rem;
+    border: none
+}
+
+.servicos-content .c-content-cards .content-card .mb-16 {
+    margin-bottom: 1rem
+}
+
+.servicos-content .c-content-cards .content-card .mb-24 {
+    margin-bottom: 1.5rem
+}
+
+.servicos-content .c-content-cards .content-card .mb-32 {
+    margin-bottom: 2rem
+}
+
+.servicos-content .c-content-cards .content-card .mb-40 {
+    margin-bottom: 2.5rem
+}
+
+.servicos-content .c-content-cards .content-card .mb-48 {
+    margin-bottom: 3rem
+}
+
+.servicos-content .c-content-cards .content-card .mb-56 {
+    margin-bottom: 3.5rem
+}
+
+.servicos-content .c-content-cards .content-card .mb-64 {
+    margin-bottom: 4rem
+}
+
+.servicos-content .c-content-cards .content-card .mb-72 {
+    margin-bottom: 4.5rem
+}
+
+.servicos-content .c-content-cards .content-card .mb-96 {
+    margin-bottom: 6rem
+}
+
+.servicos-content .c-content-cards .content-card .ml-16 {
+    margin-left: 1rem
+}
+
+.servicos-content .c-content-cards .content-card .black {
+    color: black
+}
+
+.servicos-content .c-content-cards .content-card .sb {
+    font-weight: 600
+}
+
+.servicos-content .c-content-cards .content-card .block {
+    display: block
+}
+
+.servicos-content .c-content-cards .content-card h4 {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #C50030;
+    text-align: left
+}
+
+.servicos-content .c-content-cards .content-card a {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #456CF6;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.servicos-content .c-content-cards .content-card p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #47484C;
+    text-align: left
+}
+
+.servicos-content .c-content-cards .content-card ul {
+    list-style: circle inside url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/circle-list.svg")
+}
+
+.servicos-content .c-content-cards .content-card ul li {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #47484C
+}
+
+.servicos-content .c-content-cards .content-card .btn-outline-red {
+    max-width: 19.125rem
+}
+
+.servicos-content .c-content-cards .content-card .btn-outline-red.mobile {
+    display: none
+}
+
+.servicos-content .c-content-cards .content-card .line {
+    width: 3.75rem;
+    border-bottom: 4px solid #E1173F;
+    position: relative;
+    top: 10px;
+}
+
+.servicos-content .c-content-cards .content-card .pergunta {
+    width: 100%;
+    margin-bottom: 1rem
+}
+
+.servicos-content .c-content-cards .content-card .pergunta button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #E4E5E9;
+    padding: 0 0 0.5rem
+}
+
+.servicos-content .c-content-cards .content-card .pergunta button h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #47484C;
+    text-align: left
+}
+
+.servicos-content .c-content-cards .content-card .pergunta button .seta {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/seta.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 1.0625rem;
+    height: 0.625rem;
+    transition: 0.4s
+}
+
+.servicos-content .c-content-cards .content-card .pergunta button.open .seta {
+    transform: rotate(180deg)
+}
+
+.servicos-content .c-content-cards .content-card .pergunta .expansivel-content {
+    max-height: 0;
+    transition: 0.4s;
+    overflow: hidden
+}
+
+.servicos-content .c-content-cards .content-card .pergunta .expansivel-content .doc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px
+}
+
+.servicos-content .c-content-cards .content-card .pergunta .expansivel-content .doc .icon {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/modal/6-file-blue.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1.8125rem;
+    height: 2.4375rem;
+    margin-right: 0.5rem
+}
+
+.servicos-content .c-content-cards .content-card .pergunta .expansivel-content .doc a {
+    font-weight: 600
+}
+
+.servicos-content .c-content-cards .content-card .pergunta button.open ~ .expansivel-content {
+    max-height: 100rem;
+    padding: 0.5rem 0
+}
+
+@media (max-width: 1024px) {
+    .servicos-content .c-content-cards {
+        padding:0 3.75rem
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-content .c-content-cards {
+        padding:0 1.5rem
+    }
+
+    .servicos-content .c-content-cards .content-card {
+        padding: 2.5rem 1.5rem
+    }
+
+    .servicos-content .c-content-cards .content-card .btn-outline-red.desktop {
+        display: none
+    }
+
+    .servicos-content .c-content-cards .content-card .btn-outline-red.mobile {
+        display: block
+    }
+
+    .servicos-content .c-content-cards .content-card .close {
+        top: 1rem;
+        right: 1rem
+    }
+}
+
+@media (max-width: 420px) {
+    .servicos-content .c-content-cards {
+        padding:0
+    }
+
+    .servicos-content .c-content-cards .content-card .btn-outline-red {
+        width: calc(100% - 2rem)
+    }
+}
+
+.servicos-aba {
+    padding-top: 8.125rem;
+    background: #F8F8F8;
+    padding-bottom: 3.75rem
+}
+
+.servicos-aba h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #47484C;
+    text-align: center;
+    margin-bottom: 2rem
+}
+
+.servicos-aba .simple-select {
+    max-width: 24.5rem;
+    margin: 0 auto 2rem
+}
+
+.servicos-aba select::-ms-expand {
+    display: none
+}
+
+.servicos-aba .simple-select select {
+    border: 0;
+    border-bottom: 0.0625rem solid #c8c9cc;
+    color: #47484C;
+    font-weight: 500;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.1875rem;
+    transition: all 0.5s ease-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    height: 2.375rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2016%209%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%233B69FF%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20d%3D%22M0.5%2C0.5l7.5%2C8l7.5-8%22/%3E%0A%3C/svg%3E%0A");
+    background-size: 1.125rem 0.75rem;
+    background-position: right top 55%;
+    background-repeat: no-repeat;
+    padding-right: 1rem;
+    position: relative
+}
+
+.servicos-aba .simple-select select:focus {
+    font-weight: 500;
+    color: #000000;
+    border-bottom: 1px solid #3b69ff;
+    box-shadow: 0px 1px 0px 0px #3b69ff
+}
+
+.servicos-aba .simple-select select:focus {
+    border-color: #3b69ff;
+    box-shadow: 0px 1px 0px 0px #3b69ff;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2016%209%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cpath%20fill%3D%22none%22%20stroke%3D%22%233B69FF%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20d%3D%22M15.5%2C8.5L8%2C0.5l-7.5%2C8%22/%3E%0A%3C/svg%3E%0A")
+}
+
+.servicos-aba .simple-select select:focus+label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+    color: #3b69ff
+}
+
+.servicos-aba .simple-select select.selected {
+    color: #000000;
+    font-weight: 500;
+    border-color: #000000;
+    border-bottom: 1px solid black
+}
+
+.servicos-aba .simple-select select.selected+label {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+    color: #6d6e71
+}
+
+.servicos-aba .c-tab {
+    width: calc(100% - 48px);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden
+}
+
+.servicos-aba .c-tab .gradient {
+    position: absolute;
+    right: -1px;
+    top: 0;
+    height: 100%;
+    width: 16px;
+    background: linear-gradient(90deg, rgba(248,248,248,0) 0%, #f8f8f8 100%);
+    display: none;
+    z-index: 1
+}
+
+.servicos-aba .c-tab .scroll-tab {
+    position: relative
+}
+
+.servicos-aba .head-tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid #E4E5E9;
+    max-width: 48rem;
+    margin: 0 auto
+}
+
+.servicos-aba .head-tab button {
+    background: transparent;
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #47484C;
+    text-align: center;
+    padding: 0 0 1rem;
+    position: relative
+}
+
+.servicos-aba .head-tab button.w30 {
+
+}
+
+.servicos-aba .head-tab button.w40 {
+
+}
+
+.servicos-aba .head-tab button::before {
+    content: ' ';
+    border-top: 4px solid #E1173F;
+    width: 100%;
+    height: 0.1875rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: 0.3s;
+    border-radius: 8px 8px 0 0
+}
+
+.servicos-aba .head-tab button.open {
+    font-weight: 600;
+    color: #E1173F
+}
+
+.servicos-aba .head-tab button.open::before {
+    transform: scaleX(1)
+}
+
+@media (max-width: 1400px) {
+    .servicos-aba {
+        padding-top:10.125rem
+    }
+}
+
+@media (max-width: 1024px) {
+    .servicos-aba {
+        padding-top:12.125rem
+    }
+
+    .servicos-aba h1 {
+        padding: 0 3.75rem
+    }
+}
+
+@media (max-width: 768px) {
+    .servicos-aba h1 {
+        font-size:1.25rem;
+        padding: 0 1.5rem;
+        margin-left: 12px;
+    }
+
+    .servicos-aba .simple-select {
+        padding: 0 1.5rem
+    }
+
+    .servicos-aba .head-tab {
+        min-width: 27rem
+    }
+}
+
+@media (max-width: 478px) {
+    .servicos-aba .c-tab .gradient {
+        display:block
+    }
+
+    .servicos-aba .c-tab .scroll-tab {
+        overflow-x: auto
+    }
+}
+
+.servicos-content .tab-contents .tab-content {
+    display: none
+}
+
+.servicos-content .tab-contents .tab-content.open {
+    display: block
+}
+
+.servicos-content .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0.25rem auto 0;
+    width: 53.75rem
+}
+
+.servicos-content .cards .card-servicos {
+    position: relative;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 16.875rem;
+    height: 6.25rem;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    padding: 0 1rem;
+    border: none;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
+}
+
+.servicos-content .cards .card-servicos.boleto {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/1-pagamentos-1.jpg")
+}
+
+.servicos-content .cards .card-servicos.quitacao {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/1-pagamentos-2.jpg")
+}
+
+.servicos-content .cards .card-servicos.gravame {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/1-pagamentos-3.jpg")
+}
+
+.servicos-content .cards .card-servicos.atraso {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/1-pagamentos-4.jpg")
+}
+
+.servicos-content .cards .card-servicos.atraso-cotas {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/1-pagamentos-5.jpg")
+}
+
+.servicos-content .cards .card-servicos.reajuste {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/1-pagamentos-6.jpg")
+}
+
+.servicos-content .cards .card-servicos.extrato {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-1.jpg")
+}
+
+.servicos-content .cards .card-servicos.titularidade {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-2.jpg")
+}
+
+.servicos-content .cards .card-servicos.cotas {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-3.jpg")
+}
+
+.servicos-content .cards .card-servicos.contratos {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-4.jpg")
+}
+
+.servicos-content .cards .card-servicos.ir {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-5.jpg")
+}
+
+.servicos-content .cards .card-servicos.mudanca-bem {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-6.jpg")
+}
+
+.servicos-content .cards .card-servicos.atualizacao {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-7.jpg")
+}
+
+.servicos-content .cards .card-servicos.cancelamento {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-8.jpg")
+}
+
+.servicos-content .cards .card-servicos.tarifas {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-9.jpg")
+}
+
+.servicos-content .cards .card-servicos.substituicao {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-10.jpg")
+}
+
+.servicos-content .cards .card-servicos.restituicao {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-11.jpg")
+}
+
+.servicos-content .cards .card-servicos.grupos {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/2-acompanhe-12.jpg")
+}
+
+.servicos-content .cards .card-servicos.antecipacao {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-1.jpg")
+}
+
+.servicos-content .cards .card-servicos.documentos {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-2.jpg")
+}
+
+.servicos-content .cards .card-servicos.pagamento {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-3.jpg")
+}
+
+.servicos-content .cards .card-servicos.oferta {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-4.jpg")
+}
+
+.servicos-content .cards .card-servicos.calendario {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-5.jpg")
+}
+
+.servicos-content .cards .card-servicos.contemplacao {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-6.jpg")
+}
+
+.servicos-content .cards .card-servicos.fgts {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-7.jpg")
+}
+
+.servicos-content .cards .card-servicos.composicao {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-8.jpg")
+}
+
+.servicos-content .cards .card-servicos.lance {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/3-assembleia-13.jpg")
+}
+
+
+.servicos-content .cards .card-servicos.venda {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/servicos/1-vendas-cotas.jpg")
+}
+
+.contemplacao .contemplacao__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contemplacao .contemplacao__row .contemplacao__card {
+    background: #FFFFFF;
+    border: 1px solid #F0F1F5;
+    border-radius: 8px;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.contemplacao .contemplacao__row .contemplacao__card p.card__title {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Bradesco", sans-serif;
+    font-weight: 600;
+    color: #000000;
+    margin: 10px 0;
+}
+
+.contemplacao .contemplacao__row .contemplacao__card p.card__info {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Bradesco", sans-serif;
+    font-weight: normal;
+    color: #47484C;
+    margin-bottom: 24px;
+    max-width: 245px;
+}
+
+.contemplacao .contemplacao__row .contemplacao__card a {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: "Bradesco", sans-serif;
+    font-weight: normal;
+    color: #3B69FF;
+}
+
+.contemplacao .contemplacao__row .contemplacao__card a::after {
+    content: "";
+    border: solid #3B69FF;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 18px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.servicos-content .cards .card-servicos .black-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.69) 0%, rgba(145,145,145,0.5) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: 0;
+    transition: 0.4s
+}
+
+.servicos-content .cards .card-servicos .red-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(225,23,63,0.47) 60%, rgba(131,34,165,0.47) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.4s
+}
+
+.servicos-content .cards .card-servicos p {
+    position: relative;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+    z-index: 2;
+    text-align: left;
+    line-height: 1.25rem
+}
+
+.servicos-content .cards .card-servicos .line {
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
+    width: 1.875rem;
+    border-bottom: 2px solid #E1173F;
+    position: relative;
+    z-index: 2;
+    transition: 0.4s
+}
+
+.servicos-content .cards .card-servicos:hover .black-gradient,.servicos-content .cards .card-servicos:active .black-gradient,.servicos-content .cards .card-servicos:focus .black-gradient {
+    opacity: 0
+}
+
+.servicos-content .cards .card-servicos:hover .red-gradient,.servicos-content .cards .card-servicos:active .red-gradient,.servicos-content .cards .card-servicos:focus .red-gradient {
+    opacity: 1
+}
+
+@media (max-width: 992px) {
+    .servicos-content .cards {
+        justify-content:center;
+        width: calc(100% - 7.5rem)
+    }
+}
+
+@media (max-width: 420px) {
+    .servicos-content .cards {
+        width:calc(100% - 3rem)
+    }
+}
+
+.servico-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s
+}
+
+.servico-modal .bg-black {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 1
+}
+
+.servico-modal .modal-content {
+    position: relative;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    padding: 3.5rem;
+    /* max-height: 70%; */
+    /* max-width: 80%; */
+    transition: 0.4s;
+    overflow-y: auto
+}
+
+.servico-modal .modal-content .conteudo {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%
+}
+
+.servico-modal .modal-content .close-modal {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/fechar.svg");
+    background-repeat: no-repeat;
+    width: 1.0625rem;
+    height: 1.0625rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    border: none
+}
+
+.servico-modal .modal-content .mb-16 {
+    margin-bottom: 1rem
+}
+
+.servico-modal .modal-content .mb-24 {
+    margin-bottom: 1.5rem
+}
+
+.servico-modal .modal-content .mb-32 {
+    margin-bottom: 2rem
+}
+
+.servico-modal .modal-content .mb-40 {
+    margin-bottom: 2.5rem
+}
+
+.servico-modal .modal-content .mb-48 {
+    margin-bottom: 3rem
+}
+
+.servico-modal .modal-content .mb-56 {
+    margin-bottom: 3.5rem
+}
+
+.servico-modal .modal-content .mb-64 {
+    margin-bottom: 4rem
+}
+
+.servico-modal .modal-content .mb-72 {
+    margin-bottom: 4.5rem
+}
+
+.servico-modal .modal-content .mb-96 {
+    margin-bottom: 6rem
+}
+
+.servico-modal .modal-content .ml-24 {
+    margin-left: 1.5rem
+}
+
+.servico-modal .modal-content .text-center {
+    text-align: center
+}
+
+.servico-modal .modal-content p {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #707070
+}
+
+.servico-modal .modal-content p.titulo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 2.5rem
+}
+
+.servico-modal .modal-content p.texto {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black
+}
+
+.servico-modal .modal-content p.texto2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #47484C;
+    margin-bottom: 24px
+}
+
+.servico-modal .modal-content p.valor {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem
+}
+
+.servico-modal .modal-content .img-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem
+}
+
+.servico-modal .modal-content .img-text img {
+    margin-right: 1rem
+}
+
+.servico-modal .modal-content .line {
+    width: 3.75rem;
+    border-bottom: 4px solid #E1173F;
+    position: relative
+}
+
+.servico-modal .modal-content .c-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+@media (max-width: 490px) {
+    .servico-modal .modal-content .c-flex {
+        justify-content:center
+    }
+}
+
+.servico-modal .modal-content a {
+    color: #3B69FF;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+.servico-modal .modal-content a img {
+    margin-bottom: 0.5rem;
+    margin-left: 3.25rem
+}
+
+.servico-modal.esconde {
+    opacity: 0;
+    pointer-events: none
+}
+
+.servico-modal.esconde .bg-black {
+    transition: 0.4s
+}
+
+.servico-modal.esconde .modal-content {
+    transform: translate(0, -18.75rem)
+}
+
+@media (max-width: 768px) {
+    .servico-modal .modal-content {
+        padding:3.25rem 1.5rem 1.5rem;
+        /* max-width: calc(100% - 1.5rem) */
+    }
+}
+
+.simple-modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s
+}
+
+.simple-modal .bg-black {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 1
+}
+
+.simple-modal .modal-content {
+    position: relative;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem rgba(0,0,0,0.16);
+    padding: 3.5rem;
+    max-height: 70%;
+    max-width: 80%;
+    transition: 0.4s;
+    overflow-y: auto
+}
+
+.simple-modal .modal-content .conteudo {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.simple-modal .modal-content .conteudo .msg {
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem
+}
+
+.simple-modal .modal-content .close-modal {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18.388' height='18.385' viewBox='0 0 18.388 18.385'%3E%3Cg id='Grupo_6126' data-name='Grupo 6126' transform='translate(-180.833 -66.947)'%3E%3Cg id='Grupo_1883' data-name='Grupo 1883' transform='translate(1910.418 25493.799) rotate(45)'%3E%3Cg id='Grupo_6125' data-name='Grupo 6125'%3E%3Cline id='Linha_67' data-name='Linha 67' x2='24' transform='translate(-19201.5 -16756.498)' fill='none' stroke='%23E1173F' stroke-width='2'/%3E%3Cpath id='Caminho_3582' data-name='Caminho 3582' d='M0,0V24' transform='translate(-19189.498 -16768.5)' fill='none' stroke='%23E1173F' stroke-width='2'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    border: none
+}
+
+.simple-modal .modal-content .icon-warn {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iSWNvbl8tX0F2aXNvIiBkYXRhLW5hbWU9Ikljb24gLSBBdmlzbyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTYiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCA1NiA1NiI+DQogIDxyZWN0IGlkPSJSZWN0YW5nbGVfNjE2IiBkYXRhLW5hbWU9IlJlY3RhbmdsZSA2MTYiIHdpZHRoPSI1NiIgaGVpZ2h0PSI1NiIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMCIvPg0KICA8ZyBpZD0iR3JvdXBfMiIgZGF0YS1uYW1lPSJHcm91cCAyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjIgNy4xNzUpIj4NCiAgICA8ZyBpZD0iR3JvdXBfMTlfQ29weSIgZGF0YS1uYW1lPSJHcm91cCAxOSBDb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIj4NCiAgICAgIDxwYXRoIGlkPSJTdHJva2VfNTAwN19Db3B5IiBkYXRhLW5hbWU9IlN0cm9rZSA1MDA3IENvcHkiIGQ9Ik0uMjgxLDBWMTYuNDM0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMy41MTggMTAuMTcxKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZmZiYzAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLXdpZHRoPSIyIi8+DQogICAgICA8cGF0aCBpZD0iRmlsbF81MDA4X0NvcHkiIGRhdGEtbmFtZT0iRmlsbCA1MDA4IENvcHkiIGQ9Ik0yLjI0NywxLjEyMUExLjEyMywxLjEyMywwLDEsMSwxLjEyMywwLDEuMTIyLDEuMTIyLDAsMCwxLDIuMjQ3LDEuMTIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyMi42NzUgMzIuODI4KSIgZmlsbD0iI2ZmYmMwMCIgc3Ryb2tlPSIjZmZiYzAwIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgICAgIDxwYXRoIGlkPSJTdHJva2VfNTAwOV9Db3B5IiBkYXRhLW5hbWU9IlN0cm9rZSA1MDA5IENvcHkiIGQ9Ik0zNi4yMjYsNDEuNjQ5aDcuM2E0LjA1NSw0LjA1NSwwLDAsMCwzLjU4Ni01Ljk2MkwyNy4zODUsMi4xNDZhNC4wNjgsNC4wNjgsMCwwLDAtNy4xNzEsMEw0LDI5LjcwNS40ODMsMzUuNjg4QTQuMDU1LDQuMDU1LDAsMCwwLDQuMDcsNDEuNjQ5SDI0LjM3NiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmYmMwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS13aWR0aD0iMiIvPg0KICAgIDwvZz4NCiAgPC9nPg0KPC9zdmc+DQo=");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 4.125rem;
+    min-height: 4.125rem;
+    margin-bottom: 1rem
+}
+
+.simple-modal.esconde {
+    opacity: 0;
+    pointer-events: none
+}
+
+.simple-modal.esconde .bg-black {
+    transition: 0.4s
+}
+
+.simple-modal.esconde .modal-content {
+    transform: translate(0, -18.75rem)
+}
+
+@media (max-width: 768px) {
+    .simple-modal .modal-content {
+        padding:3.25rem 1.5rem 1.5rem;
+        max-width: calc(100% - 1.5rem)
+    }
+}
+
+html {
+    font-size: 14px
+}
+
+html.accessib-contraste-pa .bg-access,html.accessib-contraste-pb .bg-access {
+    background: black !important
+}
+
+body {
+    font-family: 'Bradesco' !important;
+    margin: 0;
+    background: white
+}
+
+* {
+    box-sizing: border-box
+}
+
+*:focus {
+    outline: none
+}
+
+a {
+    text-decoration: none
+}
+
+.consorcio-content {
+    position: relative;
+    margin-top: 112px;
+    overflow: hidden;
+    z-index: 1
+}
+
+@media (max-width: 768px) {
+    .consorcio-content {
+        margin-top:104px
+    }
+}
+
+.consorcio-content .home-content {
+    opacity: 1;
+    transition: 0.4s
+}
+
+.consorcio-content .home-content.hide {
+    display: none;
+    opacity: 0
+}
+
+.consorcio-content .servicos-content {
+    opacity: 1;
+    transition: 0.4s
+}
+
+.consorcio-content .servicos-content.show {
+    display: block;
+    opacity: 1
+}
+
+.show {
+    top: 750px;
+}
+
+.consorcio-content .voltar-topo {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin: 48px auto;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3B69FF
+}
+
+.consorcio-content .voltar-topo .seta-topo {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/seta-voltar-topo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 8px;
+    margin-left: 8px
+}
+
+.holder .canal-consorciado {
+    display: block
+}
+
+div#topBar.headertopBar div.canal-consorciado {
+    top: 8px
+}
+
+div#topBar.headertopBar div.canal-consorciado a {
+    width: auto;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 8px;
+    border: 0;
+    background: #ffffff;
+    border-right: 1px solid #78051c;
+    border-bottom: 1px solid #78051c;
+    border-radius: 30px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 12px;
+    font-family: "Bradesco", sans-serif;
+    font-weight: 700;
+    color: #cc092f;
+    outline: none;
+    position: relative
+}
+
+div#topBar.headertopBar {
+    z-index: 99999!important
+}
+
+div#topBar.headertopBar div.canal-consorciado a:after {
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #dd536d;
+    position: absolute;
+    right: -18px;
+    top: 3px
+}
+
+div#topBar.headertopBar div.canal-consorciado a:hover {
+    color: #fff;
+    background: #cc092f
+}
+
+.accessib-holder {
+    margin-top: 15px;
+    float: right;
+}
+
+.topico {
+    margin: 20px 0;
+    font-size: 1.3rem;
+    color: #e1173f;
+    border: none;
+    background: none;
+    font-weight: 700;
+    padding: 0;
+    width: 100%;
+}
+
+.pergunta-topico button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pergunta-topico[aria-expanded="false"] .seta {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/seta.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 1.0625rem;
+    height: 0.625rem;
+    transition: 0.4s;
+}
+
+.pergunta-topico[aria-expanded="true"] .seta {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/seta.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-width: 1.0625rem;
+    height: 0.625rem;
+    transition: 0.4s;
+    transform: rotate(180deg);
+}
+
+
+.modal-form .modal-content {
+    width: 759px;
+    min-height: 440px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    display: flex;
+}
+
+.modal-form.servico-modal .modal-content {
+    padding: 0;
+}
+
+.modal-form .modal-content .form-image {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/bg-form.jpg") no-repeat;
+    color: #fff;
+    width: 40%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+.modal-form .modal-content .form-image p {
+    color: #fff;
+}
+
+.modal-form .modal-content .form-container {
+    color: #000;
+    width: 60%;
+    height: 100%;
+}
+
+.modal-form .modal-content .form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 20px 30px;
+}
+
+.modal-form .modal-content .form-container form .btn-enviar {
+    width: 84px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background: #e1173f;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.modal-form .modal-content .form-container form input {
+    width: 100%;
+    margin: 5px 0;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.modal-form .modal-content .form-container form label {
+    width: 100%;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #4D4E53;
+}
+
+.modal-form .modal-content .form-image .form-text {
+    /* position: absolute; */
+    bottom: 20px;
+    width: 100%;
+    padding: 25px;
+}
+
+.modal-form .modal-content .form-image .form-text h3 {
+    font-size: 18px!important;
+    margin-bottom: 20px;
+}
+
+.modal-form .modal-content .form-image .form-text p {
+    font-size: 14px!important;
+    margin-bottom: 20px;
+}
+
+.modal-form .modal-content .form-image .form-text:after {
+    content: '';
+    border-bottom: 4px solid #e1173f;
+    display: block;
+    width: 50px;
+}
+
+.modal-form .modal-content .close-modal {
+    z-index: 999;
+    right: 15px;
+    top: 15px!important;
+    left: auto;
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/fechar-form.png");
+}
+
+.modal-form .modal-content .form-container form .half{
+    width: 48%;
+}
+
+.modal-form.servico-modal .bg-black {
+    height: 100%;
+}
+
+.modal-form.servico-modal {
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .modal-form .modal-content .form-container form {
+        height: 80%;
+        padding: 30px;
+    }
+    .modal-form.servico-modal {
+        align-items: unset;
+        padding-top: 2rem;
+    }
+    .modal-form .modal-content .form-container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .modal-form .modal-content .form-image {
+       /* display: none; */
+        background: unset!important;
+        width: 100%;
+        /* height: 100%; */
+    }
+    .modal-form .modal-content .form-container form .half {
+        width: 100%;
+    }
+    .modal-form .modal-content .form-image .form-text {
+        bottom: 0;
+    }
+    .modal-form .modal-content {
+        height: 85vh!important;
+        flex-direction: column;
+    }
+    .servico-modal .modal-content p {
+        color: #707070;
+    }
+    .modal-form .modal-content .form-image .form-text p {
+
+        color: #4D4E53;
+    }
+    .modal-form .modal-content .form-image .form-text h3 {
+        color: #4D4E53;
+    }
+}
+
+/* MODAL AGRO */
+
+
+#modal-agro.modal-form .modal-content {
+    /* width: 759px; */
+    width: 900px;
+    max-height: 459px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    display: flex;
+}
+
+#modal-agro.modal-form.servico-modal .modal-content {
+    padding: 0;
+    overflow: hidden;
+}
+
+#modal-agro.modal-form .modal-content .form-image {
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/bg-form-agro.jpg") no-repeat;
+    color: #fff;
+    width: 40%;
+    position: relative;
+    background-position: center!important;
+    background-size: cover!important;
+}
+
+.sucesso {
+    display: none;
+}
+
+small.termo {
+    padding: 30px 0;
+}
+
+#modal-agro.modal-form .modal-content .form-image p {
+    color: #fff;
+}
+
+#modal-agro.modal-form .modal-content .form-container {
+    color: #000;
+    width: 60%;
+    height: auto;
+    overflow-y: scroll;
+}
+
+#modal-agro.modal-form .modal-content .form-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 20px 30px;
+    margin-bottom: 70px;
+}
+
+#modal-agro.modal-form  .btn-enviar {
+    font-family: 'Bradesco';
+    font-size: 14px;
+    font-weight: 700 !important;
+    letter-spacing: .5;
+    text-align: center;
+    border-radius: 24px;
+    padding: 25px 70px;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+#modal-agro.modal-form .modal-content .form-container form input {
+    width: 100%;
+    margin: 5px 0;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+#modal-agro.modal-form .modal-content .form-container form input:focus {
+    border-bottom: 1px solid #3B69FF;
+}
+
+#modal-agro.modal-form .modal-content .form-container form label.error {
+    transform: translate(0px, 30px);
+    color: #e1173f;
+}
+
+#modal-agro.modal-form .modal-content .form-container form label {
+    width: 100%;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #4D4E53;
+}
+
+#modal-agro.modal-form .modal-content .form-image .form-text {
+    /* position: absolute; */
+    bottom: 20px;
+    width: 100%;
+    padding: 25px;
+
+}
+
+#modal-agro.modal-form .modal-content .form-image .form-text h3 {
+    font-size: 18px!important;
+    margin-bottom: 20px;
+}
+
+#modal-agro.modal-form .modal-content .form-image .form-text p {
+    font-size: 14px!important;
+    margin-bottom: 20px;
+}
+
+#modal-agro.modal-form .modal-content .form-image .form-text:after {
+    content: '';
+    border-bottom: 4px solid #e1173f;
+    display: block;
+    width: 50px;
+}
+
+#modal-agro.modal-form .modal-content .form-image .sucesso {
+    /* position: absolute; */
+    bottom: 20px;
+    width: 100%;
+    padding: 25px;
+
+}
+
+#modal-agro.modal-form .modal-content .form-image .sucesso h3 {
+    font-size: 18px!important;
+    margin-bottom: 20px;
+}
+
+#modal-agro.modal-form .modal-content .form-image .sucesso p {
+    font-size: 14px!important;
+    margin-bottom: 20px;
+}
+
+#modal-agro.modal-form .modal-content .form-image .sucesso:after {
+    content: '';
+    border-bottom: 4px solid #e1173f;
+    display: block;
+    width: 50px;
+}
+
+#modal-agro.modal-form .modal-content .close-modal {
+    z-index: 999;
+    right: 20px;
+    top: 15px!important;
+    left: auto;
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/fechar-form-agro.png") no-repeat;
+}
+
+button:disabled {
+    background: #BCBCBC!important;
+}
+
+#modal-agro.modal-form .modal-content .form-container form .half{
+    width: 48%;
+}
+
+#modal-agro.modal-form.servico-modal .bg-black {
+    height: 100vh;
+}
+
+#modal-agro.modal-form.servico-modal {
+    height: 100%;
+}
+
+.tipo {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+    appearance: none;
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/select.png") no-repeat right center;
+    z-index: 999;
+}
+
+.tipo:focus {
+    border-bottom: 1px solid #3B69FF;
+    background: url("../../../../../../../assets.bradesco/content/dam/portal-bradesco/html/classic/produtos-servicos/consorcios/assets/imgs/select-open.png") no-repeat right center;
+}
+
+.check {
+    display: flex;
+    width: 100%;
+    margin-top: 15px;
+}
+
+#modal-agro.modal-form .modal-content .form-container form .check input {
+    width: 15px;
+    margin: 0 20px 0 0;
+}
+
+#modal-agro .box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+/* #modal-agro .box input:valid label, */
+#modal-agro .box input:focus ~ label {
+    transform: translate(0, -20px);
+}
+
+#modal-agro .box input ~ label {
+    position: absolute;
+    transform: translate(0, 0);
+    transition: all .2s ease-in-out;
+}
+
+#modal-agro.modal-form .modal-content .form-container form label#labelTipoBem {
+    position: absolute;
+    width: 60%;
+}
+#modal-agro.modal-form .modal-content .form-container form small.tipoBem  {
+    padding: 4px 0 0;
+}
+
+#modal-agro.modal-form .modal-content .form-container form label#labelTipoBem.filled {
+    transform: translate(0, -20px);
+}
+
+.filled {
+    transform: translate(0, -20px)!important;
+    display: block!important;
+}
+
+
+#modal-agro .box label.error {
+    transform: translate(0, 10px);
+    font-size: 13px;
+}
+
+#modal-agro .box label.erro {
+    transform: translate(0, 10px);
+    font-size: 13px;
+}
+
+#CPF.error ~ small{
+    display: none;
+}
+
+#Celular.error ~ small{
+    display: none;
+}
+
+
+/* #modal-agro .box input:focus~ label,
+#modal-agro .box input:valid~ label {
+    transform: translate(0, -20px);
+    font-size: 13px;
+} */
+
+@media screen and (max-width: 768px) {
+    #modal-agro.modal-form .modal-content .form-container form {
+        height: 80%;
+        padding: 30px;
+    }
+    #modal-agro.modal-form.servico-modal {
+        align-items: unset;
+        padding-top: 40px;
+    }
+    #modal-agro.modal-form .modal-content .form-container {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 150px;
+    }
+    #modal-agro.modal-form .modal-content .form-image {
+       /* display: none; */
+        background: unset!important;
+        width: 100%;
+        /* height: 100%; */
+    }
+    #modal-agro.modal-form .modal-content .form-container form .half {
+        width: 100%;
+    }
+    #modal-agro.modal-form .modal-content .form-image .form-text {
+        bottom: 0;
+    }
+    #modal-agro.modal-form .modal-content .form-image .sucesso{
+        bottom: 0;
+    }
+    #modal-agro.modal-form .modal-content {
+        height: 100vh!important;
+        flex-direction: column;
+        border-radius: 0!important;
+        max-height: 100vh;
+    }
+    .servico-modal .modal-content p {
+        color: #707070;
+    }
+    #modal-agro.modal-form .modal-content .form-image .form-text p {
+
+        color: #4D4E53;
+    }
+    #modal-agro.modal-form .modal-content .form-image .form-text h3 {
+        color: #4D4E53;
+    }
+    #modal-agro.modal-form .modal-content .form-image .sucesso p {
+
+        color: #4D4E53;
+    }
+    #modal-agro.modal-form .modal-content .form-image .sucesso h3 {
+        color: #4D4E53;
+    }
+}
+
+.sucess {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    min-height: 440px;
+    padding: 35px;
+}
+
+.sucess h3 {
+    font-size: 22px;
+    font-weight: bold;
+    width: 100% !important;
+    padding: 0px !important;
+    margin-bottom: 40px;
+}
+
+.none {
+    display: none!important;
+}
+
+#banner-fixo {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 11;
+    padding: 20px;
+    display: none;
+    justify-content: center;
+    background: #cc092f;
+    color: rgb(255, 255, 255);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cc092f", endColorstr="#333b8f", GradientType=1);
+    transition: all .5s ease;
+    text-align: center;
+}
+
+#banner-fixo button {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 15px 48px;
+    color: #cc092f;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: 0;
+}
+
+@media screen and (min-width: 768px){
+    #banner-fixo {
+        display: none;
+    }
+    #modal-agro.modal-form .modal-content .form-image .form-text{
+        position: absolute;
+    }
+    #modal-agro.modal-form .modal-content .form-image .sucesso{
+        position: absolute;
+    }
+}
+
+@media (max-width: 542px) {
+    div#topBar.headertopBar div.holderMobile {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#topBar.headertopBar div.holderMobile a.fechar img {
+        display: unset;
+    }
+
+    div#topBar.headertopBar div.holderMobile p {
+        margin: 0 0 0 40px !important;
+        padding: 0;
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .quero-agro {
+        margin: 40px auto 0;
+    }
+    .section {
+        padding: 2rem 0 0;
+    }
+    .section.no-padding {
+        padding: 0;
+    }
+    .planos {
+        padding: 3rem 0;
+    }
+    .swiper-pagination {
+    margin-bottom: 30px;
+    }
+}
+
+.swiper-pagination {
+    margin-bottom: 30px;
+    z-index: 9px !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    .container-chatbia-qrcode {
+        display: block !important;
+    }
+    #chatbia-button {
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #chatbia {
+        right: 0rem !important;
+        top: auto;
+    }
+}
+/* git-sync-check */

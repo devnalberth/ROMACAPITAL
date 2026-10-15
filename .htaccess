@@ -3,6 +3,9 @@ DirectoryIndex index.html
 
 RewriteEngine On
 
+# Recursos públicos do consórcio: PHP no Apache, função Node na Vercel.
+RewriteRule ^api/consorcio-media/?$ proxy/consorcio-media.php [L,QSA]
+
 # Nunca servir credenciais nem os includes do proxy como arquivo estático.
 <FilesMatch "^(config|config\.example)\.php$">
     Require all denied

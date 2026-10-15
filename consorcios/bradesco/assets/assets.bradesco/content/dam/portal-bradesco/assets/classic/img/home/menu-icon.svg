@@ -1,0 +1,10 @@
+<svg id="navigation-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_99286" data-name="Retângulo 99286" width="16" height="16" transform="translate(100 160)" fill="#ffffff" opacity="0"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_41" data-name="Grupo de máscara 41" transform="translate(-100 -160)" clip-path="url(#clip-path)">
+    <path id="Caminho_77572" data-name="Caminho 77572" d="M16,12.851a.375.375,0,0,1-.374.372H.373a.373.373,0,1,1,0-.745H15.627A.373.373,0,0,1,16,12.851ZM.373,3.522H15.627a.373.373,0,1,0,0-.745H.373a.373.373,0,1,0,0,.745Zm15.254,4.1H.373a.373.373,0,1,0,0,.745H15.627a.373.373,0,1,0,0-.745Z" transform="translate(100 160)" fill="#ffffff"/>
+  </g>
+</svg>

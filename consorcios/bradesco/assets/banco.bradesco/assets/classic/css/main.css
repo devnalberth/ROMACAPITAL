@@ -1,0 +1,3954 @@
+@import url("../../common/css/font-bradesco/font-bradesco.css");
+@import url("home/topbar.css");
+
+:root {
+  --font-family-sans-serif: 'Bradesco', sans-serif;
+}
+
+.carousel-opacity {
+  opacity: 0;
+}
+
+body {
+  color: #1f1f1f;
+  background-repeat: no-repeat;
+  background-color: #E4E5E9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6a7684), color-stop(20%, #e4e5e9), to(#e4e5e9));
+  background-image: linear-gradient(to bottom, #6a7684 0%, #e4e5e9 20%, #e4e5e9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6a7684', endColorstr='#e4e5e9', GradientType=0);
+  font-family: var(--font-family-sans-serif) !important;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  margin-left: 118px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.text_transparent {
+  color: transparent !important;
+  display: none;
+}
+
+input.no-wlauto {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+
+.btn_classic-solid {
+  height: 3rem;
+  color: #fff;
+  background: #EB1940;
+  font-size: 0.875rem;
+  font-weight: 900;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 3rem;
+  padding: 0 3rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1.25rem;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#wrapper {
+  width: 1315px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+}
+
+body.mobile #wrapper {
+  margin: 0 auto;
+  padding: 135px 0 0 0;
+  padding-top: 95px;
+}
+
+body.mobile #AGN {
+  width: 52px !important;
+}
+
+body.mobile #CTA {
+  width: 76px !important;
+}
+
+body.mobile #DIGCTA {
+  width: 32px !important;
+}
+
+body.mobile div#topBar div.holder {
+  display: none;
+}
+
+body.mobile div#topBar div.holderMobile {
+  display: block;
+}
+
+body.mobile header.mainHeader {
+  display: block;
+}
+
+body.mobile nav#mainMenu {
+  display: block;
+}
+
+body.mobile .menu__lateral {
+  display: none;
+}
+
+body.mobile div.holderFixed {
+  display: block;
+  top: 0;
+  z-index: 1000;
+}
+
+body.mobile nav.navSegMobile {
+  display: block;
+}
+
+body.mobile a.botaoAbraConta {
+  display: block;
+}
+
+body.mobile div.breadcrumb {
+  display: none;
+}
+
+body.mobile section.mainContent {
+  width: 100%;
+}
+
+div.btn-parceiros {
+  position: absolute;
+  right: 240px;
+  top: 7px;
+  display: none;
+}
+
+div.btn-parceiros a {
+  cursor: pointer;
+  display: table;
+  background: #ffffff;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef));
+  background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#efefef', GradientType=0);
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  width: 161px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 13px;
+  text-decoration: none;
+  color: #1f1f1f;
+  text-transform: uppercase;
+}
+
+div.btn-parceiros a:hover {
+  color: #5894e8;
+}
+
+div.canal-consorciado {
+  position: absolute;
+  right: 240px;
+  top: 7px;
+  display: none;
+}
+
+div.canal-consorciado a {
+  cursor: pointer;
+  display: table;
+  background: #ffffff;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#efefef));
+  background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#efefef', GradientType=0);
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  width: 161px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 13px;
+  text-decoration: none;
+  color: #1f1f1f;
+  text-transform: uppercase;
+}
+
+div.canal-consorciado a:hover {
+  color: #5894e8;
+}
+
+div.nao-correntista {
+  display: none;
+  position: absolute;
+  right: 53px;
+  top: 7px;
+  width: 283px;
+}
+
+div.nao-correntista:after {
+  content: '';
+  width: 1px;
+  height: 20px;
+  background: #7f7faf;
+  position: absolute;
+  right: -13px;
+  top: 4px;
+}
+
+div.nao-correntista form>ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div.nao-correntista form>ul li {
+  float: left;
+  font-size: 12px;
+  color: #fff;
+  margin-left: 8px;
+}
+
+div.nao-correntista form>ul li:first-child {
+  padding-top: 8px;
+}
+
+div.nao-correntista form>ul li input[type='text'] {
+  width: 165px;
+  font-size: 15px;
+  border: 0;
+  margin-top: 1px;
+  height: 25px;
+  border-radius: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-align: center;
+}
+
+div.nao-correntista form>ul li input[type='text']:focus {
+  -webkit-box-shadow: inset 0px 0px 0px 2px #06d5fa;
+  box-shadow: inset 0px 0px 0px 2px #06d5fa;
+}
+
+div.nao-correntista form>ul li input[type='submit'] {
+  width: 30px;
+  height: 26px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 0 6px;
+  margin-top: 1px;
+  border: 0;
+  overflow: hidden;
+  -webkit-appearance: none;
+  background: #c80025;
+  border-right: 1px solid #1c315c;
+  border-bottom: 1px solid #1c315c;
+  border-radius: 1px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  text-align: center;
+}
+
+div.nao-correntista form>ul li input[type='submit']:hover {
+  background: #9e1321;
+}
+
+div.nao-correntista form>ul li .duvd {
+  width: 28px;
+  height: 28px;
+  display: table;
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/icon-duvida-cpf.png") 0px 0px no-repeat;
+}
+
+div.nao-correntista form>ul li .duvd:hover {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/icon-duvida-cpf.png") 0px -28px no-repeat;
+}
+
+div.nao-correntista .tipCartoes {
+  background: #fff;
+  margin-top: 6px;
+  margin-left: 35px;
+  position: relative;
+  background-color: #FFF;
+  border: 1px solid #BFBFBF;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.25);
+  padding: 14px 10px;
+  width: 274px;
+  display: none;
+}
+
+div.nao-correntista .tipCartoes:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #fff;
+}
+
+div.nao-correntista .tipCartoes p {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+div.nao-correntista .tipCartoes label {
+  font-size: 12px;
+}
+
+div.nao-correntista .tipCartoes label span {
+  position: relative;
+  top: -2px;
+}
+
+div.nao-correntista .tipCartoes #closeTooltip {
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 0 5px 2px 5px;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#MainMenuMobile {
+  border-left: 1px solid #ce0026;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 40px;
+  z-index: 1000;
+}
+
+#MainMenuMobile div.btn-parceiros {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 54px;
+  height: 54px;
+  width: 100%;
+}
+
+#MainMenuMobile div.btn-parceiros a {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+#MainMenuMobile div.canal-consorciado {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 54px;
+  height: 54px;
+  width: 100%;
+}
+
+#MainMenuMobile div.canal-consorciado a {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 0;
+}
+
+#MainMenuMobile ul li.resultado-busca {
+  display: none !important;
+}
+
+#MainMenuMobile a.botaoAbraConta,
+#MainMenuMobile a.botaoContrate {
+  display: block;
+  width: 100% !important;
+  font-size: 14px;
+}
+
+#MainMenuMobile>div.mm-panels {
+  top: 110px;
+}
+
+header.mainHeader {
+  width: 1315px;
+  z-index: 2;
+  position: relative;
+}
+
+header.mainHeader a.mobileMenu {
+  display: none;
+}
+
+.menu__lateral {
+  margin-top: 50px;
+  float: left;
+}
+
+.menu__lateral .logo {
+  float: left;
+  max-width: 188px;
+  height: auto;
+  padding: 0;
+  bottom: 20px;
+  position: relative;
+  left: 10px;
+  z-index: 2;
+}
+
+.menu__lateral .logo:after {
+  display: none;
+}
+
+.menu__lateral .logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+.menu__lateral h1 {
+  width: 190px;
+  height: 110px;
+  line-height: 110px;
+  background: #ffffff;
+  float: left;
+}
+
+.menu__lateral h1 img {
+  margin: 20px auto;
+  display: block;
+}
+
+.menu__lateral h1:after {
+  content: '';
+  width: 80%;
+  height: 1px;
+  background: #ebebeb;
+  display: block;
+  margin: 20px auto 0;
+}
+
+a.botaoAbraConta {
+  border: none;
+  display: block;
+  width: 190px;
+  height: 54px;
+  line-height: 54px;
+  background: #cc092f;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  float: none;
+  clear: both;
+  position: relative;
+}
+
+a.botaoAbraConta:after {
+  content: "";
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3e%3ccircle fill='none' stroke='white' stroke-width='15' opacity='0.3' cx='100.5' cy='97.5' r='89.5'/%3e%3cpath fill='white' d='M85.633,112.337l24.692-21.4a7.763,7.763,0,0,1,9.878,0,5.506,5.506,0,0,1,0,8.567l-24.693,21.4a7.759,7.759,0,0,1-9.876,0A5.507,5.507,0,0,1,85.633,112.337Z'/%3e%3cpath fill='white' d='M85.633,76.984l24.692,21.41a7.762,7.762,0,0,0,9.878,0,5.506,5.506,0,0,0,0-8.567L95.51,68.413a7.782,7.782,0,0,0-9.876,0A5.509,5.509,0,0,0,85.633,76.984Z'/%3e%3c/svg%3e ") center center no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}
+
+a:hover.botaoAbraConta {
+  background: #d63a59;
+}
+
+.botaoContrate {
+  height: 54px !important;
+  width: 190px !important;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: auto;
+  left: 0;
+  background: #333b8f;
+  border: none;
+  font-family: "Bradesco", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  padding-left: 20px;
+  padding-right: 40px;
+  position: relative;
+  line-height: 54px;
+  float: left;
+  clear: left;
+  -webkit-filter: none;
+  filter: none;
+}
+
+a:hover.botaoContrate {
+  background: #4059a6;
+  color: #fff;
+}
+
+.botaoContrate:after {
+  content: "";
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3e%3ccircle fill='none' stroke='white' stroke-width='15' opacity='0.3' cx='100.5' cy='97.5' r='89.5'/%3e%3cpath fill='white' d='M85.633,112.337l24.692-21.4a7.763,7.763,0,0,1,9.878,0,5.506,5.506,0,0,1,0,8.567l-24.693,21.4a7.759,7.759,0,0,1-9.876,0A5.507,5.507,0,0,1,85.633,112.337Z'/%3e%3cpath fill='white' d='M85.633,76.984l24.692,21.41a7.762,7.762,0,0,0,9.878,0,5.506,5.506,0,0,0,0-8.567L95.51,68.413a7.782,7.782,0,0,0-9.876,0A5.509,5.509,0,0,0,85.633,76.984Z'/%3e%3c/svg%3e ") center center no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+}
+
+.cardConta {
+  width: 220px;
+  position: absolute;
+  left: 188px;
+  top: 38px;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  z-index: 3;
+  color: #6D6E71;
+  background-color: #ffffff;
+  -webkit-box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.cardConta .btn_classic-solid {
+  margin-bottom: 0;
+}
+
+.cardConta p {
+  max-width: 100%;
+  font-size: 0.75rem;
+  margin: 0 0 1em;
+}
+
+.cardConta .destaque {
+  color: #7789e2;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.cardConta img {
+  margin-bottom: 1.25rem;
+  max-width: 70%;
+  width: 100px;
+  height: auto;
+}
+
+.cardConta:before {
+  content: '';
+  width: 0;
+  height: 0;
+  margin: 20px auto;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-right: 10px solid #fff;
+  position: absolute;
+  left: -10px;
+  top: 0;
+}
+
+div.breadcrumb {
+  float: right;
+  width: 1075px;
+  height: 40px;
+  margin: 20px 0 15px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 0;
+  background: none;
+}
+
+div.breadcrumb ul.links {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 18px;
+  overflow: hidden;
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #fff;
+}
+
+div.breadcrumb ul.links li {
+  font-size: 13px;
+  display: inline;
+}
+
+div.breadcrumb ul.links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+div.breadcrumb ul.links li.seta {
+  color: #fff;
+  padding: 0 10px;
+  font-weight: bold;
+  position: relative;
+  top: -1px;
+}
+
+div.breadcrumb ul.links li.last {
+  color: #fff;
+}
+
+div.busca {
+  position: absolute;
+  margin-top: 40px;
+  right: 0px;
+  z-index: 900;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.busca fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+div.busca fieldset legend {
+  display: none;
+}
+
+div.busca fieldset input[type='text'] {
+  float: right;
+  width: 140px;
+  color: #dfe2e7;
+  font-weight: bold;
+  background: transparent;
+  height: 29px;
+  line-height: 31px;
+  padding: 0 5px 0 10px;
+  margin: 0;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  font-size: 11px;
+}
+
+div.busca fieldset input[type='text']::-webkit-input-placeholder {
+  color: #dfe2e7;
+}
+
+div.busca fieldset input[type='text']:-ms-input-placeholder {
+  color: #dfe2e7;
+}
+
+div.busca fieldset input[type='text']::-ms-input-placeholder {
+  color: #dfe2e7;
+}
+
+div.busca fieldset input[type='text']::placeholder {
+  color: #dfe2e7;
+}
+
+div.busca fieldset input[type='button'] {
+  float: right;
+  -webkit-appearance: none;
+  background: transparent url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='18.5px' height='18.6px' viewBox='0 0 18.5 18.6' enable-background='new 0 0 18.5 18.6' xml:space='preserve'%3e%3cg id='Camada_2' display='none'%3e%3crect x='-7' y='-11.5' display='inline' fill='%23DD8B14' width='40.1' height='41'/%3e%3c/g%3e%3cg id='Lupa'%3e%3ccircle fill='none' stroke='%23FFFFFF' stroke-width='2.5' cx='8.6' cy='8.3' r='6.7'/%3e%3cpath fill='none' stroke='%23FFFFFF' stroke-width='2.5' stroke-linecap='square' stroke-linejoin='bevel' d='M13.5,12.9l2.8,3.5'/%3e%3c/g%3e%3c/svg%3e") 0 0px no-repeat;
+  text-indent: -1000px;
+  overflow: hidden;
+  width: 21px;
+  height: 29px;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  padding: 0;
+  margin: 0;
+}
+
+div.busca div.search-autocomplete2 {
+  position: absolute;
+  top: 31px !important;
+  left: 0;
+  width: 100% !important;
+  background: #dbd9d8;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d6d6d6;
+  cursor: pointer;
+}
+
+div.busca div.search-autocomplete2>div {
+  font-size: 12px;
+  font-style: italic;
+  padding: 5px 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.busca div.search-autocomplete2>div:hover {
+  background: #fff;
+}
+
+ul.navSeg {
+  list-style: none;
+  max-width: calc(100% - 250px);
+  margin: 40px 0 0 0;
+  display: table;
+  float: right;
+  z-index: 1;
+  position: relative;
+  right: 185px;
+}
+
+ul.navSeg li {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+}
+
+ul.navSeg li:last-child {
+  margin-right: 0;
+}
+
+ul.navSeg li a {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 0 0 27px;
+  display: block;
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/bg-navseg.png");
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul.navSeg li a span {
+  text-transform: uppercase;
+  font-size: 9px;
+  display: block;
+}
+
+ul.navSeg li:hover a {
+  color: #fff;
+}
+
+ul.navSeg li div.navCnt {
+  background: #ffffff;
+  width: 190px;
+  border-bottom: 2px solid #e5173f;
+  border-top: 2px solid #e5173f;
+  position: absolute;
+  top: 50px;
+  right: -10px;
+  display: none;
+  -webkit-box-shadow: -1px 2px 5px 0 #686868;
+  box-shadow: -1px 2px 5px 0 #686868;
+  z-index: 2;
+}
+
+ul.navSeg li div.navCnt ul.nav {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+ul.navSeg li div.navCnt ul.nav:after {
+  content: '';
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #e5173f;
+  position: absolute;
+  top: -1px;
+  right: 10px;
+}
+
+ul.navSeg li div.navCnt ul.nav>li {
+  border-top: 1px solid #dbdbdb;
+  float: none;
+  margin-right: 0;
+  position: initial;
+  height: auto;
+}
+
+ul.navSeg li div.navCnt ul.nav>li:first-child {
+  border-top: 0;
+}
+
+ul.navSeg li div.navCnt ul.nav a {
+  padding: 12px;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 13px;
+  color: #000;
+  text-transform: none;
+  text-align: left;
+}
+
+ul.navSeg li div.navCnt ul.nav a:hover {
+  color: #e5173f;
+  text-decoration: underline;
+  background-color: transparent;
+}
+
+ul.navSeg li div.navCnt ul.nav a:after {
+  display: none;
+}
+
+ul.navSeg li div.navCnt ul.nav.sublvl {
+  display: none;
+}
+
+ul.navSeg li.sub {
+  margin-right: 32px;
+}
+
+ul.navSeg li.sub.active_arrow a:after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+ul.navSeg li.sub a:after {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/svg/icon_seta_v_-01.svg") center center no-repeat;
+  content: "";
+  border: none;
+  width: 9px;
+  height: 7px;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+  right: -13px;
+  bottom: 30px;
+  position: absolute;
+}
+
+ul.navSeg li.sub:hover a:after {
+  display: block;
+}
+
+ul.navSeg li div.navCnt.emp {
+  width: 240px;
+}
+
+ul.navSeg li div.navCnt.emp div.maisperfis {
+  display: block;
+  border-top: 2px solid #e5173f;
+  font-size: 13px;
+  color: #e5173f;
+  font-family: "Bradesco", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+}
+
+ul.navSeg li div.navCnt.last {
+  right: -10px;
+}
+
+ul.navSeg li.active a {
+  color: #fff;
+  font-weight: bold;
+  opacity: 1;
+}
+
+div.holderFixed {
+  width: 100%;
+  position: fixed;
+  top: 40px;
+  left: 0;
+  display: none;
+  z-index: 10;
+}
+
+header.headerMobile {
+  width: 1280px;
+  background: linear-gradient(90deg, #cc092f 40%, #b81570 90%);
+  height: 80px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 20px 0 20px 20px;
+  margin: 0 auto;
+  position: relative;
+  display: none;
+}
+
+header.headerMobile a.lg-bra {
+  display: table;
+  margin-top: 2px;
+}
+
+header.headerMobile a.buscaMobile {
+  display: none;
+  position: absolute;
+  top: 21px;
+  right: 68px;
+  width: 35px;
+  height: 40px;
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/menu-icon-busca.svg") 0 0 no-repeat;
+  background-image: -webkit-image-set(url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/menu-icon-busca.svg") 1x);
+  overflow: hidden;
+  text-indent: -1000px;
+  background-size: 35px;
+}
+
+header.headerMobile a.mobileMenu {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  width: 32px;
+  height: 40px;
+  outline: none;
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/home/menu-icon.svg") 0 0 no-repeat;
+  background-image: -webkit-image-set(url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/home/menu-icon.svg") 1x);
+  display: block;
+  overflow: hidden;
+  text-indent: -1000px;
+  background-size: 35px;
+}
+
+header.headerMobile a.mobileMenu.close {
+  position: absolute;
+  top: 19px;
+  right: 20px;
+  width: 32px;
+  height: 40px;
+  outline: none;
+  background-image: -webkit-image-set(url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/home/menu-icon-close.svg") 1x) !important;
+  display: block;
+  overflow: hidden;
+  text-indent: -1000px;
+  background-size: 40px;
+}
+
+header.headerMobile div.busca {
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  top: 22px;
+  margin: 0;
+  right: 72px;
+}
+
+header.headerMobile div.busca #textobusca {
+  max-width: 190px;
+}
+
+#skiplinks.visuallyhidden {
+  background: none;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  top: 0;
+}
+
+#skiplinks {
+  clip: inherit !important;
+  height: auto !important;
+  left: 0;
+  list-style: outside none;
+  margin-left: 0 !important;
+  overflow: visible !important;
+  pointer-events: none;
+  position: absolute !important;
+  text-align: center;
+  top: 0 !important;
+  width: 100% !important;
+}
+
+#skiplinks li {
+  list-style-type: none;
+}
+
+#skiplinks li a {
+  left: -99999px;
+  position: absolute;
+  top: 30px;
+}
+
+#skiplinks li a:focus,
+#skiplinks li a:active {
+  background: rgba(229, 23, 63, 0.8);
+  color: white;
+  font-size: 14px;
+  height: auto;
+  left: 0;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  pointer-events: all;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 45px;
+  z-index: 9999;
+  width: auto;
+  outline: 0;
+}
+
+div.comboSegmentos h2 {
+  margin: 0 20px;
+}
+
+
+div.comboSegmentos {
+  background-color: transparent;
+  padding: 15px 0;
+  display: none;
+}
+
+div.comboSegmentos>h2 {
+  color: #1f1f1f;
+  font-family: "Bradesco", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+div.comboSegmentos>h2 span:after {
+  display: block;
+  content: '\203A';
+  font-size: 35px;
+  font-weight: normal;
+  top: 4px;
+  right: 14px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -ms-transform: rotate(10deg);
+  position: absolute;
+  color: #47484C;
+}
+
+div.comboSegmentos>ul {
+  margin: 0;
+  padding: 0 0 15px 0;
+  list-style: none;
+  visibility: hidden;
+  display: none;
+}
+
+div.comboSegmentos>ul>li a {
+  font-family: "Bradesco", sans-serif;
+  color: #222222;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+div.comboSegmentos>ul>li ul {
+  list-style: none;
+  padding: 0 0 0 20px;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+div.comboSegmentos>ul>li.sub {
+  margin-top: 15px;
+}
+
+div.comboSegmentos>ul>li.sub>a {
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: table;
+}
+
+div.comboSegmentos.active {
+  border-top: 1px solid #CECECE;
+  background-color: #ffffff;
+}
+
+div.comboSegmentos.active h2 {
+  color: #c80025;
+  margin: 0 20px 10px;
+}
+
+div.comboSegmentos.active h2 span:after {
+  display: block;
+  content: '\2715';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+nav.navSegMobile {
+  width: 100%;
+  padding-left: 17px;
+  display: none;
+  border-bottom: 1px solid #c80025;
+}
+
+nav.navSegMobile ul.navSeg {
+  display: none;
+  margin: 0 auto;
+  float: none;
+}
+
+nav.navSegMobile ul.navSeg>li {
+  height: 60px;
+}
+
+nav.navSegMobile ul.navSeg>li>a {
+  padding: 5px 0 0 0;
+}
+
+nav.navSegMobile ul.navSeg>li div.navCnt {
+  top: 58px;
+}
+
+nav.navSegMobile ul.navSeg>li.sub>a:before {
+  top: 41px;
+}
+
+nav#mainMenu {
+  width: 190px;
+  position: relative;
+}
+
+nav#mainMenu li.termos-bradesco-celular {
+  display: none;
+}
+
+nav#mainMenu>span {
+  margin: 0;
+  font-weight: inherit;
+}
+
+nav#mainMenu>span>ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav#mainMenu>span>ul>li {
+  width: 100%;
+  display: table;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+
+nav#mainMenu>span>ul>li>a,
+nav#mainMenu>span>ul>li>.wlauto a,
+nav#mainMenu>span>ul>li>.wlautoHover a {
+  font-family: "Bradesco", sans-serif;
+  color: #222222;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 12px 20px 12px 59px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 16px !important;
+  opacity: 0.75;
+}
+
+nav#mainMenu>span>ul>li>a:active,
+nav#mainMenu>span>ul>li>.wlauto a:active,
+nav#mainMenu>span>ul>li>.wlautoHover a:active {
+  opacity: 1 !important;
+}
+
+nav#mainMenu>span>ul>li>a:hover,
+nav#mainMenu>span>ul>li>.wlauto a:hover,
+nav#mainMenu>span>ul>li>.wlautoHover a:hover {
+  color: #cb092f;
+}
+
+nav#mainMenu>span>ul>li>a span,
+nav#mainMenu>span>ul>li>.wlauto a span,
+nav#mainMenu>span>ul>li>.wlautoHover a span {
+  display: block;
+}
+
+nav#mainMenu>span>ul>li>ul {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #fff;
+  position: relative;
+}
+
+nav#mainMenu>span>ul>li>ul>li {
+  background: #d7d7d7;
+  display: none;
+}
+
+nav#mainMenu>span>ul>li>ul>li.on {
+  display: block;
+}
+
+nav#mainMenu>span>ul>li>ul>li.active {
+  display: block;
+}
+
+nav#mainMenu>span>ul>li>ul>li a,
+nav#mainMenu>span>ul>li>ul>li .wlauto a,
+nav#mainMenu>span>ul>li>ul>li .wlautoHover a {
+  font-family: "Bradesco", sans-serif;
+  color: #222222;
+  display: block;
+  font-size: 14px;
+  text-decoration: none;
+  background: #F0F1F5;
+  padding: 16px 20px;
+  position: relative;
+  border-left: 2px solid #000;
+  left: -1px;
+  opacity: 0.75;
+}
+
+nav#mainMenu>span>ul>li>ul>li a:before,
+nav#mainMenu>span>ul>li>ul>li .wlauto a:before,
+nav#mainMenu>span>ul>li>ul>li .wlautoHover a:before {
+  content: '';
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  background: #f2f2f2;
+  top: 0;
+  left: 18px;
+}
+
+nav#mainMenu>span>ul>li>ul>li a:before:first-child,
+nav#mainMenu>span>ul>li>ul>li .wlauto a:before:first-child,
+nav#mainMenu>span>ul>li>ul>li .wlautoHover a:before:first-child {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li>ul>li a:hover,
+nav#mainMenu>span>ul>li>ul>li .wlauto a:hover,
+nav#mainMenu>span>ul>li>ul>li .wlautoHover a:hover {
+  color: #CC092D;
+  border-left: 2px solid #cc092d;
+}
+
+nav#mainMenu>span>ul>li>ul>li a span,
+nav#mainMenu>span>ul>li>ul>li .wlauto a span,
+nav#mainMenu>span>ul>li>ul>li .wlautoHover a span {
+  display: block;
+}
+
+nav#mainMenu>span>ul>li>ul>li:first-child>a:before,
+nav#mainMenu>span>ul>li>ul>li:first-child>.wlauto a:before,
+nav#mainMenu>span>ul>li>ul>li:first-child>.wlautoHover a:before {
+  background: none;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li:first-child a:before,
+nav#mainMenu>span>ul>li>ul>li>ul li:first-child .wlauto a:before,
+nav#mainMenu>span>ul>li>ul>li>ul li:first-child .wlautoHover a:before {
+  content: '';
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  background: #f2f2f2;
+  top: 0;
+  left: 18px;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li:first-child a:before:first-child,
+nav#mainMenu>span>ul>li>ul>li>ul li:first-child .wlauto a:before:first-child,
+nav#mainMenu>span>ul>li>ul>li>ul li:first-child .wlautoHover a:before:first-child {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li>ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li:first-child a:before,
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li:first-child .wlauto a:before,
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li:first-child .wlautoHover a:before {
+  content: '';
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  background: #f2f2f2;
+  top: 0;
+  left: 18px;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li:first-child a:before:first-child,
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li:first-child .wlauto a:before:first-child,
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li:first-child .wlautoHover a:before:first-child {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li>ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li.active>a,
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li.active>.wlauto a,
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li.active>.wlautoHover a {
+  border-left: 2px solid #cc092d;
+  z-index: 2;
+  color: #cc092d;
+  font-weight: 700;
+  opacity: 1;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li.active>a:before,
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li.active>.wlauto a:before,
+nav#mainMenu>span>ul>li>ul>li>ul li>ul li.active>.wlautoHover a:before {
+  width: 3px;
+  height: 100%;
+  left: auto;
+  right: -3px;
+  background: #cecece;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li.active>a,
+nav#mainMenu>span>ul>li>ul>li>ul li.active>.wlauto a,
+nav#mainMenu>span>ul>li>ul>li>ul li.active>.wlautoHover a {
+  border-left: 2px solid #cc092d;
+  z-index: 2;
+  color: #cc092d;
+  font-weight: 700;
+  opacity: 1;
+}
+
+nav#mainMenu>span>ul>li>ul>li>ul li.active>a:before,
+nav#mainMenu>span>ul>li>ul>li>ul li.active>.wlauto a:before,
+nav#mainMenu>span>ul>li>ul>li>ul li.active>.wlautoHover a:before {
+  width: 3px;
+  height: 100%;
+  left: auto;
+  right: -3px;
+  background: #cecece;
+}
+
+nav#mainMenu>span>ul>li>ul>li.active>a,
+nav#mainMenu>span>ul>li>ul>li.active>.wlauto a,
+nav#mainMenu>span>ul>li>ul>li.active>.wlautoHover a {
+  border-left: none;
+  z-index: 2;
+  color: #cc092d;
+  font-weight: 700;
+  background: #DFE2E7;
+  opacity: 1 !important;
+}
+
+nav#mainMenu>span>ul>li.active>a,
+nav#mainMenu>span>ul>li.active>.wlauto a,
+nav#mainMenu>span>ul>li.active>.wlautoHover a {
+  color: #cc092d;
+  font-weight: 700;
+  opacity: 1 !important;
+}
+
+nav#mainMenu>span>ul>li.produtos-servicos>a,
+nav#mainMenu>span>ul>li.produtos-servicos>.wlauto a,
+nav#mainMenu>span>ul>li.produtos-servicos>.wlautoHover a {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/home/icon-produtos-servicos.svg") 16px 12px no-repeat;
+}
+
+nav#mainMenu>span>ul>li.promocoes>a,
+nav#mainMenu>span>ul>li.promocoes>.wlauto a,
+nav#mainMenu>span>ul>li.promocoes>.wlautoHover a {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/home/icon-beneficios.svg") 16px 12px no-repeat;
+}
+
+nav#mainMenu>span>ul>li.acessibilidade>a,
+nav#mainMenu>span>ul>li.acessibilidade>.wlauto a,
+nav#mainMenu>span>ul>li.acessibilidade>.wlautoHover a {
+  padding: 19px 20px 19px 59px;
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' id='Camada_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='25.2px' height='29.4px' viewBox='0 0 25.2 29.4' enable-background='new 0 0 25.2 29.4' xml:space='preserve'%3e%3cg id='Camada_2_1_' display='none'%3e%3ccircle display='inline' fill='none' stroke='%23E0860E' stroke-width='0.75' cx='9.9' cy='19.6' r='8.8'/%3e%3ccircle display='inline' fill='none' stroke='%23E0860E' stroke-width='0.75' cx='10.1' cy='19.6' r='6.1'/%3e%3c/g%3e%3cg id='acessibilidade'%3e%3cpath id='Forma_2' fill='none' stroke='%23000000' stroke-width='0.75' d='M7.1,14.2v-3.2c-5.9,2.3-7.2,8.2-5.2,12.4 c1.8,3.8,5.7,5.6,10,4.7c1.7-0.3,4.3-2.1,5.2-3.7c0-0.1-1.3-3.1-1.3-3.1c-0.6,1.8-1.9,3.5-4.3,4.1C6.6,26.7,3.9,22.4,4,20 C3.9,18.2,4.7,15.6,7.1,14.2z'/%3e%3cpath id='Elipse_1' fill='none' stroke='%23000000' stroke-width='0.75' d='M11.2,1C12.7,1,14,2.2,14,3.8s-1.3,2.8-2.8,2.8 S8.4,5.3,8.4,3.8C8.4,2.2,9.7,1,11.2,1L11.2,1z'/%3e%3cpath id='Forma_1' fill='none' stroke='%23000000' stroke-width='0.75' d='M13.9,11.4h4c0.6-0.1,1.1,0.3,1.2,0.8 c0.1,0.6-0.3,1.1-0.8,1.2c-0.1,0-0.2,0-0.4,0h-4v3.1h4.5c0.7,0,1.3,0.6,1.4,1.3c0.2,0.5,1.3,3.7,1.3,3.7h1.8c0.6,0,1.2,0.5,1.2,1.2 l0,0c0,0.7-0.5,1.2-1.2,1.2l0,0h-4.2l-1.8-4.5h-5.7c-1.3,0.1-2.4-0.8-2.5-2.1c0-0.2,0-0.3,0-0.5v-6.7c0.1-1.8,1.3-2.5,2.7-2.5 C12.8,7.7,13.7,9.3,13.9,11.4z'/%3e%3c/g%3e%3c/svg%3e ") 16px 12px no-repeat;
+}
+
+nav#mainMenu>span>ul>li.sobre>a,
+nav#mainMenu>span>ul>li.sobre>.wlauto a,
+nav#mainMenu>span>ul>li.sobre>.wlautoHover a {
+  background: url("data:image/svg+xml;charset=UTF-8, %3csvg version='1.1' id='Icon' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='31.5px' height='28.5px' viewBox='0 0 41.5 38.5' enable-background='new 0 0 41.5 38.5' xml:space='preserve'%3e%3cpath fill='none' stroke='%23000' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round' stroke-miterlimit='22.9256' d=' M20.3,5.5c-8.3,0-15.1,6-15.1,13.4S12,32.3,20.3,32.3c1.7,0,3.3-0.2,4.8-0.7c1.7,1.6,3.9,3,6.6,4.1l-0.9-7.2 c2.8-2.4,4.6-5.8,4.6-9.6C35.4,11.5,28.6,5.5,20.3,5.5L20.3,5.5z'/%3e%3cpath fill='%23000' d='M22.4,17.6c0,0.6-0.2,1.3-0.5,2.6c-0.3,1.3-0.5,2.1-0.5,2.5s0.1,0.6,0.2,0.6c0.2,0,0.4-0.1,0.8-0.2l0.2-0.1 l0.4,1c-0.5,0.4-1,0.7-1.7,0.9c-0.7,0.3-1.3,0.4-1.9,0.4s-1-0.2-1.3-0.5s-0.5-0.8-0.5-1.4s0.2-1.5,0.5-2.7s0.5-1.8,0.5-2.1 c0-0.5-0.2-1-0.5-1.4L17.9,17l0.1-0.3c0.7-0.2,2.1-0.3,4.2-0.3C22.3,16.5,22.4,17,22.4,17.6L22.4,17.6z'/%3e%3cpath fill='%23000' d='M20.9,15c-0.6,0-1.1-0.2-1.5-0.5c-0.3-0.3-0.5-0.8-0.5-1.3s0.2-0.9,0.6-1.3c0.4-0.3,1-0.5,1.6-0.5 s1.1,0.1,1.4,0.4c0.3,0.3,0.5,0.7,0.5,1.2s-0.2,1-0.6,1.4C22,14.9,21.5,15,20.9,15L20.9,15z'/%3e%3c/svg%3e ") 16px 12px no-repeat;
+}
+
+nav#mainMenu>span>ul>li.educacao-financeira>a,
+nav#mainMenu>span>ul>li.educacao-financeira>.wlauto a,
+nav#mainMenu>span>ul>li.educacao-financeira>.wlautoHover a {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/home/icon-educ-financeira.svg") 16px 12px no-repeat;
+}
+
+nav#mainMenu>span>ul>li.cidadania-financeira>a,
+nav#mainMenu>span>ul>li.cidadania-financeira>.wlauto a,
+nav#mainMenu>span>ul>li.cidadania-financeira>.wlautoHover a {
+    background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/home/icon-educ-financeira.svg") 20px 12px no-repeat;
+    background-size: 29px;
+}
+
+nav#mainMenu>span>ul>li.canais-digitais>a,
+nav#mainMenu>span>ul>li.canais-digitais>.wlauto a,
+nav#mainMenu>span>ul>li.canais-digitais>.wlautoHover a {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/home/icon-bradesco-celular.svg") 16px 12px no-repeat;
+}
+
+nav#mainMenu>span>ul>li.atendimento>a,
+nav#mainMenu>span>ul>li.atendimento>.wlauto a,
+nav#mainMenu>span>ul>li.atendimento>.wlautoHover a {
+  padding: 19px 20px 19px 59px;
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/home/icon-contato.svg") 16px 12px no-repeat;
+}
+
+nav#mainMenu>span>ul>li.acessibilidade,
+nav#mainMenu>span>ul>li.encontrar-agencia {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li.como-usar {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li.rss {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li.redes-sociais {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li.tv-samsung {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li.mais-bradesco {
+  display: none;
+}
+
+nav#mainMenu>span>ul>li.resultado-busca {
+  display: none;
+}
+
+nav#mainMenu>span ul li.on a {
+  color: #CC092D;
+  border-left: 2px solid #cc092d;
+}
+
+nav#MainMenuMobile .mm-panels .mm-listview li.redes-sociais {
+  display: none;
+}
+
+nav#MainMenuMobile .mm-panels .mm-listview li.tv-samsung {
+  display: none;
+}
+
+nav#MainMenuMobile .mm-panels .mm-listview li.mais-bradesco {
+  display: none;
+}
+
+nav#MainMenuMobile .mm-panels .mm-listview li.termos-bradesco-celular {
+  display: none;
+}
+
+html.ie9 header.mainHeader h1 {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/bg-ie9.png");
+  -webkit-filter: none;
+  filter: none;
+}
+
+html.ie9 nav#mainMenu>ul>li {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/bg-ie9.png");
+  -webkit-filter: none;
+  filter: none;
+}
+
+html.ie9 nav#mainMenu div.rio2016 {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/bg-ie9.png");
+  -webkit-filter: none;
+  filter: none;
+}
+
+section.mainContent {
+  width: 1075px;
+  min-height: 485px;
+  margin-bottom: 50px;
+  float: right;
+  background: #fff;
+  padding: 20px 20px 40px 20px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/********************** Footer  *************************************************/
+footer {
+  color: #fff;
+  display: block;
+  width: 100%;
+  bottom: 0;
+  font-family: "Bradesco", sans-serif;
+  letter-spacing: 0.5px;
+  z-index: 999;
+}
+
+footer:after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+footer .footer_grey {
+  background: #ebebeb;
+  padding: 0;
+}
+
+footer .list-itens-footer {
+  padding: 20px 60px;
+}
+
+footer .item__info-uteis,
+footer .item__fones,
+footer .item__bia {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/svg/seta_filtro_v-01.svg") right center no-repeat;
+  color: #3c3c3c !important;
+  cursor: pointer;
+  display: inline;
+  font-size: 12px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-right: 20px;
+  margin-right: 30px;
+}
+
+footer .item__info-uteis.active,
+footer .item__fones.active,
+footer .item__bia.active {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/svg/seta_filtro_v-02.svg") right center no-repeat;
+}
+
+footer .list__links {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+footer .list__links a {
+  text-decoration: none;
+}
+
+footer .list__links a span {
+  color: #3c3c3c;
+  display: inline-block;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding-top: 10px;
+  text-transform: inherit;
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/svg/footer/seta_-01.svg") left center no-repeat;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+footer .list__fones {
+  display: block;
+  padding: 20px 0px;
+  margin: 5px 0;
+}
+
+footer .list__fones span {
+  display: block;
+}
+
+footer .list__fones .bia-qrcode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+footer .list__fones .bia-qrcode img {
+  width: 24%;
+}
+
+footer .list__fones .bia-qrcode>div {
+  margin-left: 5px;
+}
+
+footer .list__fones .bia-qrcode>div .list__fones-descricao {
+  margin-bottom: 0;
+}
+
+footer .list__fones .col-lg-2 {
+  position: relative;
+  min-height: 95px;
+}
+
+footer .list__fones .col-lg-2 a {
+  text-decoration: none;
+}
+
+footer .list__fones .col-lg-2.left-border:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: rgba(60, 60, 60, 0.3);
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+
+footer .list__fones .list__fones-title-sobre {
+  color: #3c3c3c;
+  font-size: 12px;
+  text-transform: inherit;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 500;
+  opacity: 0.7;
+  display: block;
+  min-height: 15px;
+}
+
+footer .list__fones .list__fones-title {
+  color: #3c3c3c;
+  font-size: 18px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 700;
+  padding: 5px 0px;
+  display: block;
+  min-height: 10px;
+}
+
+footer .list__fones .list__fones-descricao {
+  color: #3c3c3c;
+  font-size: 12px;
+  font-family: "Bradesco", sans-serif;
+  opacity: 0.7;
+  text-transform: uppercase;
+  display: block;
+  min-height: 10px;
+  margin-bottom: 20px;
+}
+
+footer .list__fones .list__fones-descricao.left__arrow {
+  background: url(https://assets.bradesco/content/dam/portal-bradesco/assets/classic/img/home/arrow_right.png) left center no-repeat;
+  padding-left: 10px;
+}
+
+footer .list__fones .list__fones-descricao.capitalize {
+  text-transform: capitalize;
+}
+
+footer .list__fones .list__fones-descricao.inherit {
+  text-transform: inherit;
+}
+
+footer .list__bia {
+  display: inline-block;
+  padding: 20px 0;
+  margin: 5px 0;
+}
+
+footer .list__bia a {
+  text-decoration: none;
+}
+
+footer .list__bia span {
+  display: block;
+}
+
+footer .list__bia .bia-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+footer .list__bia .bia-card img {
+  width: 90%;
+}
+
+footer .list__bia .bia-card>div {
+  margin-left: 5px;
+}
+
+footer .list__bia .bia-card>div .list__bia-descricao {
+  margin-bottom: 0;
+}
+
+footer .list__bia .col-lg-2 {
+  position: relative;
+  min-height: 95px;
+}
+
+footer .list__bia .col-lg-2 a {
+  text-decoration: none;
+}
+
+footer .list__bia .col-lg-2.left-border:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 40px;
+  background: rgba(60, 60, 60, 0.3);
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+
+footer .list__bia .list__bia-title-sobre {
+  color: #3c3c3c;
+  font-size: 12px;
+  text-transform: initial;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 500;
+  opacity: 0.7;
+  display: block;
+  min-height: 15px;
+}
+
+footer .list__bia .list__bia-title {
+  color: #3c3c3c;
+  font-size: 18px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 700;
+  padding: 5px 0px;
+  display: block;
+  min-height: 10px;
+}
+
+footer .list__bia .list__fones-descricao {
+  color: #3c3c3c;
+  font-size: 12px;
+  font-family: "Bradesco", sans-serif;
+  opacity: 0.7;
+  text-transform: inherit;
+  display: block;
+  min-height: 10px;
+  margin-bottom: 20px;
+}
+
+footer .list__bia .list__fones-descricao.left__arrow {
+  background: url(https://assets.bradesco/content/dam/portal-bradesco/assets/prime/img/home/arrow_right.png) left center no-repeat;
+  padding-left: 10px;
+}
+
+footer .list__bia .list__fones-descricao.capitalize {
+  text-transform: capitalize;
+}
+
+footer .list__bia .list__fones-descricao.inherit {
+  text-transform: initial;
+}
+
+footer .box_cinza {
+  display: block;
+  height: 60px;
+  margin: 0;
+  margin-left: 60px;
+  width: calc(100% - 120px);
+}
+
+footer .box_cinza .titulo_none {
+  font-size: 12px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 600;
+  color: #3c3c3c;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+footer .box_cinza .titulo_box_cinza_fone {
+  font-size: 12px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 600;
+  color: #3c3c3c;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 210px;
+  height: 30px;
+}
+
+footer .box_cinza .titulo_box_cinza_info {
+  font-size: 12px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 600;
+  color: #3c3c3c;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 270px;
+  height: 30px;
+}
+
+footer .box_cinza .seta_box_cinza {
+  display: block;
+  position: relative;
+  left: 220px;
+  bottom: 25px;
+}
+
+footer .box_cinza .active_footer {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+footer .box_cinza .info_hidden {
+  display: none;
+  position: relative;
+}
+
+footer .box_cinza .info_hidden a {
+  text-decoration: none;
+}
+
+footer .box_cinza .info_hidden a span {
+  color: #3c3c3c;
+  display: inline-block;
+  font-family: "Bradesco", sans-serif;
+  font-size: 12px;
+  padding-top: 5px;
+  text-transform: uppercase;
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/svg/footer/seta_-01.svg") left center no-repeat;
+  padding-left: 35px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+footer .box_cinza .fones_hidden {
+  display: none;
+  padding: 20px 0px;
+  margin: 5px 60px;
+}
+
+footer .box_cinza .fones_hidden span {
+  display: block;
+}
+
+footer .box_cinza .fones_hidden .col-lg-4 {
+  position: relative;
+}
+
+footer .box_cinza .fones_hidden .col-lg-4 a {
+  text-decoration: none;
+}
+
+footer .box_cinza .fones_hidden .col-lg-4.left-border:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  background: rgba(60, 60, 60, 0.3);
+  position: absolute;
+  top: 10px;
+  left: -5px;
+}
+
+footer .box_cinza .fones_hidden .list__fones-title-sobre {
+  color: #3c3c3c;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 500;
+  opacity: 0.7;
+  display: block;
+  min-height: 15px;
+  margin-top: 5px;
+}
+
+footer .box_cinza .fones_hidden .list__fones-title {
+  color: #3c3c3c;
+  font-size: 18px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 700;
+  padding: 5px 0px;
+  display: block;
+  min-height: 10px;
+  margin-top: 5px;
+}
+
+footer .box_cinza .fones_hidden .list__fones-descricao {
+  color: #3c3c3c;
+  font-size: 12px;
+  font-family: "Bradesco", sans-serif;
+  opacity: 0.7;
+  text-transform: uppercase;
+  display: block;
+  min-height: 10px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+footer .box_cinza .fones_hidden .list__fones-descricao.left__arrow {
+  background: url(https://assets.bradesco/content/dam/portal-bradesco/assets/classic/img/home/arrow_right.png) left center no-repeat;
+  padding-left: 10px;
+}
+
+footer .box_cinza .fones_hidden .list__fones-descricao.capitalize {
+  text-transform: capitalize;
+}
+
+footer .box__red {
+  background: linear-gradient(270deg, #cc092f 40%, #b81570 90%);
+  padding: 10px 60px;
+  font-family: "Bradesco", sans-serif;
+  font-size: 12px;
+  max-height: auto;
+}
+
+footer .box__red .overflow__x {
+  display: inline-block;
+}
+
+footer .box__red .logo__footer {
+  float: left;
+  display: block;
+  padding-top: 21px;
+}
+
+footer .box__red .text__title {
+  display: inline-block;
+  padding-right: 10px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: 700;
+}
+
+footer .box__red .list__icones {
+  display: inline-block;
+}
+
+footer .box__red .list__icones ul {
+  padding: 10px 0px;
+}
+
+footer .box__red .list__icones ul li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+footer .box__red .end__text {
+  display: block;
+  padding-top: 15px;
+  opacity: 0.7;
+}
+
+footer .box__blue {
+  padding: 16px 0;
+  font-size: 14px;
+  border-top: 0.05em solid rgba(255, 255, 255, 0.9);
+  margin-top: 10px;
+}
+
+footer .box__blue .box__blue-simuladores {
+  background: url(https://assets.bradesco/content/dam/portal-bradesco/assets/classic/img/home/arrow_down.png) 180px center;
+  background-repeat: no-repeat;
+  display: block;
+  font-weight: 600;
+}
+
+footer .box__blue a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+footer .links_rapidos {
+  text-align: center;
+}
+
+footer .links_rapidos li {
+  display: inline-block;
+}
+
+footer .links_rapidos li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: "Bradesco", sans-serif;
+}
+
+footer .links_rapidos li a span {
+  padding: 0px 5px;
+}
+
+div.mapa-barra {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 28px;
+  line-height: 27px;
+  position: relative;
+  background: #13385f;
+  background: -webkit-gradient(linear, left top, right top, from(#13385f), color-stop(37%, #2989d8), color-stop(62%, #207cca), to(#123458));
+  background: linear-gradient(to right, #13385f 0%, #2989d8 37%, #207cca 62%, #123458 100%);
+}
+
+div.mapa-barra ul {
+  position: relative;
+  display: table;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+}
+
+div.mapa-barra ul li {
+  display: inline-table;
+  padding: 0 35px;
+  position: relative;
+}
+
+div.mapa-barra ul li:before {
+  border-left: 1px solid #ddd;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  height: 10px;
+  content: '';
+}
+
+div.mapa-barra ul li:first-child:before {
+  border-left: 0;
+}
+
+div.mapa-barra ul li a {
+  font-family: "Bradesco", sans-serif;
+  color: #fff;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+div.mapa-barra ul li a img {
+  margin-top: -4px;
+}
+
+div.mapa-barra ul li a:hover {
+  text-decoration: underline;
+}
+
+body.tablet #wrapper {
+  padding-top: 50px;
+}
+
+body.tablet div#topBar {
+  display: block;
+}
+
+body.tablet div#topBar div.holder {
+  display: block;
+}
+
+body.tablet div#topBar div.holderMobile {
+  display: none;
+}
+
+body.tablet div.holderFixed {
+  top: 40px;
+}
+
+body.tablet footer.mainFooter {
+  padding: 20px 20px 85px 20px;
+}
+
+div.modal:not(.modal-unlock) {
+  margin: 0 auto;
+  width: 100%;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+}
+
+div.modal header {
+  border-radius: 10px 10px 0 0;
+  background: #ededed;
+  width: 100%;
+  height: auto;
+  line-height: 50px;
+  border-bottom: 2px solid #cc092f;
+  position: relative;
+  padding: 0 120px 0 20px;
+  font-family: "Bradesco", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+div.modal header span.title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.modal section {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+div.modal section p {
+  margin-bottom: 12px;
+  font-family: "Bradesco", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+div.modal section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+div.modal section fieldset {
+  border-radius: 5px;
+}
+
+div.modal section fieldset h4 {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/ico_IB.jpg") no-repeat left;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+div.modal section fieldset p {
+  background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/ico_cpf.jpg") no-repeat left;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 50px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+div.modal section fieldset ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.modal section fieldset ul li {
+  float: left;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+div.modal section fieldset ul li input[type="text"] {
+  border: 1px solid #d6d6d6;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+div.modal section fieldset ul li input[type="text"]#AGN {
+  width: 80px;
+}
+
+div.modal section fieldset ul li input[type="text"]#CTA {
+  width: 80px;
+}
+
+div.modal section fieldset ul li input[type="text"]#DIGCTA {
+  width: 30px;
+}
+
+div.modal section fieldset ul li.link {
+  margin-left: 10px;
+}
+
+div.modal section fieldset ul li.link a {
+  display: table;
+  position: relative;
+  text-decoration: none;
+  color: #393939;
+  margin-top: 5px;
+}
+
+div.modal section fieldset ul li.link a:before {
+  content: '\203A';
+  position: absolute;
+  top: -2px;
+  right: -12px;
+  font-size: 17px;
+}
+
+div.modal section fieldset ul li.link a:hover {
+  color: #75a7ec;
+}
+
+div.modal section ul.accordion div.description p {
+  margin: 0 0 20px 0 !important;
+}
+
+div.modal section a {
+  color: #393939;
+}
+
+div.modal section a:hover {
+  color: #75a7ec;
+}
+
+div.modal section a.lnk-blue {
+  color: #00539f;
+}
+
+div.modal section a.lnk-blue:hover {
+  color: #75a7ec;
+}
+
+div.modal section a.lnk-red {
+  color: #cc0a2f;
+}
+
+div.modal section a.lnk-red:hover {
+  color: #ea1b49;
+}
+
+div.modal button.mfp-close {
+  position: absolute;
+  display: table;
+  right: 20px;
+  top: 11px;
+  width: 76px;
+  height: 24px;
+  padding: 0 0 0 12px;
+  line-height: 23px;
+  color: #000;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  background: #f6f6f6;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #f6f6f6), color-stop(50%, #ffffff), color-stop(100%, #efefef));
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), color-stop(50%, #ffffff), to(#efefef));
+  background: linear-gradient(to bottom, #f6f6f6 0%, #ffffff 50%, #efefef 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#efefef', GradientType=0);
+  border-radius: 5px;
+  border: 1px solid #dfdfdf;
+  opacity: 1;
+  text-decoration: none;
+}
+
+div.modal button.mfp-close:hover {
+  color: #488ae6;
+}
+
+div.modal button.mfp-close:before {
+  content: '\00d7';
+  position: absolute;
+  left: 8px;
+  top: 0;
+  color: #ff0000;
+  font-size: 18px;
+}
+
+div.modal input[type="submit"].ok {
+  width: 44px;
+  height: 27px;
+  line-height: 13px;
+  font-size: 12px;
+  font-weight: normal;
+  text-align: center;
+  background: #b90925;
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #b90925), color-stop(50%, #e31b32), color-stop(100%, #b90a25));
+  background: -webkit-gradient(linear, left top, left bottom, from(#b90925), color-stop(50%, #e31b32), to(#b90a25));
+  background: linear-gradient(to bottom, #b90925 0%, #e31b32 50%, #b90a25 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b90925', endColorstr='#b90a25', GradientType=0);
+  border-radius: 5px;
+  border: 1px solid #b90925;
+  color: #fff;
+}
+
+.img-servicos {
+  height: 147px;
+  width: 111px;
+}
+
+.transacao-no-mobile {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.transacao-no-mobile p {
+  margin-bottom: 20px !important;
+  font-size: 16px !important;
+}
+
+.transacao-no-mobile span {
+  font-size: 16px !important;
+}
+
+.transacao-no-mobile a {
+  border: 1px solid #ce0026;
+  display: inline-table;
+  width: 90px;
+  height: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 26px;
+  background: #c80025;
+  background: radial-gradient(ellipse at center, #c80025 0%, #a2001e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c80025', endColorstr='#a2001e', GradientType=1);
+  text-align: center;
+  color: #fff !important;
+  text-decoration: none;
+  font-family: "Bradesco", sans-serif;
+  font-size: 12px;
+}
+
+#modalURLExterna section h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#modalURLExterna section p {
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+#modalURLExterna section img {
+  width: 100%;
+  display: block;
+}
+
+#modalURLExterna section .img-link-externo {
+  border-bottom: 1px solid #d2d2d2;
+  text-align: center;
+}
+
+#modalURLExterna section .img-link-externo img {
+  max-width: 220px;
+  display: inline;
+}
+
+.tab-wrapper {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(to right bottom, #f36279, #ed556b, #e6485e, #df3a50, #d72a42, #d42043, #d01444, #cd0045, #cb0055, #c60065, #be0774, #b41a83);
+  display: none;
+  visibility: hidden;
+  padding: 20px;
+  font-size: 0.8rem;
+  position: relative;
+  transition: all 1s ease-in-out;
+  top: 120px;
+}
+
+.tab-wrapper div.image-wrapper {
+  text-align: center;
+}
+
+.tab-wrapper ul {
+  color: #fff;
+}
+
+.tab-wrapper div.tab {
+  margin: 0 20px 30px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-evenly;
+}
+
+.tab-wrapper div.tab button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0 20px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+.tab-wrapper ul li {
+  padding: 5px 0;
+  font-weight: 500;
+}
+
+.tab-wrapper .lnk-classic {
+  opacity: 0.7;
+}
+
+.tab-wrapper ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: opacity 0.2s ease-in-out;
+
+}
+
+.tab-wrapper ul li a:hover {
+  opacity: 0.7;
+
+}
+
+.para-sua-empresa {
+  display: none;
+}
+
+
+.nav-line {
+  height: 1px;
+  width: 80%;
+  margin: 0 auto;
+  background: #fff;
+  transform: translateY(-19px);
+}
+
+.nav-destaque {
+  height: 4px;
+  width: 40%;
+  margin: 0 auto;
+  background: #fff;
+  transform: translate(-70%, -23px);
+  transition: all .2s ease-in;
+}
+
+.tabcontent hr {
+  opacity: 0.3;
+}
+
+.tabcontent h3 {
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.tabcontent h3::before {
+  content: "";
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3e%3ccircle fill='none' stroke='white' stroke-width='15' opacity='0.3' cx='100.5' cy='97.5' r='89.5'/%3e%3cpath fill='white' d='M85.633,112.337l24.692-21.4a7.763,7.763,0,0,1,9.878,0,5.506,5.506,0,0,1,0,8.567l-24.693,21.4a7.759,7.759,0,0,1-9.876,0A5.507,5.507,0,0,1,85.633,112.337Z'/%3e%3cpath fill='white' d='M85.633,76.984l24.692,21.41a7.762,7.762,0,0,0,9.878,0,5.506,5.506,0,0,0,0-8.567L95.51,68.413a7.782,7.782,0,0,0-9.876,0A5.509,5.509,0,0,0,85.633,76.984Z'/%3e%3c/svg%3e") center center no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  top: -7px;
+  right: 10px;
+  left: auto;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btnAbraContaFixed {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background: #e5173f;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  z-index: 998;
+}
+
+.btnAbraContaFixed::after {
+  right: calc(50% - 90px);
+  content: "";
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3e%3ccircle fill='none' stroke='white' stroke-width='15' opacity='0.3' cx='100.5' cy='97.5' r='89.5'/%3e%3cpath fill='white' d='M85.633,112.337l24.692-21.4a7.763,7.763,0,0,1,9.878,0,5.506,5.506,0,0,1,0,8.567l-24.693,21.4a7.759,7.759,0,0,1-9.876,0A5.507,5.507,0,0,1,85.633,112.337Z'/%3e%3cpath fill='white' d='M85.633,76.984l24.692,21.41a7.762,7.762,0,0,0,9.878,0,5.506,5.506,0,0,0,0-8.567L95.51,68.413a7.782,7.782,0,0,0-9.876,0A5.509,5.509,0,0,0,85.633,76.984Z'/%3e%3c/svg%3e") center center no-repeat;
+  display: block;
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  left: auto;
+}
+
+div.tablinks-pf span,
+div.tablinks-pj span {
+  color: #47484C;
+}
+
+/* MEGA-MENU - OCULTAR MAIS SERVIÇOS */
+nav#mainMenu>h2>ul>li.produtos-servicos>ul>li.mais-produtos-servicos>ul,
+nav#mainMenu>span>ul>li.produtos-servicos>ul>li.mais-produtos-servicos>ul {
+  display: none !important
+}
+
+.mais-perfis {
+  cursor: pointer;
+}
+
+.mais-perfis .arrow_down:after {
+  display: block;
+  content: '\203A';
+  font-size: 35px;
+  font-weight: 400;
+  top: 18px;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -ms-transform: rotate(10deg);
+  position: absolute;
+  color: #47484C;
+  width: 20px;
+  height: 20px
+}
+
+.mais-perfis[aria-expanded=false] {
+  display: block !important
+}
+
+.mais-perfis[aria-expanded=true] {
+  display: block !important
+}
+
+.mais-perfis[aria-expanded=true] .arrow_down:after {
+  transform: rotate(270deg);
+  right: 28px;
+  top: 7px
+}
+
+#demo ul li {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1279px) {
+  body.mobile header.mainHeader {
+    display: none;
+  }
+
+  body.mobile nav#mainMenu {
+    display: none;
+  }
+
+  div#topBar div.holder {
+    width: calc(100% - 90px) !important;
+  }
+
+  div#topBar div.holderMobile {
+    width: 1024px;
+  }
+
+  div.nao-correntista {
+    right: 0 !important;
+  }
+
+  div.nao-correntista:after {
+    display: none;
+  }
+
+  body.cartoesSec div#topBar div.top-bar-center {
+    display: none;
+  }
+
+  body.consorciosSec div#topBar div.top-bar-center {
+    display: none;
+  }
+
+  body.imoveisSec div#topBar div.top-bar-center {
+    display: none;
+  }
+
+  #wrapper {
+    width: 1024px;
+  }
+
+  header.mainHeader {
+    width: 1024px;
+  }
+
+  header.headerMobile {
+    width: 1024px;
+  }
+
+  div.breadcrumb {
+    width: 819px;
+  }
+
+  div.breadcrumb ul.links {
+    width: 75%;
+  }
+
+  section.mainContent {
+    width: 819px;
+  }
+
+  footer.mainFooter {
+    width: 1024px;
+  }
+
+  footer.mainFooter div.holderFooter ul li {
+    padding: 0 !important;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(1) {
+    width: 300px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(1) h3 {
+    font-size: 14px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(1) h3 span {
+    font-size: 13px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(1) p {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(2) {
+    width: 158px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(2) h6 {
+    font-size: 15px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(3) {
+    width: 295px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(4) {
+    width: 230px;
+  }
+
+  div.mapa-barra ul li {
+    padding: 0 20px;
+  }
+
+  .destaque-area .description .left {
+    float: left;
+    width: 90%;
+  }
+
+  .destaque-area .description .right {
+    float: left;
+    width: 10%;
+  }
+
+  .destaque-area .description .right .saiba-mais {
+    margin-top: 0;
+  }
+
+  div.btn-parceiros {
+    right: 0;
+  }
+
+  div.btn-parceiros a:after {
+    display: none;
+  }
+
+  div.canal-consorciado {
+    right: 0;
+  }
+
+  div.canal-consorciado a:after {
+    display: none;
+  }
+
+  body.tablet div#topBar {
+    padding: 0 20px;
+  }
+
+  body.tablet div#topBar div.holder .top-bar-center {
+    right: 40px;
+  }
+
+  body.tablet div#topBar div.holder div.como-usar {
+    left: 426px;
+  }
+
+  body.tablet div#topBar form legend {
+    width: 14px;
+    background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/acesso-seguro-1024.png") no-repeat;
+  }
+
+  body.tablet div#topBar form fieldset>ul {
+    left: 25px;
+  }
+
+  body.tablet div.btn-parceiros {
+    right: 40px;
+  }
+
+  body.tablet div.canal-consorciado {
+    right: 40px;
+  }
+
+  body.tablet div.nao-correntista {
+    right: 40px !important;
+  }
+
+  body.tablet div.nao-correntista .tipCartoes {
+    margin-left: 8px;
+  }
+
+  body.tablet div.nao-correntista .tipCartoes:before {
+    left: 40px;
+  }
+
+  body.tablet footer.mainFooter div.holderFooter {
+    display: none;
+    height: auto;
+    margin-top: 35px;
+  }
+
+  body.tablet footer.mainFooter h6.atendimento {
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 15px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+
+  body.tablet footer.mainFooter h6.atendimento span {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 7px;
+    display: block;
+    background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/footer/seta-atendimento.gif") 0 0 no-repeat;
+  }
+
+  body.tablet footer.mainFooter h6.atendimento.active span {
+    background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/footer/seta-atendimento.gif") 0 -7px no-repeat;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  footer .list__links {
+    margin: 20px 15px;
+  }
+
+  footer .list__fones {
+    margin: 20px 15px;
+  }
+
+  footer .box__red {
+    padding: 20px 15px;
+  }
+
+  footer .box__blue {
+    padding: 20px 15px;
+  }
+}
+
+@media only screen and (max-width: 1129px) {
+  div#topBar div.holder {
+    width: calc(100% - 20px) !important;
+  }
+
+  div#topBar div.holder div.como-usar {
+    left: 632px;
+  }
+
+  div#topBar div.holder form .legenda-acessa-conta {
+    width: 170px;
+  }
+
+  div#topBar div.holder form fieldset>ul {
+    left: 182px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1246px) {
+  #wrapper {
+    max-width: 100%;
+  }
+
+  #wrapper #wrapper {
+    padding-top: 0;
+  }
+
+  section.mainContent {
+    width: 803px;
+  }
+
+  #wrapper header.mainHeader {
+    max-width: 100%;
+    padding: 0 20px !important;
+  }
+
+  header.mainHeader h1 {
+    margin-top: 20px !important;
+  }
+
+  #wrapper nav#mainMenu {
+    margin-left: 20px !important;
+    margin-right: 0 !important;
+    max-width: 188px;
+    width: 16.5vw !important;
+    /* width: 168px !important; */
+  }
+
+  nav#mainMenu>span>ul>li {
+    max-height: 47px;
+  }
+
+  nav#mainMenu>span>ul>li>a {
+    background-position-y: 8px !important;
+    padding: 4.5% 10% 4.5% 31% !important;
+  }
+
+  nav#mainMenu>span>ul>li.educacao-financeira>a,
+  nav#mainMenu>span>ul>li.educacao-financeira>.wlauto a,
+  nav#mainMenu>span>ul>li.educacao-financeira>.wlautoHover a {
+    background-position-y: 6px !important;
+  }
+
+  nav#mainMenu>span>ul>li.cidadania-financeira>a,
+  nav#mainMenu>span>ul>li.cidadania-financeira>.wlauto a,
+  nav#mainMenu>span>ul>li.cidadania-financeira>.wlautoHover a {
+    background-position-y: 6px !important;
+  }
+
+  nav#mainMenu>span>ul>li.promocoes>a,
+  nav#mainMenu>span>ul>li.promocoes>.wlauto a,
+  nav#mainMenu>span>ul>li.promocoes>.wlautoHover a {
+    background-position-y: 11px !important;
+  }
+
+  nav#mainMenu>span>ul>li.acessibilidade>a,
+  nav#mainMenu>span>ul>li.acessibilidade>.wlauto a,
+  nav#mainMenu>span>ul>li.acessibilidade>.wlautoHover a {
+    background-position-y: 8px !important;
+    padding: 9.175% 10% 9.175% 31% !important;
+  }
+
+  nav#mainMenu>span>ul>li.atendimento>a,
+  nav#mainMenu>span>ul>li.atendimento>.wlauto a,
+  nav#mainMenu>span>ul>li.atendimento>.wlautoHover a {
+    background-position-y: 7px !important;
+    padding: 9.175% 10% 9.175% 31% !important;
+  }
+
+  div.busca {
+    margin-top: 30px;
+  }
+
+  .home div.busca {
+    margin-top: 10px;
+  }
+
+  #wrapper .busca-desk {
+    right: 20px !important;
+  }
+
+  ul.navSeg {
+    display: table-cell;
+    max-width: calc(100% - 225px) !important;
+    margin-top: 30px;
+    right: 126px;
+    text-align: right;
+    width: 100%;
+  }
+
+  ul.navSeg li {
+    display: inline-block;
+    float: none;
+    text-align: left;
+    margin-right: 2%;
+  }
+
+  ul.navSeg li.sub a {
+    padding-right: 13px !important;
+  }
+
+  ul.navSeg li.sub a:after {
+    right: 0 !important;
+  }
+
+  ul.navSeg li div.navCnt {
+    right: -13px !important;
+  }
+
+  ul.navSeg li div.navCnt ul.nav>li {
+    width: 100%;
+  }
+
+  ul.navSeg li div.navCnt ul.nav a {
+    text-align: center;
+  }
+
+  .menu__lateral .logo {
+    bottom: 26px;
+    left: 20px;
+  }
+
+  #wrapper a.botaoAbraConta {
+    height: 47px !important;
+    line-height: 47px;
+    max-width: 188px;
+    padding-left: 15px;
+    padding-right: 40px;
+    /* width: 168px !important; */
+    width: 16.5vw !important;
+  }
+
+  #wrapper a.botaoContrate {
+    height: 47px !important;
+    line-height: 47px;
+    max-width: 188px;
+    padding-left: 8px;
+    padding-right: 33px;
+    /* width: 168px !important; */
+    width: 16.5vw !important;
+  }
+
+  #carousel-banner #carousel .flex-viewport {
+    bottom: 9vh !important;
+  }
+
+  .home #wrapper nav#mainMenu {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+
+  .home nav#mainMenu {
+    top: 130px;
+  }
+
+  .home .botaoContrate {
+    line-height: 45px !important;
+    padding-left: 8px !important;
+    padding-right: 33px !important;
+  }
+
+  .botaoAbraConta:after,
+  .home .botaoAbraConta:after {
+    top: 6px !important;
+    right: 6% !important;
+  }
+
+  .botaoContrate:after,
+  .home .botaoContrate:after {
+    top: 6px !important;
+    right: 1.25% !important;
+  }
+
+  div.breadcrumb {
+    width: 783px;
+  }
+}
+
+@media only screen and (min-width: 1067px) and (max-width: 1246px) {
+
+  body ul.navSeg>li,
+  body.home ul.navSeg>li {
+    margin-right: 1.5%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1066px) {
+
+  body ul.navSeg>li,
+  body.home ul.navSeg>li {
+    margin-right: 1.18%;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1066px) {
+
+  body ul.navSeg>li,
+  body.home ul.navSeg>li {
+    margin-right: 0.61%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+
+  div.comboSegmentos {
+    display: inline-block;
+    width: 47.9%;
+    text-align: center;
+    margin: -1px;
+    height: 50px;
+    padding-top: 15px;
+  }
+
+  .tab-wrapper {
+    top: 0;
+  }
+
+  .home.mobile div.busca-desk {
+    display: none !important;
+  }
+
+  nav.navSegMobile {
+    display: block;
+  }
+
+  .filtro_topo {
+    display: none !important;
+  }
+
+  ul.navSeg {
+    max-width: 100%;
+    right: 0;
+  }
+
+  div#topBar div.holder {
+    width: 768px;
+  }
+
+  div#topBar div.holder div.como-usar {
+    display: none;
+  }
+
+  div#topBar div.holder form legend {
+    width: 14px;
+    background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/acesso-seguro-1024.png") no-repeat;
+  }
+
+  div#topBar div.holder form fieldset>ul {
+    left: 30px;
+  }
+
+  div#topBar div.holder form fieldset>ul li.lembrar:before {
+    display: none;
+  }
+
+  div#topBar div.holderMobile {
+    width: 768px;
+  }
+
+  div#topBar div.btn-parceiros {
+    display: none !important;
+  }
+
+  div#topBar div.canal-consorciado {
+    display: none !important;
+  }
+
+  body.cartoesSec div#topBar div.top-bar-center {
+    display: none;
+  }
+
+  body.cartoesSec div#topBar .legenda-acessa-conta {
+    display: none;
+  }
+
+  body.cartoesSec div.nao-correntista {
+    right: 20px;
+  }
+
+  body.cartoesSec div.nao-correntista:after {
+    display: none;
+  }
+
+  body.consorciosSec div#topBar div.top-bar-center {
+    display: block;
+  }
+
+  body.imoveisSec div#topBar div.top-bar-center {
+    display: block;
+  }
+
+  #wrapper {
+    width: 768px;
+    padding-top: 135px;
+  }
+
+  header.mainHeader,
+  .menu__lateral {
+    display: none;
+  }
+
+  div.holderFixed {
+    display: block;
+  }
+
+  header.headerMobile {
+    width: 768px;
+    padding: 20px 0 20px 20px;
+    display: block;
+  }
+
+  header.headerMobile a.mobileMenu {
+    right: 20px;
+  }
+
+  header.headerMobile div.busca {
+    right: 72px;
+  }
+
+  header.headerMobile div.busca #textobusca {
+    max-width: 300px;
+  }
+
+  nav#mainMenu {
+    display: none;
+  }
+
+  div.breadcrumb {
+    display: none;
+  }
+
+  a.botaoAbraConta {
+    display: none;
+  }
+
+  section.mainContent {
+    width: 100%;
+  }
+
+  footer.mainFooter {
+    width: 768px;
+    padding: 20px 20px 85px 20px;
+    background: #EBEBEB url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/footer/bg-footer-1024.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  footer.mainFooter div.chosen-select-b2 {
+    display: none;
+  }
+
+  footer.mainFooter select.chosen-select-b2 {
+    display: none;
+  }
+
+  footer.mainFooter div.holderFooter {
+    display: none;
+    height: auto;
+    margin-top: 25px;
+  }
+
+  footer.mainFooter div.holderFooter ul li {
+    padding: 0 !important;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(1) {
+    width: 50%;
+    margin-bottom: 20px;
+    min-height: 120px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(2) {
+    width: 50%;
+    margin-bottom: 20px;
+    min-height: 120px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(2) div {
+    display: inline-table;
+    width: 49%;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(3) {
+    width: 50%;
+    margin-bottom: 20px;
+    min-height: 120px;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(4) {
+    width: 50%;
+    margin-bottom: 20px;
+    min-height: 120px;
+  }
+
+  footer.mainFooter address {
+    margin-top: 20px;
+  }
+
+  footer.mainFooter h6.atendimento {
+    width: 727px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 15px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+  }
+
+  footer.mainFooter h6.atendimento span {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 7px;
+    display: block;
+    background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/footer/seta-atendimento.gif") 0 0 no-repeat;
+  }
+
+  footer.mainFooter h6.atendimento.active span {
+    background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/footer/seta-atendimento.gif") 0 -7px no-repeat;
+  }
+
+  div.mapa-barra ul li {
+    padding: 0 13px;
+  }
+
+  body.tablet body.cartoesSec div.nao-correntista {
+    right: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .classic.mainContent .menu-flutuante li.item {
+    transform: scale(.7);
+  }
+
+  .tab-wrapper {
+    top: 0px;
+  }
+
+  div.comboSegmentos {
+    display: inline-block;
+    width: 47.9%;
+    text-align: center;
+    margin: -1px;
+    height: 50px;
+    padding-top: 15px;
+  }
+
+  div.tablinks-pf.active {
+    background: transparent linear-gradient(105deg, #F36279 0%, #CC092F 51%, #B41A83 100%) 0% 0% no-repeat padding-box;
+    border-top: none !important;
+  }
+
+  div.tablinks-pj.active {
+    background: transparent linear-gradient(105deg, #F36279 0%, #CC092F 51%, #B41A83 100%) 0% 0% no-repeat padding-box;
+    border-top: none !important;
+    width: 52%;
+  }
+
+  div.tablinks-pf.active span {
+    color: #FFF !important;
+  }
+
+  div.tablinks-pj.active span {
+    color: #FFF !important;
+  }
+
+  div.comboSegmentos>span:after {
+    display: block;
+    content: '\203A';
+    font-size: 35px;
+    font-weight: normal;
+    top: 4px;
+    right: 14px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -ms-transform: rotate(10deg);
+    position: absolute;
+    color: #47484C;
+  }
+
+  div.comboSegmentos>span:after {
+    display: block;
+    content: '\203A';
+    font-size: 35px;
+    font-weight: normal;
+    top: -10px !important;
+    right: -22px !important;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -ms-transform: rotate(10deg);
+    position: absolute;
+    color: #47484C;
+  }
+
+  .comboSegmentos>span {
+    font-family: "Bradesco", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  div.tablinks-pf.active span::after {
+    color: #FFF;
+    transform: rotate(270deg);
+    right: 15px;
+  }
+
+  div.tablinks-pj.active span::after {
+    color: #FFF;
+    transform: rotate(270deg);
+    right: 15px;
+  }
+
+
+  div.modal header {
+    font-size: 15px;
+  }
+
+  div.modal header span.title {
+    line-height: normal;
+  }
+
+  .mfp-title {
+    font-size: 15px !important;
+  }
+
+  div#topBar div.holder {
+    width: 640px;
+  }
+
+  div#topBar div.holder div.como-usar {
+    display: none;
+  }
+
+  div#topBar div.holder div.top-bar-center {
+    display: none;
+  }
+
+  div#topBar div.holder form fieldset {
+    width: auto;
+  }
+
+  div#topBar div.holder form fieldset legend {
+    left: 20px;
+    width: 177px;
+    background: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/acesso-seguro.png") no-repeat;
+  }
+
+  div#topBar div.holder form fieldset .legenda-acessa-conta,
+  div#topBar div.holder form fieldset .ico-cadeado {
+    display: none;
+  }
+
+  div#topBar div.holder form fieldset>ul {
+    left: auto;
+    right: 15px;
+  }
+
+  div#topBar div.holder form fieldset>ul li.lembrar {
+    display: none;
+  }
+
+  div#topBar div.acessibilidade {
+    display: none;
+  }
+
+  div#topBar div.holderMobile {
+    width: 640px;
+  }
+
+  body.cartoesSec div.nao-correntista {
+    display: none !important;
+  }
+
+  #wrapper {
+    width: 640px;
+  }
+
+  header.mainHeader {
+    display: none;
+  }
+
+  .botaoContrate {
+    bottom: initial;
+    width: 100% !important;
+    font-size: 13px;
+  }
+
+  div.holderFixed {
+    display: block;
+  }
+
+  header.headerMobile {
+    width: 640px;
+  }
+
+  body.mobile nav.navSegMobile {
+    display: none;
+  }
+
+  nav.navSegMobile {
+    display: none;
+  }
+
+  section.mainContent {
+    width: 100%;
+  }
+
+  footer .item__info-uteis,
+  footer .item__fones,
+  footer .item__bia {
+    display: block;
+    padding: 10px;
+    clear: both;
+  }
+
+  footer .line_mobile_footer {
+    height: 1px;
+    display: none;
+    background: #ebebeb;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  footer .line_mobile_footer span {
+    height: 1px;
+    display: none;
+    background: #afafaf;
+    width: calc(100% - 100px);
+    margin: 0 auto;
+  }
+
+  footer .list__links a span {
+    font-size: 12px;
+  }
+
+  footer .item__info-uteis {
+    border-top: none;
+  }
+
+  footer .list__links,
+  footer .list__fones,
+  footer .list__bia {
+    display: none;
+    border: none;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  footer .list__links .col-xs-12,
+  footer .list__fones .col-xs-12,
+  footer .list__bia .col-xs-12 {
+    width: 33%;
+  }
+
+  footer .list__links .col-xs-12:last-child,
+  footer .list__fones .col-xs-12:last-child,
+  footer .list__bia .col-xs-12:last-child {
+    padding-bottom: 25px;
+  }
+
+  footer .list__links .col-xs-12 .list__fones-title-sobre,
+  footer .list__fones .col-xs-12 .list__fones-title-sobre,
+  footer .list__bia .col-xs-12 .list__fones-title-sobre {
+    margin-left: 0;
+  }
+
+  footer .list__links .col-xs-12 .list__fones-title,
+  footer .list__fones .col-xs-12 .list__fones-title,
+  footer .list__bia .col-xs-12 .list__fones-title {
+    margin-left: 0;
+  }
+
+  footer .list__links .col-xs-12 .list__fones-descricao,
+  footer .list__fones .col-xs-12 .list__fones-descricao,
+  footer .list__bia .col-xs-12 .list__fones-descricao {
+    margin-left: 0;
+  }
+
+  footer .overflow__x {
+    overflow-x: auto;
+    height: auto;
+  }
+
+  footer .box__red {
+    margin: 0 auto;
+  }
+
+  footer .box__red .text__title {
+    margin: 0 7%;
+  }
+
+  footer .box__red .list__icones {
+    display: block;
+    width: 500px;
+    margin-left: 0px;
+  }
+
+  footer .box__red .list__icones ul {
+    text-align: center;
+  }
+
+  footer .box__red .list__icones ul li {
+    padding-right: 15px;
+  }
+
+  footer .end__text {
+    display: block !important;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  footer .logo__footer {
+    text-align: center;
+    float: none !important;
+  }
+
+  footer .logo__footer img {
+    width: 50%;
+    height: 62px;
+    display: block !important;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  #modalTabelaLocalSorteiosHiperfundo>section>div>div>p {
+    max-width: 258px;
+  }
+
+  .destaque-area .description .left {
+    float: none;
+    width: 100%;
+  }
+
+  .destaque-area .description .right {
+    float: none;
+    width: 100%;
+  }
+
+  .destaque-area .description .right .saiba-mais {
+    margin-top: 15px;
+  }
+
+  div#topBar div.holder {
+    width: 480px;
+  }
+
+  div#topBar div.holder div.ico-cadeado {
+    display: none;
+  }
+
+  div#topBar div.holder a.abrirLogin {
+    display: block;
+  }
+
+  div#topBar div.holder form fieldset legend {
+    display: block;
+    width: 15px;
+  }
+
+  div#topBar div.holderMobile {
+    width: 480px;
+  }
+
+  div#topBar div.holderMobile p {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+
+  div#topBar div.holderMobile p span {
+    display: block;
+  }
+
+  #wrapper {
+    width: 480px;
+  }
+
+  header.headerMobile {
+    width: 480px;
+  }
+
+  header.headerMobile a.buscaMobile {
+    display: block;
+  }
+
+  header.headerMobile div.busca {
+    display: none;
+  }
+
+  header.headerMobile div.busca.active {
+    display: block;
+    top: 79px;
+    right: 0;
+    height: 51px;
+    background: #fff;
+    width: 100% !important;
+  }
+
+  header.headerMobile div.busca.active input[type="text"] {
+    min-width: 85% !important;
+    max-width: 250px;
+    height: 49px !important;
+    line-height: 49px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    float: left;
+  }
+
+  header.headerMobile div.busca.active input.btn-buscar {
+    width: 45px;
+    height: 49px !important;
+    background-position: center;
+  }
+
+  header.headerMobile div.busca.active div.search-autocomplete2 {
+    top: 49px !important;
+  }
+
+  nav.navSegMobile ul.navSeg {
+    display: none;
+  }
+
+  footer.mainFooter {
+    width: 100%;
+    padding: 20px 0 85px 0;
+    background: #EBEBEB url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/footer/bg-footer-640.png") bottom right no-repeat;
+  }
+
+  footer.mainFooter ul.redes-sociais {
+    display: table;
+    margin: 0 auto;
+    float: none;
+  }
+
+  footer.mainFooter ul.redes-sociais li.acompanhe {
+    clear: both;
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  footer.mainFooter div.holderFooter ul {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(1) {
+    width: 100%;
+    margin-bottom: 30px;
+    min-height: auto;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(2) {
+    width: 100%;
+    margin-bottom: 30px;
+    min-height: auto;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(3) {
+    width: 100%;
+    margin-bottom: 30px;
+    min-height: auto;
+  }
+
+  footer.mainFooter div.holderFooter ul li:nth-child(4) {
+    width: 100%;
+    margin-bottom: 30px;
+    min-height: auto;
+  }
+
+  footer.mainFooter address {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  footer.mainFooter h6.atendimento {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+
+  div.modal header {
+    font-size: 13px;
+  }
+
+  div.modal section fieldset h4 {
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+
+  div.modal section fieldset ul li {
+    margin-bottom: 10px;
+  }
+
+  div.modal section fieldset ul li:first-child {
+    float: none;
+  }
+
+  div.modal section fieldset ul li label.conta span {
+    display: inline-table;
+    padding-left: 12px;
+  }
+
+  .mfp-title {
+    font-size: 13px !important;
+    padding: 18px 90px 17px 20px;
+    line-height: initial !important;
+  }
+
+  div#topBar div.holder {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  div#topBar div.holder form fieldset>ul li.lembrar {
+    display: none;
+  }
+
+  div#topBar div.holderMobile {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  header.headerMobile {
+    width: 100%;
+    min-width: 320px;
+    z-index: 1000;
+  }
+
+  #wrapper {
+    width: 100%;
+    min-width: 320px;
+    padding-top: 118px;
+    background-color: white;
+  }
+
+  #modalURLExterna section .col-lg-4 {
+    width: 100%;
+  }
+
+  #modalURLExterna section .col-lg-8 {
+    width: 100%;
+  }
+
+  #modalURLExterna section h3 {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  #modalURLExterna section p {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  #modalURLExterna section .thumb {
+    display: none;
+  }
+
+  #modalURLExterna section .img-link-externo {
+    margin-bottom: 30px;
+  }
+
+  #modalURLExterna section .img-link-externo img {
+    max-width: 160px;
+    display: inline;
+  }
+
+  footer .line_mobile_footer span {
+    width: calc(100% - 50px);
+  }
+
+  footer .list__links,
+  footer .list__fones,
+  footer .list__bia {
+    width: calc(100% - 50px);
+  }
+
+  footer .list__links .col-xs-12,
+  footer .list__fones .col-xs-12,
+  footer .list__bia .col-xs-12 {
+    width: 100%;
+  }
+
+  footer .list__links .col-xs-12 a span,
+  footer .list__fones .col-xs-12 a span,
+  footer .list__bia .col-xs-12 a span {
+    width: auto;
+  }
+
+  footer .list__bia {
+    border: none;
+  }
+
+  footer .list__bia .list__bia_img_xs {
+    width: 25%;
+  }
+
+  footer .list__bia .list__bia_xs {
+    width: 75%;
+  }
+
+  footer .item__info-uteis,
+  footer .item__fones,
+  footer .item__bia {
+    padding: 20px;
+    border-bottom: 1px solid #999;
+    margin: 5px 20px;
+  }
+
+  footer .end__text {
+    font-size: 12px;
+    padding: 10px 20px 20px 20px;
+  }
+
+  footer .box__red .overflow__x {
+    display: block;
+    overflow: hidden;
+  }
+
+  footer .box__red .list__icones {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .mfp-title {
+    padding: 10px 90px 10px 20px;
+  }
+
+  footer.mainFooter ul.redes-sociais li {
+    margin-right: 4px;
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  html.mm-opened .mm-page #menumobheader {
+    position: relative;
+  }
+
+  html.mm-opened .mm-page #prewrapper {
+    margin-top: -50px;
+  }
+}
+
+@media (-ms-high-contrast: active) {
+  html.mm-opened .mm-page #menumobheader {
+    position: relative;
+  }
+
+  html.mm-opened .mm-page #prewrapper {
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  div.modal header {
+    font-size: 12px;
+  }
+
+  div#topBar div.holder form fieldset legend {
+    display: none;
+  }
+
+  footer.mainFooter div.holderFooter ul {
+    max-width: 270px;
+  }
+
+  footer.mainFooter address {
+    max-width: 270px;
+  }
+
+  footer.mainFooter ul.redes-sociais li {
+    margin-right: 2px;
+  }
+
+  h6.atendimento {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+}
+
+.c-footer a {
+  font-size: 12px;
+}
+
+.c-footer address {
+  font-size: 12px;
+}
+
+.banner-padrao {
+  all: unset;
+  display: block;
+  width: 100%;
+}
+
+#mainMenu > span > ul > li.produtos-servicos.selected > ul > li.investimentos1 > a::before {
+    background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/investimento.svg");
+    width: 30px;
+    height: 26px;
+}
+
+#mainMenu > span > ul > li.produtos-servicos.selected > ul > li.investimentos1:hover > a::before {
+/* nav#mainMenu.mega-menu.theme-classic>span>ul>li.produtos-servicos>ul:last-child li.cartoes:hover>a:before{ */
+  background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/home/images/mega-menu/investimento-hover.svg");
+  width: 30px;
+  height: 26px;
+}

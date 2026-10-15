@@ -1,0 +1,37 @@
+.accessib-holder {
+    display: none;
+}
+
+nav.custom-navbar #acessib-menu-feat #acessib-menu {
+    position: fixed;
+    right: 100px;
+}
+
+nav.custom-navbar #acessib-menu-feat a.bt-acessib span.texto {
+    color: #000!important;
+    display: inline-block!important;
+    text-transform: capitalize;
+    font-size: 14px;
+    top: 7px;
+    left: 18px;
+}
+
+.custom-navbar #acessib-menu-feat a.bt-acessib span.icone {
+    display: none;
+}
+
+@media (min-width : 72.3125rem) {
+    .accessib-holder {
+        display: block;
+        position: absolute;
+        right: 0;
+        /* top: calc(100% - 14px); */
+    }
+}
+
+@media (max-width: 600px) {
+    nav.custom-navbar #acessib-menu-feat #acessib-menu {
+        right: 60px;
+        top: 200px;
+    }
+}
