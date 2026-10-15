@@ -1,0 +1,127 @@
+div#topBar.headertopBar { background: linear-gradient( 90deg, #cc092f 40%, #b81570 90% ); height: 40px; left: 0; position: fixed; right: 0; top: 0; z-index: 1000; display: none; }
+div#topBar.headertopBar div.holder { width: calc(100% - 120px) !important; margin: 0 auto; display: table; position: relative; }
+div#topBar.headertopBar div.holder a.abrirLogin { border: 1px solid #ce0026; display: none; width: 90px; height: 26px; box-sizing: border-box; line-height: 26px; background: #c80025; background: -moz-radial-gradient(center, ellipse cover, #c80025 0%, #a2001e 100%); background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #c80025), color-stop(100%, #a2001e)); background: -webkit-radial-gradient(center, ellipse cover, #c80025 0%, #a2001e 100%); background: -o-radial-gradient(center, ellipse cover, #c80025 0%, #a2001e 100%); background: -ms-radial-gradient(center, ellipse cover, #c80025 0%, #a2001e 100%); background: radial-gradient(ellipse at center, #c80025 0%, #a2001e 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c80025', endColorstr='#a2001e', GradientType=1 ); text-align: center; color: #fff; text-decoration: none; font-size: 12px; position: absolute; top: 7px; right: 15px; }
+div#topBar.headertopBar div.holder div.como-usar {position: absolute;left: 700px;top: 0px;height: 35px;display: none;}
+div#topBar.headertopBar div.holder div.como-usar>a:before { content: '';   background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 200 200'%3e%3ccircle fill='none' stroke='white' stroke-width='15' opacity='0.3' cx='100.5' cy='97.5' r='89.5'/%3e%3cpath fill='white' d='M85.633,112.337l24.692-21.4a7.763,7.763,0,0,1,9.878,0,5.506,5.506,0,0,1,0,8.567l-24.693,21.4a7.759,7.759,0,0,1-9.876,0A5.507,5.507,0,0,1,85.633,112.337Z'/%3e%3cpath fill='white' d='M85.633,76.984l24.692,21.41a7.762,7.762,0,0,0,9.878,0,5.506,5.506,0,0,0,0-8.567L95.51,68.413a7.782,7.782,0,0,0-9.876,0A5.509,5.509,0,0,0,85.633,76.984Z'/%3e%3c/svg%3e ") center center no-repeat; display: block; height: 32px; width: 32px; position: absolute; top: 3px; right: -20px;}
+div#topBar.headertopBar div.holder div.como-usar > a { display: block; color: #ffffff; font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px !important; text-decoration: none; line-height: 39px; padding-right: 14px; cursor: pointer; }
+div#topBar.headertopBar div.holder div.como-usar > span a { display: block; color: #ffffff; font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: 1.5px !important; text-decoration: none; line-height: 39px; padding-right: 14px; cursor: pointer; }
+div#topBar.headertopBar div.holder div.como-usar div.links { width: 165px; position: absolute; top: 38px; right: -14px; background: #ffffff; display: table; box-sizing: border-box; padding: 0 10px; border-top: 1px solid #eb232e; border-bottom: 1px solid #eb232e; display: none; }
+div#topBar.headertopBar div.holder div.como-usar div.links ul { margin: 0; padding: 0; list-style: none; }
+div#topBar.headertopBar div.holder div.como-usar div.links ul li { clear: both; font-size: 12px; padding: 10px 0 10px 0; border-top: 1px solid #d6d6d6; }
+div#topBar.headertopBar div.holder div.como-usar div.links ul li:first-child { border-top: 0; }
+div#topBar.headertopBar div.holder div.como-usar div.links ul li a { color: #000000; text-decoration: none; }
+div#topBar.headertopBar div.holder div.como-usar div.links ul li a:hover { text-decoration: underline; }
+div#topBar.headertopBar div.holder div.como-usar:hover span { text-decoration: none; }
+div#topBar.headertopBar div.holder div.top-bar-center { position: absolute; top: 14px; right: 0; line-height: 11px; }
+div#topBar.headertopBar div.holder div.top-bar-center span { color: #fff; font-size: 11px; line-height: 11px; border-bottom: 0; float: left; margin-right: 10px; position: relative; top: 1px; }
+div#topBar.headertopBar div.holder div.top-bar-center div#webLibrasCNT { float: left; width: 22px; height: 22px; overflow: hidden; position: relative; top: -4px; }
+div#topBar.headertopBar div.holder div.top-bar-center div#webLibrasCNT a { text-decoration: none; }
+div#topBar.headertopBar div.holder div.top-bar-center div#webLibrasCNT a img { display: block; margin-bottom: 1px; width: 100%; }
+div#topBar.headertopBar div.holder .visuallyhidden { background: none; border: 0; clip: rect(0 0 0 0); height: 0px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; top: 0; }
+div#topBar.headertopBar div.holder form { border: 0; margin: 0; padding: 0; }
+div#topBar.headertopBar div.holder form legend { float: left; width: 177px; height: 17px; position: absolute; top: 11px; overflow: hidden; font-size: 12px; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; line-height: 20px; padding: 0px 20px; }
+div#topBar.headertopBar div.holder form .legenda-acessa-conta { float: left; width: 177px; height: 17px; position: absolute; top: 11px; overflow: hidden; font-size: 12px; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; line-height: 20px; padding: 0 0 0 30px; }
+div#topBar.headertopBar div.holder form .legenda-acessa-conta:after { content: ""; height: 22px; width: 2px; background: #000; display: block; position: absolute; right: 0px; top: 0; opacity: 0.25; }
+div#topBar.headertopBar div.holder form fieldset { border: 0; margin: 0; padding: 0; float: left; }
+div#topBar.headertopBar div.holder form fieldset .ico-cadeado { padding-top: 10px; display: block; }
+div#topBar.headertopBar div.holder form fieldset > ul { position: absolute; left: 195px; top: 6px; padding: 0; margin: 0; list-style: none; }
+div#topBar.headertopBar div.holder form fieldset > ul li { float: left; font-size: 12px; color: #fff; margin-right: 8px; }
+div#topBar.headertopBar div.holder form fieldset > ul li:nth-child(1) input[type='text'] { width: 55px; height: 28px; padding: 0 10px; }
+div#topBar.headertopBar div.holder form fieldset > ul li:nth-child(2) input[type='text'] { width: 30px; height: 28px; padding: 0 10px; }
+div#topBar.headertopBar div.holder form fieldset > ul li:nth-child(2) input[type='text']:nth-child(2) { width: 85px; height: 28px; padding: 0 10px; }
+div#topBar.headertopBar div.holder form fieldset > ul li label { color: white; letter-spacing: 1.5px; font-size: 12px; font-weight: 700; position: relative; top: -1px; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar { margin-left: 5px; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar label { margin: 15px 5px 0 5px; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar input[type="checkbox"] { display: none; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar input[type="checkbox"] + label { display: inline-block; height: 14px; width: 114px; background: url("../../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/home/check.png") no-repeat; padding: 0 0px 0 20px; margin: 0; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar input[type="checkbox"] + label:before { content: ''; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar input[type="checkbox"]:checked + label { background-position-y: -15px; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar input[type="checkbox"]:checked + label:before { content: ''; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar:before { width: 2px; background-color: #000; right: -5px; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar span { width: auto; background: none; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar .text_hover { visibility: hidden; width: 0; }
+div#topBar.headertopBar div.holder form fieldset > ul li input[type='text'] { font-size: 15px; border: 0; margin-left: 5px; height: 25px; border-radius: 0; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; -ms-transition: all .2s; transition: all .2s; border-radius: 30px; }
+div#topBar.headertopBar div.holder form fieldset > ul li input[type='text']:focus { -webkit-box-shadow: inset 0px 0px 0px 2px #9d0b21 !important; -moz-box-shadow: inset 0px 0px 0px 2px #9d0b21 !important; box-shadow: inset 0px 0px 0px 2px #9d0b21 !important; }
+div#topBar.headertopBar div.holder form fieldset > ul li input[type='submit'] { width: 30px; height: 26px; line-height: 18px; color: #ffffff; background: #9d0b21; font-weight: bold; font-size: 12px; border-radius: 3px; padding: 0 6px; border: 0; overflow: hidden; -webkit-appearance: none; border-radius: 3px; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; -ms-transition: all .2s; transition: all .2s; }
+div#topBar.headertopBar div.holder form fieldset > ul li input[type='submit']:hover { background: #b00f2f; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar { position: relative; margin-right: 0; margin-top: 6px; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar label { margin: 7px 5px 0 5px; display: inline-block; }
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar label input { float: left; margin-right: 5px; }
+/* div#topBar.headertopBar div.holder form fieldset > ul li.lembrar:before { content: ''; width: 1px; height: 20px; background-color: #ae0021; position: absolute; right: -8px; } */
+div#topBar.headertopBar div.holder form fieldset > ul li.lembrar span { width: 27px; height: 27px; display: inline-block; background: url("../../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/icon-lembrar-me.png") 0px 8px no-repeat; cursor: help; position: absolute; }
+div#topBar.headertopBar div.holderMobile { width: 375px; margin: 0 auto; display: table; position: relative; display: none; }
+div#topBar.headertopBar div.holderMobile p { float: left; color: #fff; box-sizing: border-box; padding: 10px 0; font-size: 12px; margin: 0 0 0 10px; }
+div#topBar.headertopBar div.holderMobile > span { float: left; font-weight: 600; color: #fff; box-sizing: border-box; padding: 10px 0; font-size: 12px; margin: 0 0 0 10px; }
+div#topBar.headertopBar div.holderMobile a.fechar { width: 15px; position: absolute; left: 10px; top: 11px; }
+div#topBar.headertopBar div.holderMobile a.fechar img { width: 100%; display: block; }
+div#topBar.headertopBar div.holderMobile a.baixe { background: #fff; border: 1px solid #fff; font-weight: 600; display: block; width: 90px; height: 26px; box-sizing: border-box; line-height: 26px; text-align: center; color: #cc092f; text-decoration: none; font-size: 12px; float: right; position: relative; top: 7px; right: 20px; }
+div#topBar.headertopBar div.btn-parceiros { top: 8px; }
+div#topBar.headertopBar div.btn-parceiros a { width: auto; height: 26px; line-height: 26px; padding: 0 1rem; border: 0; background: #fff; border: 1px solid #e5173f; border-radius: 1.2rem; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; -ms-transition: all .2s; transition: all .2s; font-size: 12px; font-weight: 700; color: #e5173f; position: relative; }
+div#topBar.headertopBar div.btn-parceiros a:after { content: ''; width: 1px; height: 20px; background: #7f7faf; position: absolute; right: -18px; top: 3px; }
+div#topBar.headertopBar div.btn-parceiros a:hover { color: #fff; background: #9e1321; }
+div#topBar.headertopBar div.canal-consorciado { top: 8px; }
+div#topBar.headertopBar div.canal-consorciado a { width: auto; height: 28px; line-height: 28px; padding: 0 8px; border: 0; background: #c80025; border-right: 1px solid #1c315c; border-bottom: 1px solid #1c315c; border-radius: 30px; -webkit-transition: all .2s; -moz-transition: all .2s; -o-transition: all .2s; -ms-transition: all .2s; transition: all .2s; font-size: 12px; font-family: "Bradesco", sans-serif; font-weight: 700; color: #fff; position: relative; }
+div#topBar.headertopBar div.canal-consorciado a:after { content: ''; width: 1px; height: 20px; background: #7f7faf; position: absolute; right: -18px; top: 3px; }
+div#topBar.headertopBar div.canal-consorciado a:hover { color: #fff; background: #9e1321; }
+div#topBar.headertopBar div.nao-correntista { display: none; position: absolute; right: 53px; top: 7px; width: 315px; }
+div#topBar.headertopBar div.nao-correntista:after { content: ''; width: 1px; height: 20px; background: #7f7faf; position: absolute; right: -13px; top: 4px; }
+div#topBar.headertopBar div.nao-correntista form > ul { padding: 0; margin: 0; list-style: none; }
+div#topBar.headertopBar div.nao-correntista form > ul li { float: left; font-size: 12px; color: #fff; margin-left: 8px; }
+div#topBar.headertopBar div.nao-correntista form > ul li:first-child { padding-top: 8px; }
+div#topBar.headertopBar div.nao-correntista form > ul li input[type='text'] { width: 180px; font-size: 15px; border: 0; margin-left: 5px; height: 28px; border-radius: 0; -webkit-transition: all .2s; transition: all .2s; border-radius: 30px; padding: 0 10px; }
+div#topBar.headertopBar div.nao-correntista form > ul li input[type='text']:focus { -webkit-box-shadow: inset 0px 0px 0px 2px #9d0b21; -moz-box-shadow: inset 0px 0px 0px 2px #9d0b21; box-shadow: inset 0px 0px 0px 2px #9d0b21; }
+div#topBar.headertopBar div.nao-correntista form > ul li input[type='submit'] { height: 26px; line-height: 18px; color: #ffffff; font-weight: bold; font-size: 12px; border-radius: 3px; padding: 0 6px; border: 0; overflow: hidden; -webkit-appearance: none; background: #9d0b21; border-radius: 3px; -webkit-transition: all .2s; transition: all .2s; }
+div#topBar.headertopBar div.nao-correntista form > ul li input[type='submit']:hover { background: #e1173f; }
+div#topBar.headertopBar div.nao-correntista form > ul li .duvd { width: 28px; height: 28px; display: table; background: url("../../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/icon-duvida-cpf.png") 0px 0px no-repeat; }
+div#topBar.headertopBar div.nao-correntista form > ul li .duvd:hover { background: url("../../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/icon-duvida-cpf.png") 0px -28px no-repeat; }
+div#topBar.headertopBar div.nao-correntista .tipCartoes { background: #fff; margin-top: 6px; margin-left: 35px; position: relative; background-color: #FFF; border: 1px solid #BFBFBF; border-radius: 4px; box-shadow: 0 6px 5px 0 rgba(0, 0, 0, 0.25); padding: 14px 10px; width: 274px; display: none; }
+div#topBar.headertopBar div.nao-correntista .tipCartoes:before { content: ""; display: inline-block; position: absolute; top: -6px; left: 10px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 6px solid #fff; }
+div#topBar.headertopBar div.nao-correntista .tipCartoes p { font-size: 12px; margin-bottom: 15px; }
+div#topBar.headertopBar div.nao-correntista .tipCartoes label { font-size: 12px; }
+div#topBar.headertopBar div.nao-correntista .tipCartoes label span { position: relative; top: -2px; }
+div#topBar.headertopBar div.nao-correntista .tipCartoes #closeTooltip { display: block; position: absolute; top: 6px; right: 6px; padding: 0 5px 2px 5px; color: #000; font-size: 14px; border: 1px solid #000; border-radius: 15px; cursor: pointer; }
+
+@media only screen and (max-width: 1366px) {
+  div#topBar.headertopBar div.holder div.como-usar span { font-size: 9px; }
+  div#topBar.headertopBar div.holder form fieldset > ul li label { font-size: 10px; }
+  div#topBar.headertopBar div.holder div.como-usar { margin-left: -20px; }
+  div#topBar.headertopBar div.nao-correntista form > ul li { margin-left: 11px; }
+}
+
+@media only screen and (max-width: 1023px) {
+  div#topBar.headertopBar div.holder form fieldset > ul { left: 35px !important; right: 15px; }
+  div#topBar.headertopBar div.holder form fieldset > ul li.lembrar input[type="checkbox"] + label { display: none !important; }
+  div#topBar.headertopBar div.holder form .legenda-acessa-conta { display: none !important; }
+  div#topBar.headertopBar div.holder div.holder { width: 768px; }
+  div#topBar.headertopBar div.holder div.holder div.como-usar { display: none !important; }
+  div#topBar.headertopBar div.holder div.holder form legend { width: 14px; background: url("../../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/acesso-seguro-1024.png") no-repeat; }
+  div#topBar.headertopBar div.holder div.holder form fieldset > ul { left: 30px; }
+  div#topBar.headertopBar div.holder div.holder form fieldset > ul li.lembrar:before { display: none; }
+  div#topBar.headertopBar div.holder div.holderMobile { width: 768px; }
+  div#topBar.headertopBar div.holder div.btn-parceiros { display: none !important; }
+  div#topBar.headertopBar div.holder div.canal-consorciado { display: none !important; }
+}
+
+@media only screen and (max-width: 768px) {
+  div#topBar.headertopBar div.holder { width: 100% !important; }
+  div#topBar.headertopBar div.holder div.como-usar { display: none; }
+  div#topBar.headertopBar div.holder form fieldset > ul { left: 5px !important; right: 15px; }
+  div#topBar.headertopBar div.holder form fieldset .ico-cadeado { display: none; }
+}
+
+@media(min-width: 1049px) {
+  div#topBar.headertopBar div.holder div.como-usar { display: table }
+}
+
+@media(max-width: 390px) {
+  div#topBar.headertopBar div.holderMobile > span {font-size: 11px; margin: 0 0 0 20px;}
+}
+
+@media (max-width: 375px) {
+  div#topBar.headertopBar div.holderMobile > span {font-size: 10px;}
+  div#topBar.headertopBar div.holderMobile a.baixe {width: 70px;}
+}
+@media(max-width: 345px) {
+  div#topBar.headertopBar div.holderMobile > span {font-size: 10px;}
+  div#topBar.headertopBar div.holderMobile a.baixe {width: 70px;}
+}

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_1_copy_6" data-name="Ellipse 1 copy 6" cx="24" cy="24" r="24" fill="#none" stroke="#ffffff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_7178" data-name="Group 7178" transform="translate(-1089 -825)">
+    <g id="Mask_Group_50" data-name="Mask Group 50" transform="translate(1089 825)" clip-path="url(#clip-path)">
+      <g id="rede_de_atendimento_pin" data-name="rede de atendimento pin" transform="translate(0.28 0.28)">
+        <g id="Group_6166" data-name="Group 6166" transform="translate(0 0)">
+          <g id="Fill_1" data-name="Fill 1">
+            <path id="Path_9873" data-name="Path 9873" d="M23.918,47.631a23.72,23.72,0,1,1,23.72-23.72,23.72,23.72,0,0,1-23.72,23.72Z" transform="translate(-0.199 -0.192)" fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Group_25035" data-name="Group 25035" transform="translate(1099.791 835.907)">
+      <path id="Stroke_3052" data-name="Stroke 3052" d="M25,13.366V11.634a1.041,1.041,0,0,0-.913-1.034l-2.961-.37A8.86,8.86,0,0,0,20.2,8.005L22.037,5.65a1.043,1.043,0,0,0-.086-1.377L20.726,3.049a1.04,1.04,0,0,0-1.376-.086L17,4.794a8.857,8.857,0,0,0-2.225-.92S14.542,2.054,14.4.909A1.038,1.038,0,0,0,13.366,0H11.634A1.041,1.041,0,0,0,10.6.912l-.37,2.962A8.864,8.864,0,0,0,8,4.794L5.647,2.961a1.038,1.038,0,0,0-1.374.088L3.048,4.273A1.043,1.043,0,0,0,2.963,5.65L4.794,8a8.879,8.879,0,0,0-.92,2.226L.909,10.6A1.039,1.039,0,0,0,0,11.634v1.732A1.043,1.043,0,0,0,.912,14.4l2.962.37A8.872,8.872,0,0,0,4.794,17L2.963,19.35a1.041,1.041,0,0,0,.085,1.376l1.225,1.225a1.042,1.042,0,0,0,1.376.086L8,20.2a8.866,8.866,0,0,0,2.226.921s.228,1.819.371,2.965A1.038,1.038,0,0,0,11.634,25h1.732a1.041,1.041,0,0,0,1.033-.913l.371-2.961A8.86,8.86,0,0,0,17,20.2l2.254,1.753a1.186,1.186,0,0,0,1.57-.1l1.132-1.132a1.042,1.042,0,0,0,.086-1.376L20.2,17a8.875,8.875,0,0,0,.921-2.225L24.09,14.4A1.038,1.038,0,0,0,25,13.366Z" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1"/>
+      <g id="Ellipse_1690" data-name="Ellipse 1690" transform="translate(8.517 8.887)" fill="none" stroke="#ffffff" stroke-width="1">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

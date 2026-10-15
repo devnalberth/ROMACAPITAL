@@ -1,0 +1,37 @@
+.btn__classic, .btn__classic_solid, .btn__exclusive, .btn__exclusive_solid, .btn__prime, .btn__prime_solid { display: inline-flex !important; align-items: center; justify-content: center; border: 2px solid transparent; height: 42px; font-family: "Bradesco" sans-serif; font-weight: 600; font-size: 13px; text-align: center; padding: 0 20px 0 0; text-transform: uppercase; text-decoration: none !important; }
+
+.btn__classic::before, .btn__classic_solid::before, .btn__exclusive::before, .btn__exclusive_solid::before, .btn__prime::before, .btn__prime_solid::before, .icon-seta-longa-branca::before { content: ""; position: relative; margin: 0 10px 0 20px; white-space: nowrap; position: relative; background-repeat: no-repeat; background-size: 80%; background-position: 50% 50%; }
+
+.btn__classic { border-color: #E5173F; color: #E5173F !important; }
+.btn__classic::before { width: 10px; height: 15px; background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/produtos-servicos/mais-produtos-servicos/regularizacao/icon-read-hover.png") !important; }
+.btn__classic:hover { color: #AF2230; border-color: #AF2230; }
+.btn__classic_solid { background-color: #E5173F; color: #FFF !important; }
+.btn__classic_solid::before { width: 10px; height: 15px; background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/produtos-servicos/mais-produtos-servicos/regularizacao/icon-read-more-white.png") !important; }
+.btn__classic_solid:hover { background-color: #AF2230; }
+.btn__classic_vitrine { font-size: 9px !important; }
+.btn__exclusive { border-color: #AB8F62; color: #AB8F62 !important; }
+.btn__exclusive::before { width: 10px; height: 15px; background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/exclusive/img/produtos-servicos/mais-produtos-servicos/regularizacao/ico_seta_exclusive.png") !important; }
+.btn__exclusive:hover { filter: brightness(70%); }
+.btn__exclusive_solid { background-color: #AB8F62; color: #FFF !important; }
+.btn__exclusive_solid::before { width: 10px; height: 15px; background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/classic/img/produtos-servicos/mais-produtos-servicos/regularizacao/icon-read-more-white.png") !important; }
+.btn__exclusive_solid:hover { background-color: #7b5c29; }
+.btn__exclusive_vitrine { font-size: 9px !important; }
+.btn__prime { border: 1px solid #0e1e64; color: #0e1e64 !important; }
+.btn__prime::before { width: 15px; height: 15px; background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/prime/img/icons/arrows/arrow-right-prime.svg") !important; }
+.btn__prime:hover { filter: brightness(70%); }
+.btn__prime_solid { background-color: #0e1e64; color: #FFF !important; }
+.btn__prime_solid::before { width: 17px; height: 17px; background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/arrows/arrow-right-branca.svg") !important; }
+.btn__prime_solid:hover { background-color: #081137; }
+.btn__prime_vitrine { font-size: 9px !important; }
+
+.icon-seta-longa-branca::before { width: 17px; height: 17px; background-image: url("../../../../assets.bradesco/content/dam/portal-bradesco/assets/common/img/icons/arrows/arrow-right-branca.svg") !important; }
+
+.btn__classic_net_empresa_container {display: flex; width: 100%;justify-content: center;margin-top: 36px;}
+.btn__classic_net_empresa_container a { text-decoration: none;}
+.btn__classic_net_empresa { display: flex; flex-direction: row; justify-content: center;background-color: #FFF; align-items: center;border: 1px solid black;padding: 14px 29px 13px 29px; width: 100%;min-height: 61px;border-style: none;box-shadow: 0px 4px 4px #00000029;border-radius: 8px;cursor: pointer;opacity: 1;}
+.btn__classic_net_empresa img { width: 33px; height: 33px;}
+.btn__classic_net_empresa_text {display: block;margin-left: 18px;}
+.btn__classic_net_empresa_text p { text-decoration: none; font: normal normal medium 14px/18px Bradesco Sans; color: #000000;}
+.btn__classic_net_empresa_text span { text-decoration: none; color: #3B69FF;}
+
+@media (max-width: 576px) { .btn__classic_net_empresa { flex-direction: column; justify-content: space-around; height: 124px; }}
