@@ -84,4 +84,3 @@ test('mantém resposta de intervalo fora dos limites', async () => {
   assert.equal(res.statusCode, 416);
   assert.equal(res.headers['content-range'], 'bytes */100');
 });
-

@@ -87,4 +87,3 @@ function createHandler(fetcher = fetch) {
 
 module.exports = createHandler();
 module.exports.createHandler = createHandler;
-

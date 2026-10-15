@@ -71,4 +71,3 @@ if ($method !== 'HEAD') {
 } elseif (isset($headers['content-length'])) {
     header('Content-Length: ' . (int) $headers['content-length']);
 }
-
